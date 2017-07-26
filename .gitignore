@@ -1,1 +1,13 @@
+/node_modules
+/.tmp
+/.sass-cache
+/bower_components
+.idea
+/resources
+/.tscache
+/typings
+*.map
+*/.DS_Store
+/test/coverage
+/dist
 .DS_Store
