@@ -19,7 +19,7 @@
     "build:utils": "cross-env NODE_ENV=production babel ./src/utils --out-dir ./lib/utils --ignore spec.js",
     "publish": "deploy:docs"
   },
-  "version": "0.1.17",
+  "version": "0.1.18",
   "main": "./lib/index.js",
   "engines": {
     "node": ">=4.0.0"
