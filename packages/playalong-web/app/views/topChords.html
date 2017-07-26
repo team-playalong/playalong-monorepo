@@ -1,0 +1,16 @@
+<section  id="topChords"
+      translate-namespace="topChords">
+  <md-card layout-align="center" class="ply-search-results" >
+    <md-card-content>
+      <h1 class="md-title"  translate=".TITLE"></h1>
+      <div class="ply-search-results-wrapper">
+        <ply-spinner is-active="top.isTopChordsSpinnerActive"></ply-spinner>
+        <ply-chord-result-list
+          chords="top.topChords"
+          click="$root.goToChordPage"
+          ></ply-chord-result-list>
+      </div>
+
+    </md-card-content>
+  </md-card>
+</section>

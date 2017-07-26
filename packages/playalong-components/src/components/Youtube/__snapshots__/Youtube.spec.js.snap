@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot testing 1`] = `
+<iframe
+  allowFullScreen={true}
+  className="lazyload"
+  frameBorder="0"
+  height={150}
+  id="plyYoutubeIframe"
+  src="https://www.youtube.com/embed/123"
+  title="playalong youtube"
+  width={300}
+/>
+`;

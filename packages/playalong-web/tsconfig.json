@@ -1,0 +1,21 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "module": "es2015",
+    "allowJs":true,
+    "target": "es5",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "removeComments": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "jsx": "react",
+    "lib": [ "es2015", "dom" ]
+  },
+  "exclude": [
+    "node_modules",
+    "bower_components",
+    "typings"
+  ]
+}

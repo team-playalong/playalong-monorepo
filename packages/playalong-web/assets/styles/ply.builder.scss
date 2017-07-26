@@ -1,0 +1,29 @@
+@import "_ply.vars.scss";
+
+$ply-editor-font-size: 20px;
+$EDITOR_MIN_HEIGHT: 300px;
+
+.builder {
+  .ply-editor-wrapper {
+    border: 0;
+    margin-bottom: 20px;
+    padding: 7px;
+    background-color: $ply-white;
+    color: $primary-text;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    &:focus {
+      border: 0;
+      outline: none !important;
+      border-bottom: 2px solid $brand-primary;
+      background-color: $ply-grey-light;
+    }
+    .ply-editor {
+      .chord {
+        color: $primary-text; //To override pink chords
+      }
+    }
+    .ply-chord-preview {
+      min-height: $EDITOR_MIN_HEIGHT;
+    }
+  }
+}

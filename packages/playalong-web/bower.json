@@ -1,0 +1,19 @@
+{
+  "name": "playalong-web",
+  "version": "0.0.0",
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5",
+    "flag-icon-css": "~0.8.5",
+    "messageformat": "^1.0.0",
+    "jquery-ui": "^1.12.0",
+    "angular-bootstrap": "^2.1.3",
+    "font-awesome": "fontawesome#^4.6.3",
+    "firebase": "^3.4.0"
+  },
+  "devDependencies": {},
+  "appPath": "app",
+  "moduleName": "playalongWebApp",
+  "resolutions": {
+    "angular": ">=1.4.0"
+  }
+}

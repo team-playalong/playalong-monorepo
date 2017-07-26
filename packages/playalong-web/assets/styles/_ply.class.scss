@@ -1,0 +1,92 @@
+@import url(https://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
+@import '_ply.vars.scss';
+
+//Common Classes
+.clickable {
+  cursor: pointer;
+}
+
+.non-clickable {
+	cursor: default;
+}
+
+.ply-chord {
+	color: #0288D1;
+}
+
+.chord {
+  color: $ply-pink;
+  direction: ltr;
+}
+
+.ply-btn-ghost {
+	border: 1px solid #FFFFFF;
+}
+
+.ply-ellipsis {
+	white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.text-align-right {
+  text-align: right;
+}
+
+.no-padding {
+  padding:0;
+}
+
+.ply-transparent {
+  background: transparent;
+}
+
+.ply-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: $ply-pink;
+  opacity: 0.7;
+}
+
+.ply-white {
+  color: $ply-white;
+}
+
+.hebrew-sans {
+  font-family: 'Open Sans Hebrew', sans-serif;
+}
+
+.ta-hidden-input {
+  left: 0;
+}
+
+.direction-initial {
+  direction: initial;
+}
+
+.ply-relative {
+  position: relative;
+}
+
+.ply-flex {
+  display: flex;
+}
+
+.ply-hidden {
+ position: absolute !important;
+ top: -9999px !important;
+ left: -9999px !important;
+}
+
+.ply-red {
+  color: $ply-red;
+}
+
+.margin-right-10 {
+  margin-right: 10px;
+}

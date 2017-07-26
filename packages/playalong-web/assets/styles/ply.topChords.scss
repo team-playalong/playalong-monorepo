@@ -1,0 +1,9 @@
+@import '_ply.vars.scss';
+
+#topChords {
+	position: relative;
+	
+	.ply-search-results-wrapper {
+		min-height: 300px;	
+	}
+}

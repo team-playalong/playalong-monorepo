@@ -1,0 +1,104 @@
+<div  class="md-padding" id="chord" ng-cloak
+      translate-namespace="chord">
+    <md-card  layout-padding layout-align="center"
+              ng-class="{'text-align-right' : isRtl}">
+      <!-- TODO - Fix drag issue -->
+      <!-- <ply-auto-scroll></ply-auto-scroll> -->
+      <md-card-content class="ply-chord-container">
+        <div layout="row" layout-align="{{!!isRtl ? 'end' : 'start'}} center">
+          <div flex="30">
+            <text-slider element-class="chordContentClass" on-slider-changed="handleSliderChange" size="textSize"></text-slider>
+          </div>
+          <div flex="40">
+            <span ng-if="transposition">
+              <span translate=".TRANSPOSITION"></span>
+              <span ng-bind="transposition"></span>
+              <md-button  class="md-primary md-hue-1"
+                ng-click="transposeChords(-transposition)"
+                aria-label="Reset Transpose"
+                translate=".RESET_TRANSPOSE">
+              </md-button>
+            </span>
+          </div>
+          <div flex>
+            <ply-favorite-btn chord="chord"></ply-favorite-btn>
+          </div>
+        </div>
+        <div layout="row" class="direction-initial" >
+          <div flex>
+            <h2 ng-bind="chord.artist"></h2>
+            <h4 ng-bind="chord.title"></h4>
+          </div>
+        </div>
+
+        <!-- TODO - Return after resoving youtube errors -->
+        <!-- <div  layout="row" class="direction-initial"
+              ng-if="!!chord.youtubeLink">
+          <div flex>
+            <ply-youtube
+              video-id="chord.youtubeLink">
+            </ply-youtube>
+          </div>
+        </div> -->
+        <figure hide>
+          <figcaption ng-bind="chord.imagePath"></figcaption>
+          <img src="{{chord.imagePath}}" alt="no image">
+        </figure>
+        <div class="ply-spinner-wrapper">
+          <ply-spinner is-active="isChordSpinnerActive"></ply-spinner>
+
+          <div ng-show="chordContent" class="ply-chord-container-content direction-initial" compile="chordContent"></div>
+        </div>
+
+        <div  class="ply-chord-rating"
+              ng-if="chordRating">
+          <h5 tranlate=".RATE_MESSAGE"></h5>
+          <ply-rating value="chordRating" click="ratingChanged" readonly="hasRated"></ply-rating>
+          <p class='help-block'
+              ng-if='chord.countRating && !hasRated'>
+              <span>{{::chord.countRating}}</span>
+              <span translate=".COUNT_RATING_MESSAGE"></span>
+          </p>
+        </div>
+        <ply-disqus ply-disqus-url="chord" ply-disqus-id="{{chord.$id}}"></ply-disqus>
+      </md-card-content>
+    </md-card>
+</div>
+<md-fab-speed-dial
+    class="ply-fab"
+    ng-class="{'fab-right': app.dir === 'ltr',
+                'fab-left': app.dir !== 'ltr'}"
+    md-open="chordFab.isOpen" md-direction="up"
+    ng-class="chordFab.selectedMode">
+  <md-fab-trigger>
+    <md-button aria-label="menu" class="md-fab md-accent ply-fab-more">
+      <ng-md-icon class="ply-fab-icon" icon="more_vert"></ng-md-icon>
+    </md-button>
+  </md-fab-trigger>
+  <md-fab-actions>
+    <md-button
+      aria-label="tone down" class="md-fab md-raised md-mini"
+      ng-click="transposeChords(-1)"
+      data-tip="{{'chord.TONE_DOWN' | translate}}"
+    >
+      <ng-md-icon class="ply-fab-icon ply-fab-icon-dark" icon="expand_more"></ng-md-icon>
+    </md-button>
+    <md-button
+      aria-label="toneUp" class="md-fab md-raised md-mini"
+      ng-click="transposeChords(1)"
+      data-tip="{{'chord.TONE_UP' | translate}}"
+      >
+      <ng-md-icon class="ply-fab-icon ply-fab-icon-dark" icon="expand_less"></ng-md-icon>
+    </md-button>
+    <md-button
+      aria-label="edit chord"
+      class="md-fab md-raised md-mini"
+      ui-sref="builder.edit({id:chord.$id || chord.chordKey})"
+      ng-if="login.isLoggedIn()"
+      data-tip="{{'chord.EDIT_CHORD' | translate}}"
+    >
+      <ng-md-icon class="ply-fab-icon ply-fab-icon-dark" icon="create"></ng-md-icon>
+    </md-button>
+
+  </md-fab-actions>
+</md-fab-speed-dial>

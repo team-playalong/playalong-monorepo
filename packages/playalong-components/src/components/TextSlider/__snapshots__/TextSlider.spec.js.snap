@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextSlider Snapshot testing 1`] = `
+<span
+  className="sc-bwzfXH fhwTEP"
+  data-tip="Change Font Size"
+>
+  <span
+    className="small-letter"
+  >
+    A
+  </span>
+  <span
+    className="input-wrapper"
+  >
+    <input
+      className="slider"
+      max={20}
+      min={12}
+      onChange={[Function]}
+      type="range"
+      value={18}
+    />
+  </span>
+  <span
+    className="big-letter"
+  >
+    A
+  </span>
+</span>
+`;

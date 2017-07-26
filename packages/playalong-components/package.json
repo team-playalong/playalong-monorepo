@@ -1,0 +1,144 @@
+{
+  "name": "playalong-components",
+  "scripts": {
+    "prestart": "npm run gen:docs",
+    "start": "npm-run-all --parallel start:docs gen:docs-watch test",
+    "start:docs": "node scripts/start.js",
+    "test": "node scripts/test.js --env=jsdom",
+    "test:single": "jest",
+    "gen:docs": "node scripts/generateComponentData.js",
+    "gen:docs-watch": "npm run gen:docs --watch",
+    "build:docs": "node scripts/build.js",
+    "predeploy:docs": "yarn build:docs",
+    "deploy:docs": "gh-pages -d build",
+    "prebuild": "rimraf lib",
+    "build": "npm-run-all --parallel build:commonjs build:utils build:css build:copy-files build:docs",
+    "build:copy-files": "node scripts/copyBuildFiles.js",
+    "build:css": "cpx \"./src/components/**/*.css\" ./lib",
+    "build:commonjs": "cross-env NODE_ENV=production babel ./src/components --out-dir ./lib/components --ignore spec.js",
+    "build:utils": "cross-env NODE_ENV=production babel ./src/utils --out-dir ./lib/utils --ignore spec.js",
+    "publish": "deploy:docs"
+  },
+  "version": "0.1.16",
+  "main": "./lib/index.js",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "author": {
+    "name": "Dadi Atar",
+    "email": "atardadi@gmail.com",
+    "url": "https://www.playalong.io"
+  },
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "components",
+    "react",
+    "react-component",
+    "toolkit",
+    "playalong"
+  ],
+  "dependencies": {
+    "chokidar": "^1.7.0",
+    "draft-js": "^0.10.1",
+    "draft-js-export-html": "^0.5.4",
+    "flag-icon-css": "^2.8.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "jquery-ui": "^1.12.1",
+    "lazysizes": "^4.0.0-rc3",
+    "material-ui": "^0.18.3",
+    "npm-run-all": "^4.0.2",
+    "react": "^15.5.4",
+    "react-docgen": "^2.15.0",
+    "react-dom": "^15.5.4",
+    "react-fontawesome": "^1.6.1",
+    "react-svg-gauge": "^1.0.4",
+    "react-tap-event-plugin": "^2.0.1",
+    "react-tooltip": "^3.3.0",
+    "styled-components": "^2.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "7.1.2",
+    "babel-cli": "^6.24.1",
+    "babel-core": "6.25.0",
+    "babel-eslint": "7.2.3",
+    "babel-jest": "20.0.3",
+    "babel-loader": "7.1.1",
+    "babel-preset-react-app": "^3.0.0",
+    "babel-runtime": "6.23.0",
+    "case-sensitive-paths-webpack-plugin": "2.1.1",
+    "chalk": "2.0.1",
+    "cpx": "^1.5.0",
+    "cross-env": "^5.0.1",
+    "css-loader": "0.28.4",
+    "dotenv": "4.0.0",
+    "enzyme": "^2.8.2",
+    "eslint": "4.3.0",
+    "eslint-config-react-app": "^1.0.4",
+    "eslint-loader": "1.9.0",
+    "eslint-plugin-flowtype": "2.35.0",
+    "eslint-plugin-import": "2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-react": "7.1.0",
+    "extract-text-webpack-plugin": "3.0.0",
+    "fbjs": "^0.8.12",
+    "file-loader": "0.11.2",
+    "fs-extra": "4.0.0",
+    "gh-pages": "^1.0.0",
+    "highlight.js": "^9.12.0",
+    "html-webpack-plugin": "2.29.0",
+    "jest": "20.0.4",
+    "object-assign": "4.1.1",
+    "postcss-flexbugs-fixes": "3.0.0",
+    "postcss-loader": "2.0.6",
+    "promise": "8.0.1",
+    "react-addons-test-utils": "^15.5.1",
+    "react-dev-utils": "^3.0.0",
+    "react-error-overlay": "^1.0.7",
+    "react-test-renderer": "^15.5.4",
+    "rimraf": "^2.6.1",
+    "style-loader": "0.18.2",
+    "sw-precache-webpack-plugin": "0.11.4",
+    "url-loader": "0.5.9",
+    "webpack": "3.3.0",
+    "webpack-dev-server": "2.5.1",
+    "webpack-manifest-plugin": "1.2.1",
+    "whatwg-fetch": "2.0.3"
+  },
+  "homepage": "https://team-playalong.github.io/playalong-components/",
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}"
+    ],
+    "setupFiles": [
+      "<rootDir>/config/polyfills.js"
+    ],
+    "testMatch": [
+      "<rootDir>/src/**/__tests__/**/*.js?(x)",
+      "<rootDir>/src/**/?(*.)(spec|test).js?(x)"
+    ],
+    "testEnvironment": "node",
+    "testURL": "http://localhost",
+    "transform": {
+      "^.+\\.(js|jsx)$": "<rootDir>/node_modules/babel-jest",
+      "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
+      "^(?!.*\\.(js|jsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"
+    ],
+    "moduleNameMapper": {
+      "^react-native$": "react-native-web"
+    }
+  },
+  "babel": {
+    "presets": [
+      "react-app"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  }
+}
