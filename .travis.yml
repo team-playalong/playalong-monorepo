@@ -2,7 +2,8 @@ sudo: false
 language: node_js
 node_js: 7.1.0
 before_script:
-- npm i -g lerna
+- npm i -g lerna yarn
+- lerna clean
 - lerna bootstrap
 script:
 - lerna run build
