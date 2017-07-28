@@ -1,0 +1,2138 @@
+0 silly input []
+1 silly flags { _: [ 'bootstrap' ], args: [] }
+2 verbose rootPath /Users/datar/git/playalong-monorepo
+3 info version 2.0.0
+4 info versioning independent
+5 silly existsSync /Users/datar/git/playalong-monorepo/VERSION
+6 silly initialize attempt
+7 silly initialize success
+8 silly execute attempt
+9 info Bootstrapping 2 packages
+10 info lifecycle preinstall
+11 silly runScript preinstall playalong-components
+12 silly playalong-components
+13 silly runScript preinstall playalongweb
+14 silly playalongweb
+15 silly hasMatchingDependency playalongweb playalong-components
+16 silly hasDependencyInstalled playalong-components autoprefixer
+17 silly dependencyIsSatisfied [ 'autoprefixer',
+17 silly dependencyIsSatisfied   '7.1.2',
+17 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+18 verbose dependencyIsSatisfied autoprefixer true
+19 silly hasDependencyInstalled playalong-components babel-cli
+20 silly dependencyIsSatisfied [ 'babel-cli',
+20 silly dependencyIsSatisfied   '^6.24.1',
+20 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+21 verbose dependencyIsSatisfied babel-cli true
+22 silly hasDependencyInstalled playalongweb babel-cli
+23 silly dependencyIsSatisfied [ 'babel-cli',
+23 silly dependencyIsSatisfied   '^6.24.1',
+23 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+24 verbose dependencyIsSatisfied babel-cli true
+25 silly hasDependencyInstalled playalong-components babel-core
+26 silly dependencyIsSatisfied [ 'babel-core',
+26 silly dependencyIsSatisfied   '6.25.0',
+26 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+27 verbose dependencyIsSatisfied babel-core true
+28 silly hasDependencyInstalled playalongweb babel-core
+29 silly dependencyIsSatisfied [ 'babel-core',
+29 silly dependencyIsSatisfied   '^6.25.0',
+29 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+30 verbose dependencyIsSatisfied babel-core true
+31 silly hasDependencyInstalled playalong-components babel-eslint
+32 silly dependencyIsSatisfied [ 'babel-eslint',
+32 silly dependencyIsSatisfied   '7.2.3',
+32 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+33 verbose dependencyIsSatisfied babel-eslint true
+34 silly hasDependencyInstalled playalongweb babel-eslint
+35 silly dependencyIsSatisfied [ 'babel-eslint',
+35 silly dependencyIsSatisfied   '^7.2.3',
+35 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+36 verbose dependencyIsSatisfied babel-eslint true
+37 silly hasDependencyInstalled playalong-components babel-jest
+38 silly dependencyIsSatisfied [ 'babel-jest',
+38 silly dependencyIsSatisfied   '20.0.3',
+38 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+39 verbose dependencyIsSatisfied babel-jest true
+40 silly hasDependencyInstalled playalongweb babel-jest
+41 silly dependencyIsSatisfied [ 'babel-jest',
+41 silly dependencyIsSatisfied   '^20.0.3',
+41 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+42 verbose dependencyIsSatisfied babel-jest true
+43 silly hasDependencyInstalled playalong-components babel-loader
+44 silly dependencyIsSatisfied [ 'babel-loader',
+44 silly dependencyIsSatisfied   '7.1.1',
+44 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+45 verbose dependencyIsSatisfied babel-loader true
+46 silly hasDependencyInstalled playalongweb babel-loader
+47 silly dependencyIsSatisfied [ 'babel-loader',
+47 silly dependencyIsSatisfied   '^7.1.1',
+47 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+48 verbose dependencyIsSatisfied babel-loader true
+49 silly hasDependencyInstalled playalong-components babel-preset-react-app
+50 silly dependencyIsSatisfied [ 'babel-preset-react-app',
+50 silly dependencyIsSatisfied   '^3.0.0',
+50 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+51 verbose dependencyIsSatisfied babel-preset-react-app true
+52 silly hasDependencyInstalled playalongweb babel-preset-react-app
+53 silly dependencyIsSatisfied [ 'babel-preset-react-app',
+53 silly dependencyIsSatisfied   '^3.0.1',
+53 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+54 verbose dependencyIsSatisfied babel-preset-react-app true
+55 silly hasDependencyInstalled playalong-components babel-runtime
+56 silly dependencyIsSatisfied [ 'babel-runtime',
+56 silly dependencyIsSatisfied   '6.23.0',
+56 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+57 verbose dependencyIsSatisfied babel-runtime true
+58 silly hasDependencyInstalled playalongweb babel-runtime
+59 silly dependencyIsSatisfied [ 'babel-runtime',
+59 silly dependencyIsSatisfied   '^6.23.0',
+59 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+60 verbose dependencyIsSatisfied babel-runtime true
+61 silly hasDependencyInstalled playalong-components case-sensitive-paths-webpack-plugin
+62 silly dependencyIsSatisfied [ 'case-sensitive-paths-webpack-plugin',
+62 silly dependencyIsSatisfied   '2.1.1',
+62 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+63 verbose dependencyIsSatisfied case-sensitive-paths-webpack-plugin true
+64 silly hasDependencyInstalled playalong-components chalk
+65 silly dependencyIsSatisfied [ 'chalk',
+65 silly dependencyIsSatisfied   '2.0.1',
+65 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+66 verbose dependencyIsSatisfied chalk true
+67 silly hasDependencyInstalled playalong-components cpx
+68 silly dependencyIsSatisfied [ 'cpx',
+68 silly dependencyIsSatisfied   '^1.5.0',
+68 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+69 verbose dependencyIsSatisfied cpx true
+70 silly hasDependencyInstalled playalong-components cross-env
+71 silly dependencyIsSatisfied [ 'cross-env',
+71 silly dependencyIsSatisfied   '^5.0.1',
+71 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+72 verbose dependencyIsSatisfied cross-env true
+73 silly hasDependencyInstalled playalong-components css-loader
+74 silly dependencyIsSatisfied [ 'css-loader',
+74 silly dependencyIsSatisfied   '0.28.4',
+74 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+75 verbose dependencyIsSatisfied css-loader true
+76 silly hasDependencyInstalled playalongweb css-loader
+77 silly dependencyIsSatisfied [ 'css-loader',
+77 silly dependencyIsSatisfied   '^0.28.1',
+77 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+78 verbose dependencyIsSatisfied css-loader true
+79 silly hasDependencyInstalled playalong-components dotenv
+80 silly dependencyIsSatisfied [ 'dotenv',
+80 silly dependencyIsSatisfied   '4.0.0',
+80 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+81 verbose dependencyIsSatisfied dotenv true
+82 silly hasDependencyInstalled playalong-components enzyme
+83 silly dependencyIsSatisfied [ 'enzyme',
+83 silly dependencyIsSatisfied   '^2.8.2',
+83 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+84 verbose dependencyIsSatisfied enzyme true
+85 silly hasDependencyInstalled playalongweb enzyme
+86 silly dependencyIsSatisfied [ 'enzyme',
+86 silly dependencyIsSatisfied   '^2.8.2',
+86 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+87 verbose dependencyIsSatisfied enzyme true
+88 silly hasDependencyInstalled playalong-components eslint
+89 silly dependencyIsSatisfied [ 'eslint',
+89 silly dependencyIsSatisfied   '4.3.0',
+89 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+90 verbose dependencyIsSatisfied eslint true
+91 silly hasDependencyInstalled playalongweb eslint
+92 silly dependencyIsSatisfied [ 'eslint',
+92 silly dependencyIsSatisfied   '^4.0.0',
+92 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+93 verbose dependencyIsSatisfied eslint true
+94 silly hasDependencyInstalled playalong-components eslint-config-react-app
+95 silly dependencyIsSatisfied [ 'eslint-config-react-app',
+95 silly dependencyIsSatisfied   '^1.0.4',
+95 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+96 verbose dependencyIsSatisfied eslint-config-react-app true
+97 silly hasDependencyInstalled playalongweb eslint-config-react-app
+98 silly dependencyIsSatisfied [ 'eslint-config-react-app',
+98 silly dependencyIsSatisfied   '^1.0.5',
+98 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+99 verbose dependencyIsSatisfied eslint-config-react-app true
+100 silly hasDependencyInstalled playalong-components eslint-loader
+101 silly dependencyIsSatisfied [ 'eslint-loader',
+101 silly dependencyIsSatisfied   '1.9.0',
+101 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+102 verbose dependencyIsSatisfied eslint-loader true
+103 silly hasDependencyInstalled playalong-components eslint-plugin-flowtype
+104 silly dependencyIsSatisfied [ 'eslint-plugin-flowtype',
+104 silly dependencyIsSatisfied   '2.35.0',
+104 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+105 verbose dependencyIsSatisfied eslint-plugin-flowtype true
+106 silly hasDependencyInstalled playalongweb eslint-plugin-flowtype
+107 silly dependencyIsSatisfied [ 'eslint-plugin-flowtype',
+107 silly dependencyIsSatisfied   '^2.35.0',
+107 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+108 verbose dependencyIsSatisfied eslint-plugin-flowtype true
+109 silly hasDependencyInstalled playalong-components eslint-plugin-import
+110 silly dependencyIsSatisfied [ 'eslint-plugin-import',
+110 silly dependencyIsSatisfied   '2.7.0',
+110 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+111 verbose dependencyIsSatisfied eslint-plugin-import true
+112 silly hasDependencyInstalled playalongweb eslint-plugin-import
+113 silly dependencyIsSatisfied [ 'eslint-plugin-import',
+113 silly dependencyIsSatisfied   '^2.3.0',
+113 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+114 verbose dependencyIsSatisfied eslint-plugin-import true
+115 silly hasDependencyInstalled playalong-components eslint-plugin-jsx-a11y
+116 silly dependencyIsSatisfied [ 'eslint-plugin-jsx-a11y',
+116 silly dependencyIsSatisfied   '^5.0.3',
+116 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+117 verbose dependencyIsSatisfied eslint-plugin-jsx-a11y true
+118 silly hasDependencyInstalled playalongweb eslint-plugin-jsx-a11y
+119 silly dependencyIsSatisfied [ 'eslint-plugin-jsx-a11y',
+119 silly dependencyIsSatisfied   '^5.0.3',
+119 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+120 verbose dependencyIsSatisfied eslint-plugin-jsx-a11y true
+121 silly hasDependencyInstalled playalong-components eslint-plugin-react
+122 silly dependencyIsSatisfied [ 'eslint-plugin-react',
+122 silly dependencyIsSatisfied   '7.1.0',
+122 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+123 verbose dependencyIsSatisfied eslint-plugin-react true
+124 silly hasDependencyInstalled playalongweb eslint-plugin-react
+125 silly dependencyIsSatisfied [ 'eslint-plugin-react',
+125 silly dependencyIsSatisfied   '^7.1.0',
+125 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+126 verbose dependencyIsSatisfied eslint-plugin-react true
+127 silly hasDependencyInstalled playalong-components extract-text-webpack-plugin
+128 silly dependencyIsSatisfied [ 'extract-text-webpack-plugin',
+128 silly dependencyIsSatisfied   '3.0.0',
+128 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+129 verbose dependencyIsSatisfied extract-text-webpack-plugin true
+130 silly hasDependencyInstalled playalong-components fbjs
+131 silly dependencyIsSatisfied [ 'fbjs',
+131 silly dependencyIsSatisfied   '^0.8.12',
+131 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+132 verbose dependencyIsSatisfied fbjs true
+133 silly hasDependencyInstalled playalong-components file-loader
+134 silly dependencyIsSatisfied [ 'file-loader',
+134 silly dependencyIsSatisfied   '0.11.2',
+134 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+135 verbose dependencyIsSatisfied file-loader true
+136 silly hasDependencyInstalled playalongweb file-loader
+137 silly dependencyIsSatisfied [ 'file-loader',
+137 silly dependencyIsSatisfied   '^0.11.1',
+137 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+138 verbose dependencyIsSatisfied file-loader true
+139 silly hasDependencyInstalled playalong-components fs-extra
+140 silly dependencyIsSatisfied [ 'fs-extra',
+140 silly dependencyIsSatisfied   '4.0.0',
+140 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+141 verbose dependencyIsSatisfied fs-extra true
+142 silly hasDependencyInstalled playalong-components gh-pages
+143 silly dependencyIsSatisfied [ 'gh-pages',
+143 silly dependencyIsSatisfied   '^1.0.0',
+143 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+144 verbose dependencyIsSatisfied gh-pages true
+145 silly hasDependencyInstalled playalong-components highlight.js
+146 silly dependencyIsSatisfied [ 'highlight.js',
+146 silly dependencyIsSatisfied   '^9.12.0',
+146 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+147 verbose dependencyIsSatisfied highlight.js true
+148 silly hasDependencyInstalled playalong-components html-webpack-plugin
+149 silly dependencyIsSatisfied [ 'html-webpack-plugin',
+149 silly dependencyIsSatisfied   '2.29.0',
+149 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+150 verbose dependencyIsSatisfied html-webpack-plugin true
+151 silly hasDependencyInstalled playalongweb html-webpack-plugin
+152 silly dependencyIsSatisfied [ 'html-webpack-plugin',
+152 silly dependencyIsSatisfied   '^2.28.0',
+152 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+153 verbose dependencyIsSatisfied html-webpack-plugin true
+154 silly hasDependencyInstalled playalong-components jest
+155 silly dependencyIsSatisfied [ 'jest',
+155 silly dependencyIsSatisfied   '20.0.4',
+155 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+156 verbose dependencyIsSatisfied jest true
+157 silly hasDependencyInstalled playalongweb jest
+158 silly dependencyIsSatisfied [ 'jest',
+158 silly dependencyIsSatisfied   '^20.0.4',
+158 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+159 verbose dependencyIsSatisfied jest true
+160 silly hasDependencyInstalled playalong-components object-assign
+161 silly dependencyIsSatisfied [ 'object-assign',
+161 silly dependencyIsSatisfied   '4.1.1',
+161 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+162 verbose dependencyIsSatisfied object-assign true
+163 silly hasDependencyInstalled playalong-components postcss-flexbugs-fixes
+164 silly dependencyIsSatisfied [ 'postcss-flexbugs-fixes',
+164 silly dependencyIsSatisfied   '3.0.0',
+164 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+165 verbose dependencyIsSatisfied postcss-flexbugs-fixes true
+166 silly hasDependencyInstalled playalong-components postcss-loader
+167 silly dependencyIsSatisfied [ 'postcss-loader',
+167 silly dependencyIsSatisfied   '2.0.6',
+167 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+168 verbose dependencyIsSatisfied postcss-loader true
+169 silly hasDependencyInstalled playalongweb postcss-loader
+170 silly dependencyIsSatisfied [ 'postcss-loader',
+170 silly dependencyIsSatisfied   '^2.0.5',
+170 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+171 verbose dependencyIsSatisfied postcss-loader true
+172 silly hasDependencyInstalled playalong-components promise
+173 silly dependencyIsSatisfied [ 'promise',
+173 silly dependencyIsSatisfied   '8.0.1',
+173 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+174 verbose dependencyIsSatisfied promise true
+175 silly hasDependencyInstalled playalong-components react-addons-test-utils
+176 silly dependencyIsSatisfied [ 'react-addons-test-utils',
+176 silly dependencyIsSatisfied   '^15.5.1',
+176 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+177 verbose dependencyIsSatisfied react-addons-test-utils true
+178 silly hasDependencyInstalled playalongweb react-addons-test-utils
+179 silly dependencyIsSatisfied [ 'react-addons-test-utils',
+179 silly dependencyIsSatisfied   '^15.5.1',
+179 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+180 verbose dependencyIsSatisfied react-addons-test-utils true
+181 silly hasDependencyInstalled playalong-components react-dev-utils
+182 silly dependencyIsSatisfied [ 'react-dev-utils',
+182 silly dependencyIsSatisfied   '^3.0.0',
+182 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+183 verbose dependencyIsSatisfied react-dev-utils true
+184 silly hasDependencyInstalled playalongweb react-dev-utils
+185 silly dependencyIsSatisfied [ 'react-dev-utils',
+185 silly dependencyIsSatisfied   '^3.0.2',
+185 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+186 verbose dependencyIsSatisfied react-dev-utils true
+187 silly hasDependencyInstalled playalong-components react-error-overlay
+188 silly dependencyIsSatisfied [ 'react-error-overlay',
+188 silly dependencyIsSatisfied   '^1.0.7',
+188 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+189 verbose dependencyIsSatisfied react-error-overlay true
+190 silly hasDependencyInstalled playalong-components react-test-renderer
+191 silly dependencyIsSatisfied [ 'react-test-renderer',
+191 silly dependencyIsSatisfied   '^15.5.4',
+191 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+192 verbose dependencyIsSatisfied react-test-renderer true
+193 silly hasDependencyInstalled playalongweb react-test-renderer
+194 silly dependencyIsSatisfied [ 'react-test-renderer',
+194 silly dependencyIsSatisfied   '^15.6.1',
+194 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+195 verbose dependencyIsSatisfied react-test-renderer true
+196 silly hasDependencyInstalled playalong-components rimraf
+197 silly dependencyIsSatisfied [ 'rimraf',
+197 silly dependencyIsSatisfied   '^2.6.1',
+197 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+198 verbose dependencyIsSatisfied rimraf true
+199 silly hasDependencyInstalled playalong-components style-loader
+200 silly dependencyIsSatisfied [ 'style-loader',
+200 silly dependencyIsSatisfied   '0.18.2',
+200 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+201 verbose dependencyIsSatisfied style-loader true
+202 silly hasDependencyInstalled playalongweb style-loader
+203 silly dependencyIsSatisfied [ 'style-loader',
+203 silly dependencyIsSatisfied   '^0.18.0',
+203 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+204 verbose dependencyIsSatisfied style-loader true
+205 silly hasDependencyInstalled playalong-components sw-precache-webpack-plugin
+206 silly dependencyIsSatisfied [ 'sw-precache-webpack-plugin',
+206 silly dependencyIsSatisfied   '0.11.4',
+206 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+207 verbose dependencyIsSatisfied sw-precache-webpack-plugin true
+208 silly hasDependencyInstalled playalong-components url-loader
+209 silly dependencyIsSatisfied [ 'url-loader',
+209 silly dependencyIsSatisfied   '0.5.9',
+209 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+210 verbose dependencyIsSatisfied url-loader true
+211 silly hasDependencyInstalled playalongweb url-loader
+212 silly dependencyIsSatisfied [ 'url-loader',
+212 silly dependencyIsSatisfied   '^0.5.8',
+212 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+213 verbose dependencyIsSatisfied url-loader true
+214 silly hasDependencyInstalled playalong-components webpack
+215 silly dependencyIsSatisfied [ 'webpack',
+215 silly dependencyIsSatisfied   '3.3.0',
+215 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+216 verbose dependencyIsSatisfied webpack true
+217 silly hasDependencyInstalled playalongweb webpack
+218 silly dependencyIsSatisfied [ 'webpack',
+218 silly dependencyIsSatisfied   '^3.0.0',
+218 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+219 verbose dependencyIsSatisfied webpack true
+220 silly hasDependencyInstalled playalong-components webpack-dev-server
+221 silly dependencyIsSatisfied [ 'webpack-dev-server',
+221 silly dependencyIsSatisfied   '2.5.1',
+221 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+222 verbose dependencyIsSatisfied webpack-dev-server true
+223 silly hasDependencyInstalled playalongweb webpack-dev-server
+224 silly dependencyIsSatisfied [ 'webpack-dev-server',
+224 silly dependencyIsSatisfied   '^2.4.5',
+224 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+225 verbose dependencyIsSatisfied webpack-dev-server true
+226 silly hasDependencyInstalled playalong-components webpack-manifest-plugin
+227 silly dependencyIsSatisfied [ 'webpack-manifest-plugin',
+227 silly dependencyIsSatisfied   '1.2.1',
+227 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+228 verbose dependencyIsSatisfied webpack-manifest-plugin true
+229 silly hasDependencyInstalled playalong-components whatwg-fetch
+230 silly dependencyIsSatisfied [ 'whatwg-fetch',
+230 silly dependencyIsSatisfied   '2.0.3',
+230 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+231 verbose dependencyIsSatisfied whatwg-fetch true
+232 silly hasDependencyInstalled playalong-components chokidar
+233 silly dependencyIsSatisfied [ 'chokidar',
+233 silly dependencyIsSatisfied   '^1.7.0',
+233 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+234 verbose dependencyIsSatisfied chokidar true
+235 silly hasDependencyInstalled playalong-components draft-js
+236 silly dependencyIsSatisfied [ 'draft-js',
+236 silly dependencyIsSatisfied   '^0.10.1',
+236 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+237 verbose dependencyIsSatisfied draft-js true
+238 silly hasDependencyInstalled playalong-components draft-js-export-html
+239 silly dependencyIsSatisfied [ 'draft-js-export-html',
+239 silly dependencyIsSatisfied   '^0.5.4',
+239 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+240 verbose dependencyIsSatisfied draft-js-export-html true
+241 silly hasDependencyInstalled playalong-components flag-icon-css
+242 silly dependencyIsSatisfied [ 'flag-icon-css',
+242 silly dependencyIsSatisfied   '^2.8.0',
+242 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+243 verbose dependencyIsSatisfied flag-icon-css true
+244 silly hasDependencyInstalled playalongweb flag-icon-css
+245 silly dependencyIsSatisfied [ 'flag-icon-css',
+245 silly dependencyIsSatisfied   '^2.8.0',
+245 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+246 verbose dependencyIsSatisfied flag-icon-css true
+247 silly hasDependencyInstalled playalong-components font-awesome
+248 silly dependencyIsSatisfied [ 'font-awesome',
+248 silly dependencyIsSatisfied   '^4.7.0',
+248 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+249 verbose dependencyIsSatisfied font-awesome true
+250 silly hasDependencyInstalled playalongweb font-awesome
+251 silly dependencyIsSatisfied [ 'font-awesome',
+251 silly dependencyIsSatisfied   '^4.7.0',
+251 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+252 verbose dependencyIsSatisfied font-awesome true
+253 silly hasDependencyInstalled playalong-components jquery
+254 silly dependencyIsSatisfied [ 'jquery',
+254 silly dependencyIsSatisfied   '^3.2.1',
+254 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+255 verbose dependencyIsSatisfied jquery true
+256 silly hasDependencyInstalled playalongweb jquery
+257 silly dependencyIsSatisfied [ 'jquery',
+257 silly dependencyIsSatisfied   '~3.1.1',
+257 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+258 verbose dependencyIsSatisfied jquery true
+259 silly hasDependencyInstalled playalong-components jquery-ui
+260 silly dependencyIsSatisfied [ 'jquery-ui',
+260 silly dependencyIsSatisfied   '^1.12.1',
+260 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+261 verbose dependencyIsSatisfied jquery-ui true
+262 silly hasDependencyInstalled playalongweb jquery-ui
+263 silly dependencyIsSatisfied [ 'jquery-ui',
+263 silly dependencyIsSatisfied   '^1.12.1',
+263 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+264 verbose dependencyIsSatisfied jquery-ui true
+265 silly hasDependencyInstalled playalong-components lazysizes
+266 silly dependencyIsSatisfied [ 'lazysizes',
+266 silly dependencyIsSatisfied   '^4.0.0-rc3',
+266 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+267 verbose dependencyIsSatisfied lazysizes true
+268 silly hasDependencyInstalled playalong-components material-ui
+269 silly dependencyIsSatisfied [ 'material-ui',
+269 silly dependencyIsSatisfied   '^0.18.3',
+269 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+270 verbose dependencyIsSatisfied material-ui true
+271 silly hasDependencyInstalled playalongweb material-ui
+272 silly dependencyIsSatisfied [ 'material-ui',
+272 silly dependencyIsSatisfied   '^0.18.1',
+272 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+273 verbose dependencyIsSatisfied material-ui true
+274 silly hasDependencyInstalled playalong-components npm-run-all
+275 silly dependencyIsSatisfied [ 'npm-run-all',
+275 silly dependencyIsSatisfied   '^4.0.2',
+275 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+276 verbose dependencyIsSatisfied npm-run-all true
+277 silly hasDependencyInstalled playalongweb npm-run-all
+278 silly dependencyIsSatisfied [ 'npm-run-all',
+278 silly dependencyIsSatisfied   '^4.0.2',
+278 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+279 verbose dependencyIsSatisfied npm-run-all true
+280 silly hasDependencyInstalled playalong-components react
+281 silly dependencyIsSatisfied [ 'react',
+281 silly dependencyIsSatisfied   '^15.5.4',
+281 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+282 verbose dependencyIsSatisfied react true
+283 silly hasDependencyInstalled playalongweb react
+284 silly dependencyIsSatisfied [ 'react',
+284 silly dependencyIsSatisfied   '^15.5.4',
+284 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+285 verbose dependencyIsSatisfied react true
+286 silly hasDependencyInstalled playalong-components react-docgen
+287 silly dependencyIsSatisfied [ 'react-docgen',
+287 silly dependencyIsSatisfied   '^2.15.0',
+287 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+288 verbose dependencyIsSatisfied react-docgen true
+289 silly hasDependencyInstalled playalong-components react-dom
+290 silly dependencyIsSatisfied [ 'react-dom',
+290 silly dependencyIsSatisfied   '^15.5.4',
+290 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+291 verbose dependencyIsSatisfied react-dom true
+292 silly hasDependencyInstalled playalongweb react-dom
+293 silly dependencyIsSatisfied [ 'react-dom',
+293 silly dependencyIsSatisfied   '^15.5.4',
+293 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+294 verbose dependencyIsSatisfied react-dom true
+295 silly hasDependencyInstalled playalong-components react-fontawesome
+296 silly dependencyIsSatisfied [ 'react-fontawesome',
+296 silly dependencyIsSatisfied   '^1.6.1',
+296 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+297 verbose dependencyIsSatisfied react-fontawesome true
+298 silly hasDependencyInstalled playalongweb react-fontawesome
+299 silly dependencyIsSatisfied [ 'react-fontawesome',
+299 silly dependencyIsSatisfied   '^1.6.1',
+299 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+300 verbose dependencyIsSatisfied react-fontawesome true
+301 silly hasDependencyInstalled playalong-components react-svg-gauge
+302 silly dependencyIsSatisfied [ 'react-svg-gauge',
+302 silly dependencyIsSatisfied   '^1.0.4',
+302 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+303 verbose dependencyIsSatisfied react-svg-gauge true
+304 silly hasDependencyInstalled playalongweb react-svg-gauge
+305 silly dependencyIsSatisfied [ 'react-svg-gauge',
+305 silly dependencyIsSatisfied   '^1.0.4',
+305 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+306 verbose dependencyIsSatisfied react-svg-gauge true
+307 silly hasDependencyInstalled playalong-components react-tap-event-plugin
+308 silly dependencyIsSatisfied [ 'react-tap-event-plugin',
+308 silly dependencyIsSatisfied   '^2.0.1',
+308 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+309 verbose dependencyIsSatisfied react-tap-event-plugin true
+310 silly hasDependencyInstalled playalongweb react-tap-event-plugin
+311 silly dependencyIsSatisfied [ 'react-tap-event-plugin',
+311 silly dependencyIsSatisfied   '^2.0.1',
+311 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+312 verbose dependencyIsSatisfied react-tap-event-plugin true
+313 silly hasDependencyInstalled playalong-components react-tooltip
+314 silly dependencyIsSatisfied [ 'react-tooltip',
+314 silly dependencyIsSatisfied   '^3.3.0',
+314 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+315 verbose dependencyIsSatisfied react-tooltip true
+316 silly hasDependencyInstalled playalongweb react-tooltip
+317 silly dependencyIsSatisfied [ 'react-tooltip',
+317 silly dependencyIsSatisfied   '^3.3.0',
+317 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+318 verbose dependencyIsSatisfied react-tooltip true
+319 silly hasDependencyInstalled playalong-components styled-components
+320 silly dependencyIsSatisfied [ 'styled-components',
+320 silly dependencyIsSatisfied   '^2.0.1',
+320 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-components/node_modules' ]
+321 verbose dependencyIsSatisfied styled-components true
+322 silly hasDependencyInstalled playalongweb styled-components
+323 silly dependencyIsSatisfied [ 'styled-components',
+323 silly dependencyIsSatisfied   '^2.0.1',
+323 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+324 verbose dependencyIsSatisfied styled-components true
+325 silly hasDependencyInstalled playalongweb @types/angular
+326 silly dependencyIsSatisfied [ '@types/angular',
+326 silly dependencyIsSatisfied   '^1.6.17',
+326 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+327 verbose dependencyIsSatisfied @types/angular true
+328 silly hasDependencyInstalled playalongweb @types/babel-core
+329 silly dependencyIsSatisfied [ '@types/babel-core',
+329 silly dependencyIsSatisfied   '^6.7.14',
+329 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+330 verbose dependencyIsSatisfied @types/babel-core true
+331 silly hasDependencyInstalled playalongweb @types/enzyme
+332 silly dependencyIsSatisfied [ '@types/enzyme',
+332 silly dependencyIsSatisfied   '^2.8.0',
+332 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+333 verbose dependencyIsSatisfied @types/enzyme true
+334 silly hasDependencyInstalled playalongweb @types/jest
+335 silly dependencyIsSatisfied [ '@types/jest',
+335 silly dependencyIsSatisfied   '^20.0.2',
+335 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+336 verbose dependencyIsSatisfied @types/jest true
+337 silly hasDependencyInstalled playalongweb @types/jqueryui
+338 silly dependencyIsSatisfied [ '@types/jqueryui',
+338 silly dependencyIsSatisfied   '^1.11.32',
+338 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+339 verbose dependencyIsSatisfied @types/jqueryui true
+340 silly hasDependencyInstalled playalongweb @types/node
+341 silly dependencyIsSatisfied [ '@types/node',
+341 silly dependencyIsSatisfied   '^8.0.5',
+341 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+342 verbose dependencyIsSatisfied @types/node true
+343 silly hasDependencyInstalled playalongweb @types/react
+344 silly dependencyIsSatisfied [ '@types/react',
+344 silly dependencyIsSatisfied   '^15.0.24',
+344 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+345 verbose dependencyIsSatisfied @types/react true
+346 silly hasDependencyInstalled playalongweb @types/react-dom
+347 silly dependencyIsSatisfied [ '@types/react-dom',
+347 silly dependencyIsSatisfied   '^15.5.0',
+347 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+348 verbose dependencyIsSatisfied @types/react-dom true
+349 silly hasDependencyInstalled playalongweb @types/webpack-env
+350 silly dependencyIsSatisfied [ '@types/webpack-env',
+350 silly dependencyIsSatisfied   '^1.13.0',
+350 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+351 verbose dependencyIsSatisfied @types/webpack-env true
+352 silly hasDependencyInstalled playalongweb clean-webpack-plugin
+353 silly dependencyIsSatisfied [ 'clean-webpack-plugin',
+353 silly dependencyIsSatisfied   '^0.1.16',
+353 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+354 verbose dependencyIsSatisfied clean-webpack-plugin true
+355 silly hasDependencyInstalled playalongweb copy-webpack-plugin
+356 silly dependencyIsSatisfied [ 'copy-webpack-plugin',
+356 silly dependencyIsSatisfied   '^4.0.1',
+356 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+357 verbose dependencyIsSatisfied copy-webpack-plugin true
+358 silly hasDependencyInstalled playalongweb cssnext
+359 silly dependencyIsSatisfied [ 'cssnext',
+359 silly dependencyIsSatisfied   '^1.8.4',
+359 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+360 verbose dependencyIsSatisfied cssnext true
+361 silly hasDependencyInstalled playalongweb ejs-loader
+362 silly dependencyIsSatisfied [ 'ejs-loader',
+362 silly dependencyIsSatisfied   '^0.3.0',
+362 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+363 verbose dependencyIsSatisfied ejs-loader true
+364 silly hasDependencyInstalled playalongweb eslint-plugin-jasmine
+365 silly dependencyIsSatisfied [ 'eslint-plugin-jasmine',
+365 silly dependencyIsSatisfied   '^2.3.1',
+365 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+366 verbose dependencyIsSatisfied eslint-plugin-jasmine true
+367 silly hasDependencyInstalled playalongweb eslint-plugin-protractor
+368 silly dependencyIsSatisfied [ 'eslint-plugin-protractor',
+368 silly dependencyIsSatisfied   '^1.34.2',
+368 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+369 verbose dependencyIsSatisfied eslint-plugin-protractor true
+370 silly hasDependencyInstalled playalongweb firebase-tools
+371 silly dependencyIsSatisfied [ 'firebase-tools',
+371 silly dependencyIsSatisfied   '^3.7.0',
+371 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+372 verbose dependencyIsSatisfied firebase-tools true
+373 silly hasDependencyInstalled playalongweb jasmine-core
+374 silly dependencyIsSatisfied [ 'jasmine-core',
+374 silly dependencyIsSatisfied   '^2.6.1',
+374 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+375 verbose dependencyIsSatisfied jasmine-core true
+376 silly hasDependencyInstalled playalongweb jshint-stylish
+377 silly dependencyIsSatisfied [ 'jshint-stylish',
+377 silly dependencyIsSatisfied   '^2.2.0',
+377 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+378 verbose dependencyIsSatisfied jshint-stylish true
+379 silly hasDependencyInstalled playalongweb karma
+380 silly dependencyIsSatisfied [ 'karma',
+380 silly dependencyIsSatisfied   '^1.3.0',
+380 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+381 verbose dependencyIsSatisfied karma true
+382 silly hasDependencyInstalled playalongweb karma-babel-preprocessor
+383 silly dependencyIsSatisfied [ 'karma-babel-preprocessor',
+383 silly dependencyIsSatisfied   '^6.0.1',
+383 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+384 verbose dependencyIsSatisfied karma-babel-preprocessor true
+385 silly hasDependencyInstalled playalongweb karma-chrome-launcher
+386 silly dependencyIsSatisfied [ 'karma-chrome-launcher',
+386 silly dependencyIsSatisfied   '^2.0.0',
+386 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+387 verbose dependencyIsSatisfied karma-chrome-launcher true
+388 silly hasDependencyInstalled playalongweb karma-coverage
+389 silly dependencyIsSatisfied [ 'karma-coverage',
+389 silly dependencyIsSatisfied   '^1.1.1',
+389 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+390 verbose dependencyIsSatisfied karma-coverage true
+391 silly hasDependencyInstalled playalongweb karma-jasmine
+392 silly dependencyIsSatisfied [ 'karma-jasmine',
+392 silly dependencyIsSatisfied   '*',
+392 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+393 verbose dependencyIsSatisfied karma-jasmine true
+394 silly hasDependencyInstalled playalongweb karma-phantomjs-launcher
+395 silly dependencyIsSatisfied [ 'karma-phantomjs-launcher',
+395 silly dependencyIsSatisfied   '*',
+395 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+396 verbose dependencyIsSatisfied karma-phantomjs-launcher true
+397 silly hasDependencyInstalled playalongweb ng-annotate-loader
+398 silly dependencyIsSatisfied [ 'ng-annotate-loader',
+398 silly dependencyIsSatisfied   '^0.6.0',
+398 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+399 verbose dependencyIsSatisfied ng-annotate-loader true
+400 silly hasDependencyInstalled playalongweb node-sass
+401 silly dependencyIsSatisfied [ 'node-sass',
+401 silly dependencyIsSatisfied   '^4.5.2',
+401 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+402 verbose dependencyIsSatisfied node-sass true
+403 silly hasDependencyInstalled playalongweb nsp
+404 silly dependencyIsSatisfied [ 'nsp',
+404 silly dependencyIsSatisfied   '^2.6.2',
+404 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+405 verbose dependencyIsSatisfied nsp true
+406 silly hasDependencyInstalled playalongweb path
+407 silly dependencyIsSatisfied [ 'path',
+407 silly dependencyIsSatisfied   '^0.12.7',
+407 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+408 verbose dependencyIsSatisfied path true
+409 silly hasDependencyInstalled playalongweb phantomjs-prebuilt
+410 silly dependencyIsSatisfied [ 'phantomjs-prebuilt',
+410 silly dependencyIsSatisfied   '^2.1.3',
+410 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+411 verbose dependencyIsSatisfied phantomjs-prebuilt true
+412 silly hasDependencyInstalled playalongweb postcss-cssnext
+413 silly dependencyIsSatisfied [ 'postcss-cssnext',
+413 silly dependencyIsSatisfied   '^3.0.2',
+413 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+414 verbose dependencyIsSatisfied postcss-cssnext true
+415 silly hasDependencyInstalled playalongweb postcss-import
+416 silly dependencyIsSatisfied [ 'postcss-import',
+416 silly dependencyIsSatisfied   '^10.0.0',
+416 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+417 verbose dependencyIsSatisfied postcss-import true
+418 silly hasDependencyInstalled playalongweb sass-loader
+419 silly dependencyIsSatisfied [ 'sass-loader',
+419 silly dependencyIsSatisfied   '^6.0.3',
+419 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+420 verbose dependencyIsSatisfied sass-loader true
+421 silly hasDependencyInstalled playalongweb serve
+422 silly dependencyIsSatisfied [ 'serve',
+422 silly dependencyIsSatisfied   '^6.0.0',
+422 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+423 verbose dependencyIsSatisfied serve true
+424 silly hasDependencyInstalled playalongweb static
+425 silly dependencyIsSatisfied [ 'static',
+425 silly dependencyIsSatisfied   '^2.0.0',
+425 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+426 verbose dependencyIsSatisfied static true
+427 silly hasDependencyInstalled playalongweb ts-loader
+428 silly dependencyIsSatisfied [ 'ts-loader',
+428 silly dependencyIsSatisfied   '^2.0.3',
+428 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+429 verbose dependencyIsSatisfied ts-loader true
+430 silly hasDependencyInstalled playalongweb tslint
+431 silly dependencyIsSatisfied [ 'tslint',
+431 silly dependencyIsSatisfied   '^5.4.2',
+431 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+432 verbose dependencyIsSatisfied tslint true
+433 silly hasDependencyInstalled playalongweb tsutils
+434 silly dependencyIsSatisfied [ 'tsutils',
+434 silly dependencyIsSatisfied   '^2.3.0',
+434 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+435 verbose dependencyIsSatisfied tsutils true
+436 silly hasDependencyInstalled playalongweb typescript
+437 silly dependencyIsSatisfied [ 'typescript',
+437 silly dependencyIsSatisfied   '^2.2.1',
+437 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+438 verbose dependencyIsSatisfied typescript true
+439 silly hasDependencyInstalled playalongweb vinyl-fs
+440 silly dependencyIsSatisfied [ 'vinyl-fs',
+440 silly dependencyIsSatisfied   '2.4.4',
+440 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+441 verbose dependencyIsSatisfied vinyl-fs true
+442 silly hasDependencyInstalled playalongweb Guitar-Tuner-Webapp
+443 silly dependencyIsSatisfied [ 'Guitar-Tuner-Webapp',
+443 silly dependencyIsSatisfied   'https://github.com/oankarberg/Guitar-Tuner-Webapp.git',
+443 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+444 verbose dependencyIsSatisfied Guitar-Tuner-Webapp false
+445 silly hasDependencyInstalled playalongweb angular
+446 silly dependencyIsSatisfied [ 'angular',
+446 silly dependencyIsSatisfied   '^1.5.8',
+446 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+447 verbose dependencyIsSatisfied angular true
+448 silly hasDependencyInstalled playalongweb angular-animate
+449 silly dependencyIsSatisfied [ 'angular-animate',
+449 silly dependencyIsSatisfied   '^1.4.12',
+449 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+450 verbose dependencyIsSatisfied angular-animate true
+451 silly hasDependencyInstalled playalongweb angular-aria
+452 silly dependencyIsSatisfied [ 'angular-aria',
+452 silly dependencyIsSatisfied   '^1.5.8',
+452 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+453 verbose dependencyIsSatisfied angular-aria true
+454 silly hasDependencyInstalled playalongweb angular-cookies
+455 silly dependencyIsSatisfied [ 'angular-cookies',
+455 silly dependencyIsSatisfied   '^1.5.8',
+455 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+456 verbose dependencyIsSatisfied angular-cookies true
+457 silly hasDependencyInstalled playalongweb angular-dragdrop
+458 silly dependencyIsSatisfied [ 'angular-dragdrop',
+458 silly dependencyIsSatisfied   '~1.0.12',
+458 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+459 verbose dependencyIsSatisfied angular-dragdrop true
+460 silly hasDependencyInstalled playalongweb angular-gage
+461 silly dependencyIsSatisfied [ 'angular-gage',
+461 silly dependencyIsSatisfied   '^0.1.0',
+461 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+462 verbose dependencyIsSatisfied angular-gage true
+463 silly hasDependencyInstalled playalongweb angular-local-storage
+464 silly dependencyIsSatisfied [ 'angular-local-storage',
+464 silly dependencyIsSatisfied   '^0.6.0',
+464 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+465 verbose dependencyIsSatisfied angular-local-storage true
+466 silly hasDependencyInstalled playalongweb angular-material
+467 silly dependencyIsSatisfied [ 'angular-material',
+467 silly dependencyIsSatisfied   '^1.1.4',
+467 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+468 verbose dependencyIsSatisfied angular-material true
+469 silly hasDependencyInstalled playalongweb angular-material-icons
+470 silly dependencyIsSatisfied [ 'angular-material-icons',
+470 silly dependencyIsSatisfied   '^0.7.0',
+470 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+471 verbose dependencyIsSatisfied angular-material-icons true
+472 silly hasDependencyInstalled playalongweb angular-mocks
+473 silly dependencyIsSatisfied [ 'angular-mocks',
+473 silly dependencyIsSatisfied   '^1.5.8',
+473 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+474 verbose dependencyIsSatisfied angular-mocks true
+475 silly hasDependencyInstalled playalongweb angular-resource
+476 silly dependencyIsSatisfied [ 'angular-resource',
+476 silly dependencyIsSatisfied   '^1.5.8',
+476 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+477 verbose dependencyIsSatisfied angular-resource true
+478 silly hasDependencyInstalled playalongweb angular-route
+479 silly dependencyIsSatisfied [ 'angular-route',
+479 silly dependencyIsSatisfied   '^1.5.8',
+479 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+480 verbose dependencyIsSatisfied angular-route true
+481 silly hasDependencyInstalled playalongweb angular-sanitize
+482 silly dependencyIsSatisfied [ 'angular-sanitize',
+482 silly dependencyIsSatisfied   '^1.6.4',
+482 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+483 verbose dependencyIsSatisfied angular-sanitize true
+484 silly hasDependencyInstalled playalongweb angular-touch
+485 silly dependencyIsSatisfied [ 'angular-touch',
+485 silly dependencyIsSatisfied   '^1.5.8',
+485 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+486 verbose dependencyIsSatisfied angular-touch true
+487 silly hasDependencyInstalled playalongweb angular-translate-interpolation-messageformat
+488 silly dependencyIsSatisfied [ 'angular-translate-interpolation-messageformat',
+488 silly dependencyIsSatisfied   '^2.15.1',
+488 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+489 verbose dependencyIsSatisfied angular-translate-interpolation-messageformat true
+490 silly hasDependencyInstalled playalongweb angular-translate-loader-static-files
+491 silly dependencyIsSatisfied [ 'angular-translate-loader-static-files',
+491 silly dependencyIsSatisfied   '^2.15.1',
+491 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+492 verbose dependencyIsSatisfied angular-translate-loader-static-files true
+493 silly hasDependencyInstalled playalongweb angular-ui-bootstrap
+494 silly dependencyIsSatisfied [ 'angular-ui-bootstrap',
+494 silly dependencyIsSatisfied   '^2.5.0',
+494 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+495 verbose dependencyIsSatisfied angular-ui-bootstrap true
+496 silly hasDependencyInstalled playalongweb angular-ui-router
+497 silly dependencyIsSatisfied [ 'angular-ui-router',
+497 silly dependencyIsSatisfied   '~0.4.2',
+497 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+498 verbose dependencyIsSatisfied angular-ui-router true
+499 silly hasDependencyInstalled playalongweb angular-youtube-embed
+500 silly dependencyIsSatisfied [ 'angular-youtube-embed',
+500 silly dependencyIsSatisfied   '^1.1.1',
+500 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+501 verbose dependencyIsSatisfied angular-youtube-embed true
+502 silly hasDependencyInstalled playalongweb angularfire
+503 silly dependencyIsSatisfied [ 'angularfire',
+503 silly dependencyIsSatisfied   '^2.3.0',
+503 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+504 verbose dependencyIsSatisfied angularfire true
+505 silly hasDependencyInstalled playalongweb bootstrap
+506 silly dependencyIsSatisfied [ 'bootstrap',
+506 silly dependencyIsSatisfied   '^3.3.7',
+506 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+507 verbose dependencyIsSatisfied bootstrap true
+508 silly hasDependencyInstalled playalongweb es5-shim
+509 silly dependencyIsSatisfied [ 'es5-shim',
+509 silly dependencyIsSatisfied   '^4.5.9',
+509 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+510 verbose dependencyIsSatisfied es5-shim true
+511 silly hasDependencyInstalled playalongweb firebase
+512 silly dependencyIsSatisfied [ 'firebase',
+512 silly dependencyIsSatisfied   '^4.1.2',
+512 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+513 verbose dependencyIsSatisfied firebase true
+514 silly hasDependencyInstalled playalongweb json3
+515 silly dependencyIsSatisfied [ 'json3',
+515 silly dependencyIsSatisfied   '^3.3.2',
+515 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+516 verbose dependencyIsSatisfied json3 true
+517 silly hasDependencyInstalled playalongweb justgage
+518 silly dependencyIsSatisfied [ 'justgage',
+518 silly dependencyIsSatisfied   '^1.2.2',
+518 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+519 verbose dependencyIsSatisfied justgage true
+520 silly hasDependencyInstalled playalongweb ngreact
+521 silly dependencyIsSatisfied [ 'ngreact',
+521 silly dependencyIsSatisfied   '^0.4.0',
+521 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+522 verbose dependencyIsSatisfied ngreact true
+523 silly hasDependencyInstalled playalongweb prop-types
+524 silly dependencyIsSatisfied [ 'prop-types',
+524 silly dependencyIsSatisfied   '^15.5.10',
+524 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+525 verbose dependencyIsSatisfied prop-types true
+526 silly hasDependencyInstalled playalongweb rangy
+527 silly dependencyIsSatisfied [ 'rangy',
+527 silly dependencyIsSatisfied   '^1.3.0',
+527 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+528 verbose dependencyIsSatisfied rangy true
+529 silly hasDependencyInstalled playalongweb react-redux
+530 silly dependencyIsSatisfied [ 'react-redux',
+530 silly dependencyIsSatisfied   '^5.0.5',
+530 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+531 verbose dependencyIsSatisfied react-redux true
+532 silly hasDependencyInstalled playalongweb react2angular
+533 silly dependencyIsSatisfied [ 'react2angular',
+533 silly dependencyIsSatisfied   '^1.1.3',
+533 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+534 verbose dependencyIsSatisfied react2angular true
+535 silly hasDependencyInstalled playalongweb redux
+536 silly dependencyIsSatisfied [ 'redux',
+536 silly dependencyIsSatisfied   '^3.6.0',
+536 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+537 verbose dependencyIsSatisfied redux true
+538 silly hasDependencyInstalled playalongweb redux-immutable-state-invariant
+539 silly dependencyIsSatisfied [ 'redux-immutable-state-invariant',
+539 silly dependencyIsSatisfied   '^2.0.0',
+539 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+540 verbose dependencyIsSatisfied redux-immutable-state-invariant true
+541 silly hasDependencyInstalled playalongweb redux-saga
+542 silly dependencyIsSatisfied [ 'redux-saga',
+542 silly dependencyIsSatisfied   '^0.15.5',
+542 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+543 verbose dependencyIsSatisfied redux-saga true
+544 silly hasDependencyInstalled playalongweb redux-thunk
+545 silly dependencyIsSatisfied [ 'redux-thunk',
+545 silly dependencyIsSatisfied   '^2.2.0',
+545 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+546 verbose dependencyIsSatisfied redux-thunk true
+547 silly hasDependencyInstalled playalongweb textangular
+548 silly dependencyIsSatisfied [ 'textangular',
+548 silly dependencyIsSatisfied   '^1.5.9',
+548 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+549 verbose dependencyIsSatisfied textangular true
+550 silly hasDependencyInstalled playalongweb tslint-config-airbnb
+551 silly dependencyIsSatisfied [ 'tslint-config-airbnb',
+551 silly dependencyIsSatisfied   '^5.0.0',
+551 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+552 verbose dependencyIsSatisfied tslint-config-airbnb true
+553 silly hasDependencyInstalled playalongweb tslint-config-standard
+554 silly dependencyIsSatisfied [ 'tslint-config-standard',
+554 silly dependencyIsSatisfied   '^6.0.1',
+554 silly dependencyIsSatisfied   '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules' ]
+555 verbose dependencyIsSatisfied tslint-config-standard true
+556 silly root dependencies []
+557 silly leaf dependencies {
+557 silly leaf dependencies   "playalong-components": [
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "autoprefixer@7.1.2",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "babel-cli@^6.24.1",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "babel-core@6.25.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "babel-eslint@7.2.3",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "babel-jest@20.0.3",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "babel-loader@7.1.1",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "babel-preset-react-app@^3.0.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "babel-runtime@6.23.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "case-sensitive-paths-webpack-plugin@2.1.1",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "chalk@2.0.1",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "cpx@^1.5.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "cross-env@^5.0.1",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "css-loader@0.28.4",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "dotenv@4.0.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "enzyme@^2.8.2",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "eslint@4.3.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "eslint-config-react-app@^1.0.4",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "eslint-loader@1.9.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "eslint-plugin-flowtype@2.35.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "eslint-plugin-import@2.7.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "eslint-plugin-jsx-a11y@^5.0.3",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "eslint-plugin-react@7.1.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "extract-text-webpack-plugin@3.0.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "fbjs@^0.8.12",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "file-loader@0.11.2",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "fs-extra@4.0.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "gh-pages@^1.0.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "highlight.js@^9.12.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "html-webpack-plugin@2.29.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "jest@20.0.4",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "object-assign@4.1.1",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "postcss-flexbugs-fixes@3.0.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "postcss-loader@2.0.6",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "promise@8.0.1",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "react-addons-test-utils@^15.5.1",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "react-dev-utils@^3.0.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "react-error-overlay@^1.0.7",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "react-test-renderer@^15.5.4",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "rimraf@^2.6.1",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "style-loader@0.18.2",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "sw-precache-webpack-plugin@0.11.4",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "url-loader@0.5.9",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "webpack@3.3.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "webpack-dev-server@2.5.1",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "webpack-manifest-plugin@1.2.1",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "whatwg-fetch@2.0.3",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "chokidar@^1.7.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "draft-js@^0.10.1",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "draft-js-export-html@^0.5.4",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "flag-icon-css@^2.8.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "font-awesome@^4.7.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "jquery@^3.2.1",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "jquery-ui@^1.12.1",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "lazysizes@^4.0.0-rc3",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "material-ui@^0.18.3",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "npm-run-all@^4.0.2",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "react@^15.5.4",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "react-docgen@^2.15.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "react-dom@^15.5.4",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "react-fontawesome@^1.6.1",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "react-svg-gauge@^1.0.4",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "react-tap-event-plugin@^2.0.1",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "react-tooltip@^3.3.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "styled-components@^2.0.1",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     }
+557 silly leaf dependencies   ],
+557 silly leaf dependencies   "playalongweb": [
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "babel-cli@^6.24.1",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "babel-core@^6.25.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "babel-eslint@^7.2.3",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "babel-jest@^20.0.3",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "babel-loader@^7.1.1",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "babel-preset-react-app@^3.0.1",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "babel-runtime@^6.23.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "css-loader@^0.28.1",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "enzyme@^2.8.2",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "eslint@^4.0.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "eslint-config-react-app@^1.0.5",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "eslint-plugin-flowtype@^2.35.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "eslint-plugin-import@^2.3.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "eslint-plugin-jsx-a11y@^5.0.3",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "eslint-plugin-react@^7.1.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "file-loader@^0.11.1",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "html-webpack-plugin@^2.28.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "jest@^20.0.4",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "postcss-loader@^2.0.5",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "react-addons-test-utils@^15.5.1",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "react-dev-utils@^3.0.2",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "react-test-renderer@^15.6.1",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "style-loader@^0.18.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "url-loader@^0.5.8",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "webpack@^3.0.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "webpack-dev-server@^2.4.5",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "flag-icon-css@^2.8.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "font-awesome@^4.7.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "jquery@~3.1.1",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "jquery-ui@^1.12.1",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "material-ui@^0.18.1",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "npm-run-all@^4.0.2",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "react@^15.5.4",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "react-dom@^15.5.4",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "react-fontawesome@^1.6.1",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "react-svg-gauge@^1.0.4",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "react-tap-event-plugin@^2.0.1",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "react-tooltip@^3.3.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "styled-components@^2.0.1",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "@types/angular@^1.6.17",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "@types/babel-core@^6.7.14",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "@types/enzyme@^2.8.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "@types/jest@^20.0.2",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "@types/jqueryui@^1.11.32",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "@types/node@^8.0.5",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "@types/react@^15.0.24",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "@types/react-dom@^15.5.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "@types/webpack-env@^1.13.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "clean-webpack-plugin@^0.1.16",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "copy-webpack-plugin@^4.0.1",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "cssnext@^1.8.4",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "ejs-loader@^0.3.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "eslint-plugin-jasmine@^2.3.1",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "eslint-plugin-protractor@^1.34.2",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "firebase-tools@^3.7.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "jasmine-core@^2.6.1",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "jshint-stylish@^2.2.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "karma@^1.3.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "karma-babel-preprocessor@^6.0.1",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "karma-chrome-launcher@^2.0.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "karma-coverage@^1.1.1",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "karma-jasmine@*",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "karma-phantomjs-launcher@*",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "ng-annotate-loader@^0.6.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "node-sass@^4.5.2",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "nsp@^2.6.2",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "path@^0.12.7",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "phantomjs-prebuilt@^2.1.3",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "postcss-cssnext@^3.0.2",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "postcss-import@^10.0.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "sass-loader@^6.0.3",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "serve@^6.0.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "static@^2.0.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "ts-loader@^2.0.3",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "tslint@^5.4.2",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "tsutils@^2.3.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "typescript@^2.2.1",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "vinyl-fs@2.4.4",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "Guitar-Tuner-Webapp@https://github.com/oankarberg/Guitar-Tuner-Webapp.git",
+557 silly leaf dependencies       "isSatisfied": false
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "angular@^1.5.8",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "angular-animate@^1.4.12",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "angular-aria@^1.5.8",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "angular-cookies@^1.5.8",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "angular-dragdrop@~1.0.12",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "angular-gage@^0.1.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "angular-local-storage@^0.6.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "angular-material@^1.1.4",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "angular-material-icons@^0.7.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "angular-mocks@^1.5.8",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "angular-resource@^1.5.8",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "angular-route@^1.5.8",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "angular-sanitize@^1.6.4",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "angular-touch@^1.5.8",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "angular-translate-interpolation-messageformat@^2.15.1",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "angular-translate-loader-static-files@^2.15.1",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "angular-ui-bootstrap@^2.5.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "angular-ui-router@~0.4.2",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "angular-youtube-embed@^1.1.1",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "angularfire@^2.3.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "bootstrap@^3.3.7",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "es5-shim@^4.5.9",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "firebase@^4.1.2",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "json3@^3.3.2",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "justgage@^1.2.2",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "ngreact@^0.4.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "prop-types@^15.5.10",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "rangy@^1.3.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "react-redux@^5.0.5",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "react2angular@^1.1.3",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "redux@^3.6.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "redux-immutable-state-invariant@^2.0.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "redux-saga@^0.15.5",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "redux-thunk@^2.2.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "textangular@^1.5.9",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "tslint-config-airbnb@^5.0.0",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     },
+557 silly leaf dependencies     {
+557 silly leaf dependencies       "dependency": "tslint-config-standard@^6.0.1",
+557 silly leaf dependencies       "isSatisfied": true
+557 silly leaf dependencies     }
+557 silly leaf dependencies   ]
+557 silly leaf dependencies }
+558 info Installing external dependencies
+559 verbose actions 1 actions, concurrency 4
+560 silly installInDir playalong-web [ 'babel-cli@^6.24.1',
+560 silly installInDir   'babel-core@^6.25.0',
+560 silly installInDir   'babel-eslint@^7.2.3',
+560 silly installInDir   'babel-jest@^20.0.3',
+560 silly installInDir   'babel-loader@^7.1.1',
+560 silly installInDir   'babel-preset-react-app@^3.0.1',
+560 silly installInDir   'babel-runtime@^6.23.0',
+560 silly installInDir   'css-loader@^0.28.1',
+560 silly installInDir   'enzyme@^2.8.2',
+560 silly installInDir   'eslint@^4.0.0',
+560 silly installInDir   'eslint-config-react-app@^1.0.5',
+560 silly installInDir   'eslint-plugin-flowtype@^2.35.0',
+560 silly installInDir   'eslint-plugin-import@^2.3.0',
+560 silly installInDir   'eslint-plugin-jsx-a11y@^5.0.3',
+560 silly installInDir   'eslint-plugin-react@^7.1.0',
+560 silly installInDir   'file-loader@^0.11.1',
+560 silly installInDir   'html-webpack-plugin@^2.28.0',
+560 silly installInDir   'jest@^20.0.4',
+560 silly installInDir   'postcss-loader@^2.0.5',
+560 silly installInDir   'react-addons-test-utils@^15.5.1',
+560 silly installInDir   'react-dev-utils@^3.0.2',
+560 silly installInDir   'react-test-renderer@^15.6.1',
+560 silly installInDir   'style-loader@^0.18.0',
+560 silly installInDir   'url-loader@^0.5.8',
+560 silly installInDir   'webpack@^3.0.0',
+560 silly installInDir   'webpack-dev-server@^2.4.5',
+560 silly installInDir   'flag-icon-css@^2.8.0',
+560 silly installInDir   'font-awesome@^4.7.0',
+560 silly installInDir   'jquery@~3.1.1',
+560 silly installInDir   'jquery-ui@^1.12.1',
+560 silly installInDir   'material-ui@^0.18.1',
+560 silly installInDir   'npm-run-all@^4.0.2',
+560 silly installInDir   'react@^15.5.4',
+560 silly installInDir   'react-dom@^15.5.4',
+560 silly installInDir   'react-fontawesome@^1.6.1',
+560 silly installInDir   'react-svg-gauge@^1.0.4',
+560 silly installInDir   'react-tap-event-plugin@^2.0.1',
+560 silly installInDir   'react-tooltip@^3.3.0',
+560 silly installInDir   'styled-components@^2.0.1',
+560 silly installInDir   '@types/angular@^1.6.17',
+560 silly installInDir   '@types/babel-core@^6.7.14',
+560 silly installInDir   '@types/enzyme@^2.8.0',
+560 silly installInDir   '@types/jest@^20.0.2',
+560 silly installInDir   '@types/jqueryui@^1.11.32',
+560 silly installInDir   '@types/node@^8.0.5',
+560 silly installInDir   '@types/react@^15.0.24',
+560 silly installInDir   '@types/react-dom@^15.5.0',
+560 silly installInDir   '@types/webpack-env@^1.13.0',
+560 silly installInDir   'clean-webpack-plugin@^0.1.16',
+560 silly installInDir   'copy-webpack-plugin@^4.0.1',
+560 silly installInDir   'cssnext@^1.8.4',
+560 silly installInDir   'ejs-loader@^0.3.0',
+560 silly installInDir   'eslint-plugin-jasmine@^2.3.1',
+560 silly installInDir   'eslint-plugin-protractor@^1.34.2',
+560 silly installInDir   'firebase-tools@^3.7.0',
+560 silly installInDir   'jasmine-core@^2.6.1',
+560 silly installInDir   'jshint-stylish@^2.2.0',
+560 silly installInDir   'karma@^1.3.0',
+560 silly installInDir   'karma-babel-preprocessor@^6.0.1',
+560 silly installInDir   'karma-chrome-launcher@^2.0.0',
+560 silly installInDir   'karma-coverage@^1.1.1',
+560 silly installInDir   'karma-jasmine@*',
+560 silly installInDir   'karma-phantomjs-launcher@*',
+560 silly installInDir   'ng-annotate-loader@^0.6.0',
+560 silly installInDir   'node-sass@^4.5.2',
+560 silly installInDir   'nsp@^2.6.2',
+560 silly installInDir   'path@^0.12.7',
+560 silly installInDir   'phantomjs-prebuilt@^2.1.3',
+560 silly installInDir   'postcss-cssnext@^3.0.2',
+560 silly installInDir   'postcss-import@^10.0.0',
+560 silly installInDir   'sass-loader@^6.0.3',
+560 silly installInDir   'serve@^6.0.0',
+560 silly installInDir   'static@^2.0.0',
+560 silly installInDir   'ts-loader@^2.0.3',
+560 silly installInDir   'tslint@^5.4.2',
+560 silly installInDir   'tsutils@^2.3.0',
+560 silly installInDir   'typescript@^2.2.1',
+560 silly installInDir   'vinyl-fs@2.4.4',
+560 silly installInDir   'Guitar-Tuner-Webapp@https://github.com/oankarberg/Guitar-Tuner-Webapp.git',
+560 silly installInDir   'angular@^1.5.8',
+560 silly installInDir   'angular-animate@^1.4.12',
+560 silly installInDir   'angular-aria@^1.5.8',
+560 silly installInDir   'angular-cookies@^1.5.8',
+560 silly installInDir   'angular-dragdrop@~1.0.12',
+560 silly installInDir   'angular-gage@^0.1.0',
+560 silly installInDir   'angular-local-storage@^0.6.0',
+560 silly installInDir   'angular-material@^1.1.4',
+560 silly installInDir   'angular-material-icons@^0.7.0',
+560 silly installInDir   'angular-mocks@^1.5.8',
+560 silly installInDir   'angular-resource@^1.5.8',
+560 silly installInDir   'angular-route@^1.5.8',
+560 silly installInDir   'angular-sanitize@^1.6.4',
+560 silly installInDir   'angular-touch@^1.5.8',
+560 silly installInDir   'angular-translate-interpolation-messageformat@^2.15.1',
+560 silly installInDir   'angular-translate-loader-static-files@^2.15.1',
+560 silly installInDir   'angular-ui-bootstrap@^2.5.0',
+560 silly installInDir   'angular-ui-router@~0.4.2',
+560 silly installInDir   'angular-youtube-embed@^1.1.1',
+560 silly installInDir   'angularfire@^2.3.0',
+560 silly installInDir   'bootstrap@^3.3.7',
+560 silly installInDir   ... 16 more items ]
+561 silly installInDir backup /Users/datar/git/playalong-monorepo/packages/playalong-web/package.json
+562 silly rename [ '/Users/datar/git/playalong-monorepo/packages/playalong-web/package.json',
+562 silly rename   '/Users/datar/git/playalong-monorepo/packages/playalong-web/package.json.lerna_backup' ]
+563 silly installInDir writing tempJson { dependencies:
+563 silly installInDir    { 'babel-cli': '^6.24.1',
+563 silly installInDir      'babel-core': '^6.25.0',
+563 silly installInDir      'babel-eslint': '^7.2.3',
+563 silly installInDir      'babel-jest': '^20.0.3',
+563 silly installInDir      'babel-loader': '^7.1.1',
+563 silly installInDir      'babel-preset-react-app': '^3.0.1',
+563 silly installInDir      'babel-runtime': '^6.23.0',
+563 silly installInDir      'css-loader': '^0.28.1',
+563 silly installInDir      enzyme: '^2.8.2',
+563 silly installInDir      eslint: '^4.0.0',
+563 silly installInDir      'eslint-config-react-app': '^1.0.5',
+563 silly installInDir      'eslint-plugin-flowtype': '^2.35.0',
+563 silly installInDir      'eslint-plugin-import': '^2.3.0',
+563 silly installInDir      'eslint-plugin-jsx-a11y': '^5.0.3',
+563 silly installInDir      'eslint-plugin-react': '^7.1.0',
+563 silly installInDir      'file-loader': '^0.11.1',
+563 silly installInDir      'html-webpack-plugin': '^2.28.0',
+563 silly installInDir      jest: '^20.0.4',
+563 silly installInDir      'postcss-loader': '^2.0.5',
+563 silly installInDir      'react-addons-test-utils': '^15.5.1',
+563 silly installInDir      'react-dev-utils': '^3.0.2',
+563 silly installInDir      'react-test-renderer': '^15.6.1',
+563 silly installInDir      'style-loader': '^0.18.0',
+563 silly installInDir      'url-loader': '^0.5.8',
+563 silly installInDir      webpack: '^3.0.0',
+563 silly installInDir      'webpack-dev-server': '^2.4.5',
+563 silly installInDir      'flag-icon-css': '^2.8.0',
+563 silly installInDir      'font-awesome': '^4.7.0',
+563 silly installInDir      jquery: '~3.1.1',
+563 silly installInDir      'jquery-ui': '^1.12.1',
+563 silly installInDir      'material-ui': '^0.18.1',
+563 silly installInDir      'npm-run-all': '^4.0.2',
+563 silly installInDir      react: '^15.5.4',
+563 silly installInDir      'react-dom': '^15.5.4',
+563 silly installInDir      'react-fontawesome': '^1.6.1',
+563 silly installInDir      'react-svg-gauge': '^1.0.4',
+563 silly installInDir      'react-tap-event-plugin': '^2.0.1',
+563 silly installInDir      'react-tooltip': '^3.3.0',
+563 silly installInDir      'styled-components': '^2.0.1',
+563 silly installInDir      '@types/angular': '^1.6.17',
+563 silly installInDir      '@types/babel-core': '^6.7.14',
+563 silly installInDir      '@types/enzyme': '^2.8.0',
+563 silly installInDir      '@types/jest': '^20.0.2',
+563 silly installInDir      '@types/jqueryui': '^1.11.32',
+563 silly installInDir      '@types/node': '^8.0.5',
+563 silly installInDir      '@types/react': '^15.0.24',
+563 silly installInDir      '@types/react-dom': '^15.5.0',
+563 silly installInDir      '@types/webpack-env': '^1.13.0',
+563 silly installInDir      'clean-webpack-plugin': '^0.1.16',
+563 silly installInDir      'copy-webpack-plugin': '^4.0.1',
+563 silly installInDir      cssnext: '^1.8.4',
+563 silly installInDir      'ejs-loader': '^0.3.0',
+563 silly installInDir      'eslint-plugin-jasmine': '^2.3.1',
+563 silly installInDir      'eslint-plugin-protractor': '^1.34.2',
+563 silly installInDir      'firebase-tools': '^3.7.0',
+563 silly installInDir      'jasmine-core': '^2.6.1',
+563 silly installInDir      'jshint-stylish': '^2.2.0',
+563 silly installInDir      karma: '^1.3.0',
+563 silly installInDir      'karma-babel-preprocessor': '^6.0.1',
+563 silly installInDir      'karma-chrome-launcher': '^2.0.0',
+563 silly installInDir      'karma-coverage': '^1.1.1',
+563 silly installInDir      'karma-jasmine': '*',
+563 silly installInDir      'karma-phantomjs-launcher': '*',
+563 silly installInDir      'ng-annotate-loader': '^0.6.0',
+563 silly installInDir      'node-sass': '^4.5.2',
+563 silly installInDir      nsp: '^2.6.2',
+563 silly installInDir      path: '^0.12.7',
+563 silly installInDir      'phantomjs-prebuilt': '^2.1.3',
+563 silly installInDir      'postcss-cssnext': '^3.0.2',
+563 silly installInDir      'postcss-import': '^10.0.0',
+563 silly installInDir      'sass-loader': '^6.0.3',
+563 silly installInDir      serve: '^6.0.0',
+563 silly installInDir      static: '^2.0.0',
+563 silly installInDir      'ts-loader': '^2.0.3',
+563 silly installInDir      tslint: '^5.4.2',
+563 silly installInDir      tsutils: '^2.3.0',
+563 silly installInDir      typescript: '^2.2.1',
+563 silly installInDir      'vinyl-fs': '2.4.4',
+563 silly installInDir      'Guitar-Tuner-Webapp': 'https://github.com/oankarberg/Guitar-Tuner-Webapp.git',
+563 silly installInDir      angular: '^1.5.8',
+563 silly installInDir      'angular-animate': '^1.4.12',
+563 silly installInDir      'angular-aria': '^1.5.8',
+563 silly installInDir      'angular-cookies': '^1.5.8',
+563 silly installInDir      'angular-dragdrop': '~1.0.12',
+563 silly installInDir      'angular-gage': '^0.1.0',
+563 silly installInDir      'angular-local-storage': '^0.6.0',
+563 silly installInDir      'angular-material': '^1.1.4',
+563 silly installInDir      'angular-material-icons': '^0.7.0',
+563 silly installInDir      'angular-mocks': '^1.5.8',
+563 silly installInDir      'angular-resource': '^1.5.8',
+563 silly installInDir      'angular-route': '^1.5.8',
+563 silly installInDir      'angular-sanitize': '^1.6.4',
+563 silly installInDir      'angular-touch': '^1.5.8',
+563 silly installInDir      'angular-translate-interpolation-messageformat': '^2.15.1',
+563 silly installInDir      'angular-translate-loader-static-files': '^2.15.1',
+563 silly installInDir      'angular-ui-bootstrap': '^2.5.0',
+563 silly installInDir      'angular-ui-router': '~0.4.2',
+563 silly installInDir      'angular-youtube-embed': '^1.1.1',
+563 silly installInDir      angularfire: '^2.3.0',
+563 silly installInDir      bootstrap: '^3.3.7',
+563 silly installInDir      'es5-shim': '^4.5.9',
+563 silly installInDir      firebase: '^4.1.2',
+563 silly installInDir      json3: '^3.3.2',
+563 silly installInDir      justgage: '^1.2.2',
+563 silly installInDir      ngreact: '^0.4.0',
+563 silly installInDir      'prop-types': '^15.5.10',
+563 silly installInDir      rangy: '^1.3.0',
+563 silly installInDir      'react-redux': '^5.0.5',
+563 silly installInDir      react2angular: '^1.1.3',
+563 silly installInDir      redux: '^3.6.0',
+563 silly installInDir      'redux-immutable-state-invariant': '^2.0.0',
+563 silly installInDir      'redux-saga': '^0.15.5',
+563 silly installInDir      'redux-thunk': '^2.2.0',
+563 silly installInDir      textangular: '^1.5.9',
+563 silly installInDir      'tslint-config-airbnb': '^5.0.0',
+563 silly installInDir      'tslint-config-standard': '^6.0.1' } }
+564 silly getExecOpts { cwd: '/Users/datar/git/playalong-monorepo/packages/playalong-web' }
+565 silly installInDir [ 'npm', [ 'install' ] ]
+566 silly installInDir cleanup /Users/datar/git/playalong-monorepo/packages/playalong-web/package.json
+567 silly renameSync [ '/Users/datar/git/playalong-monorepo/packages/playalong-web/package.json.lerna_backup',
+567 silly renameSync   '/Users/datar/git/playalong-monorepo/packages/playalong-web/package.json' ]
+568 verbose installed leaf playalongweb
+569 error execute Error: Command failed: npm install
+569 error execute npm WARN checkPermissions Missing write access to /Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules/guitartunerapp
+569 error execute npm WARN angularfire@2.3.0 requires a peer of firebase@3.x.x but none was installed.
+569 error execute npm WARN eslint-config-react-app@1.0.5 requires a peer of eslint@^3.19.0 but none was installed.
+569 error execute npm WARN eslint-plugin-import@2.3.0 requires a peer of eslint@2.x - 3.x but none was installed.
+569 error execute npm WARN html-webpack-plugin@2.28.0 requires a peer of webpack@1 || ^2 || ^2.1.0-beta || ^2.2.0-rc but none was installed.
+569 error execute npm WARN tslint-microsoft-contrib@5.0.0 requires a peer of tsutils@1.6.0 but none was installed.
+569 error execute npm WARN webpack-dev-middleware@1.10.2 requires a peer of webpack@1 || ^2.1.0-beta || ^2.2.0-rc.0 but none was installed.
+569 error execute npm WARN webpack-dev-server@2.4.5 requires a peer of webpack@^2.2.0 but none was installed.
+569 error execute npm WARN playalong-web No repository field.
+569 error execute npm WARN playalong-web No license field.
+569 error execute npm ERR! Darwin 16.7.0
+569 error execute npm ERR! argv "/usr/local/bin/node" "/usr/local/bin/npm" "install"
+569 error execute npm ERR! node v6.11.0
+569 error execute npm ERR! npm  v3.10.10
+569 error execute npm ERR! path /Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules/guitartunerapp
+569 error execute npm ERR! code ENOENT
+569 error execute npm ERR! errno -2
+569 error execute npm ERR! syscall access
+569 error execute
+569 error execute npm ERR! enoent ENOENT: no such file or directory, access '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules/guitartunerapp'
+569 error execute npm ERR! enoent ENOENT: no such file or directory, access '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules/guitartunerapp'
+569 error execute npm ERR! enoent This is most likely not a problem with npm itself
+569 error execute npm ERR! enoent and is related to npm not being able to find a file.
+569 error execute npm ERR! enoent
+569 error execute
+569 error execute npm ERR! Please include the following file with any support request:
+569 error execute npm ERR!     /Users/datar/git/playalong-monorepo/packages/playalong-web/npm-debug.log
+569 error execute /Users/datar/git/playalong-monorepo/packages/playalong-web
+569 error execute ├─┬ angular-youtube-embed@1.3.1
+569 error execute │ └── angular@1.6.5
+569 error execute ├─┬ angularfire@2.3.0
+569 error execute │ └─┬ firebase@3.9.0
+569 error execute │   ├── base64url@2.0.0
+569 error execute │   ├── buffer-equal-constant-time@1.0.1
+569 error execute │   ├── dom-storage@2.0.2
+569 error execute │   ├── ecdsa-sig-formatter@1.0.9
+569 error execute │   ├── faye-websocket@0.9.3
+569 error execute │   ├── hoek@2.16.3
+569 error execute │   ├── isemail@1.2.0
+569 error execute │   ├── joi@6.10.1
+569 error execute │   ├── jsonwebtoken@7.4.0
+569 error execute │   ├── jwa@1.1.5
+569 error execute │   ├── jws@3.1.4
+569 error execute │   ├── lodash.once@4.1.1
+569 error execute │   ├── moment@2.18.1
+569 error execute │   ├── ms@0.7.3
+569 error execute │   ├── promise-polyfill@6.0.2
+569 error execute │   ├── safe-buffer@5.0.1
+569 error execute │   ├── topo@1.1.0
+569 error execute │   ├── websocket-driver@0.6.5
+569 error execute │   ├── websocket-extensions@0.1.1
+569 error execute │   ├── xmlhttprequest@1.8.0
+569 error execute │   └── xtend@4.0.1
+569 error execute ├── UNMET PEER DEPENDENCY eslint@4.0.0
+569 error execute ├─┬ UNMET PEER DEPENDENCY firebase@4.1.2
+569 error execute │ ├── base64url@2.0.0
+569 error execute │ ├── buffer-equal-constant-time@1.0.1
+569 error execute │ ├── dom-storage@2.0.2
+569 error execute │ ├── ecdsa-sig-formatter@1.0.9
+569 error execute │ ├── faye-websocket@0.9.3
+569 error execute │ ├── hoek@2.16.3
+569 error execute │ ├── isemail@1.2.0
+569 error execute │ ├── joi@6.10.1
+569 error execute │ ├── jsonwebtoken@7.4.1
+569 error execute │ ├── jwa@1.1.5
+569 error execute │ ├── jws@3.1.4
+569 error execute │ ├── lodash.once@4.1.1
+569 error execute │ ├── moment@2.18.1
+569 error execute │ ├── ms@2.0.0
+569 error execute │ ├── promise-polyfill@6.0.2
+569 error execute │ ├── safe-buffer@5.1.0
+569 error execute │ ├── topo@1.1.0
+569 error execute │ ├── websocket-driver@0.6.5
+569 error execute │ ├── websocket-extensions@0.1.1
+569 error execute │ ├── xmlhttprequest@1.8.0
+569 error execute │ └── xtend@4.0.1
+569 error execute ├─┬ firebase-tools@3.9.1
+569 error execute │ └─┬ firebase@2.4.2
+569 error execute │   └─┬ faye-websocket@0.9.3
+569 error execute │     └─┬ websocket-driver@0.5.2
+569 error execute │       └── websocket-extensions@0.1.1
+569 error execute ├── guitartunerapp@0.0.0  extraneous (git+https://github.com/oankarberg/Guitar-Tuner-Webapp.git#058076138d80d62eaf7ddf3759e9cf5fdfbd36b0)
+569 error execute ├─┬ nsp@2.6.3
+569 error execute │ ├─┬ chalk@1.1.3
+569 error execute │ │ ├── ansi-styles@2.2.1
+569 error execute │ │ ├── escape-string-regexp@1.0.5
+569 error execute │ │ ├─┬ has-ansi@2.0.0
+569 error execute │ │ │ └── ansi-regex@2.0.0
+569 error execute │ │ ├─┬ strip-ansi@3.0.1
+569 error execute │ │ │ └── ansi-regex@2.0.0
+569 error execute │ │ └── supports-color@2.0.0
+569 error execute │ ├─┬ cli-table@0.3.1
+569 error execute │ │ └── colors@1.0.3
+569 error execute │ ├── cvss@1.0.1
+569 error execute │ ├─┬ https-proxy-agent@1.0.0
+569 error execute │ │ ├─┬ agent-base@2.0.1
+569 error execute │ │ │ └── semver@5.0.3
+569 error execute │ │ ├─┬ debug@2.2.0
+569 error execute │ │ │ └── ms@0.7.1
+569 error execute │ │ └── extend@3.0.0
+569 error execute │ ├─┬ joi@6.10.1
+569 error execute │ │ ├── hoek@2.16.3
+569 error execute │ │ ├── isemail@1.2.0
+569 error execute │ │ ├── moment@2.12.0
+569 error execute │ │ └── topo@1.1.0
+569 error execute │ ├── nodesecurity-npm-utils@5.0.0
+569 error execute │ ├── path-is-absolute@1.0.0
+569 error execute │ ├─┬ rc@1.1.6
+569 error execute │ │ ├── deep-extend@0.4.1
+569 error execute │ │ ├── ini@1.3.4
+569 error execute │ │ ├── minimist@1.2.0
+569 error execute │ │ └── strip-json-comments@1.0.4
+569 error execute │ ├── semver@5.1.0
+569 error execute │ ├─┬ subcommand@2.0.3
+569 error execute │ │ ├── cliclopts@1.1.1
+569 error execute │ │ ├─┬ debug@2.2.0
+569 error execute │ │ │ └── ms@0.7.1
+569 error execute │ │ ├── minimist@1.2.0
+569 error execute │ │ └── xtend@4.0.1
+569 error execute │ └─┬ wreck@6.3.0
+569 error execute │   ├── boom@2.10.1
+569 error execute │   └── hoek@2.16.3
+569 error execute └── UNMET PEER DEPENDENCY webpack@3.0.0
+569 error execute
+569 error execute
+569 error execute     at Promise.all.then.arr (/Users/datar/git/playalong-monorepo/node_modules/execa/index.js:210:11)
+569 error execute     at process._tickCallback (internal/process/next_tick.js:109:7)
+569 error execute  callback with error
+569 error execute  { Error: Command failed: npm install
+569 error execute npm WARN checkPermissions Missing write access to /Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules/guitartunerapp
+569 error execute npm WARN angularfire@2.3.0 requires a peer of firebase@3.x.x but none was installed.
+569 error execute npm WARN eslint-config-react-app@1.0.5 requires a peer of eslint@^3.19.0 but none was installed.
+569 error execute npm WARN eslint-plugin-import@2.3.0 requires a peer of eslint@2.x - 3.x but none was installed.
+569 error execute npm WARN html-webpack-plugin@2.28.0 requires a peer of webpack@1 || ^2 || ^2.1.0-beta || ^2.2.0-rc but none was installed.
+569 error execute npm WARN tslint-microsoft-contrib@5.0.0 requires a peer of tsutils@1.6.0 but none was installed.
+569 error execute npm WARN webpack-dev-middleware@1.10.2 requires a peer of webpack@1 || ^2.1.0-beta || ^2.2.0-rc.0 but none was installed.
+569 error execute npm WARN webpack-dev-server@2.4.5 requires a peer of webpack@^2.2.0 but none was installed.
+569 error execute npm WARN playalong-web No repository field.
+569 error execute npm WARN playalong-web No license field.
+569 error execute npm ERR! Darwin 16.7.0
+569 error execute npm ERR! argv "/usr/local/bin/node" "/usr/local/bin/npm" "install"
+569 error execute npm ERR! node v6.11.0
+569 error execute npm ERR! npm  v3.10.10
+569 error execute npm ERR! path /Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules/guitartunerapp
+569 error execute npm ERR! code ENOENT
+569 error execute npm ERR! errno -2
+569 error execute npm ERR! syscall access
+569 error execute
+569 error execute npm ERR! enoent ENOENT: no such file or directory, access '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules/guitartunerapp'
+569 error execute npm ERR! enoent ENOENT: no such file or directory, access '/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules/guitartunerapp'
+569 error execute npm ERR! enoent This is most likely not a problem with npm itself
+569 error execute npm ERR! enoent and is related to npm not being able to find a file.
+569 error execute npm ERR! enoent
+569 error execute
+569 error execute npm ERR! Please include the following file with any support request:
+569 error execute npm ERR!     /Users/datar/git/playalong-monorepo/packages/playalong-web/npm-debug.log
+569 error execute /Users/datar/git/playalong-monorepo/packages/playalong-web
+569 error execute ├─┬ angular-youtube-embed@1.3.1
+569 error execute │ └── angular@1.6.5
+569 error execute ├─┬ angularfire@2.3.0
+569 error execute │ └─┬ firebase@3.9.0
+569 error execute │   ├── base64url@2.0.0
+569 error execute │   ├── buffer-equal-constant-time@1.0.1
+569 error execute │   ├── dom-storage@2.0.2
+569 error execute │   ├── ecdsa-sig-formatter@1.0.9
+569 error execute │   ├── faye-websocket@0.9.3
+569 error execute │   ├── hoek@2.16.3
+569 error execute │   ├── isemail@1.2.0
+569 error execute │   ├── joi@6.10.1
+569 error execute │   ├── jsonwebtoken@7.4.0
+569 error execute │   ├── jwa@1.1.5
+569 error execute │   ├── jws@3.1.4
+569 error execute │   ├── lodash.once@4.1.1
+569 error execute │   ├── moment@2.18.1
+569 error execute │   ├── ms@0.7.3
+569 error execute │   ├── promise-polyfill@6.0.2
+569 error execute │   ├── safe-buffer@5.0.1
+569 error execute │   ├── topo@1.1.0
+569 error execute │   ├── websocket-driver@0.6.5
+569 error execute │   ├── websocket-extensions@0.1.1
+569 error execute │   ├── xmlhttprequest@1.8.0
+569 error execute │   └── xtend@4.0.1
+569 error execute ├── UNMET PEER DEPENDENCY eslint@4.0.0
+569 error execute ├─┬ UNMET PEER DEPENDENCY firebase@4.1.2
+569 error execute │ ├── base64url@2.0.0
+569 error execute │ ├── buffer-equal-constant-time@1.0.1
+569 error execute │ ├── dom-storage@2.0.2
+569 error execute │ ├── ecdsa-sig-formatter@1.0.9
+569 error execute │ ├── faye-websocket@0.9.3
+569 error execute │ ├── hoek@2.16.3
+569 error execute │ ├── isemail@1.2.0
+569 error execute │ ├── joi@6.10.1
+569 error execute │ ├── jsonwebtoken@7.4.1
+569 error execute │ ├── jwa@1.1.5
+569 error execute │ ├── jws@3.1.4
+569 error execute │ ├── lodash.once@4.1.1
+569 error execute │ ├── moment@2.18.1
+569 error execute │ ├── ms@2.0.0
+569 error execute │ ├── promise-polyfill@6.0.2
+569 error execute │ ├── safe-buffer@5.1.0
+569 error execute │ ├── topo@1.1.0
+569 error execute │ ├── websocket-driver@0.6.5
+569 error execute │ ├── websocket-extensions@0.1.1
+569 error execute │ ├── xmlhttprequest@1.8.0
+569 error execute │ └── xtend@4.0.1
+569 error execute ├─┬ firebase-tools@3.9.1
+569 error execute │ └─┬ firebase@2.4.2
+569 error execute │   └─┬ faye-websocket@0.9.3
+569 error execute │     └─┬ websocket-driver@0.5.2
+569 error execute │       └── websocket-extensions@0.1.1
+569 error execute ├── guitartunerapp@0.0.0  extraneous (git+https://github.com/oankarberg/Guitar-Tuner-Webapp.git#058076138d80d62eaf7ddf3759e9cf5fdfbd36b0)
+569 error execute ├─┬ nsp@2.6.3
+569 error execute │ ├─┬ chalk@1.1.3
+569 error execute │ │ ├── ansi-styles@2.2.1
+569 error execute │ │ ├── escape-string-regexp@1.0.5
+569 error execute │ │ ├─┬ has-ansi@2.0.0
+569 error execute │ │ │ └── ansi-regex@2.0.0
+569 error execute │ │ ├─┬ strip-ansi@3.0.1
+569 error execute │ │ │ └── ansi-regex@2.0.0
+569 error execute │ │ └── supports-color@2.0.0
+569 error execute │ ├─┬ cli-table@0.3.1
+569 error execute │ │ └── colors@1.0.3
+569 error execute │ ├── cvss@1.0.1
+569 error execute │ ├─┬ https-proxy-agent@1.0.0
+569 error execute │ │ ├─┬ agent-base@2.0.1
+569 error execute │ │ │ └── semver@5.0.3
+569 error execute │ │ ├─┬ debug@2.2.0
+569 error execute │ │ │ └── ms@0.7.1
+569 error execute │ │ └── extend@3.0.0
+569 error execute │ ├─┬ joi@6.10.1
+569 error execute │ │ ├── hoek@2.16.3
+569 error execute │ │ ├── isemail@1.2.0
+569 error execute │ │ ├── moment@2.12.0
+569 error execute │ │ └── topo@1.1.0
+569 error execute │ ├── nodesecurity-npm-utils@5.0.0
+569 error execute │ ├── path-is-absolute@1.0.0
+569 error execute │ ├─┬ rc@1.1.6
+569 error execute │ │ ├── deep-extend@0.4.1
+569 error execute │ │ ├── ini@1.3.4
+569 error execute │ │ ├── minimist@1.2.0
+569 error execute │ │ └── strip-json-comments@1.0.4
+569 error execute │ ├── semver@5.1.0
+569 error execute │ ├─┬ subcommand@2.0.3
+569 error execute │ │ ├── cliclopts@1.1.1
+569 error execute │ │ ├─┬ debug@2.2.0
+569 error execute │ │ │ └── ms@0.7.1
+569 error execute │ │ ├── minimist@1.2.0
+569 error execute │ │ └── xtend@4.0.1
+569 error execute │ └─┬ wreck@6.3.0
+569 error execute │   ├── boom@2.10.1
+569 error execute │   └── hoek@2.16.3
+569 error execute └── UNMET PEER DEPENDENCY webpack@3.0.0
+569 error execute
+569 error execute
+569 error execute     at Promise.all.then.arr (/Users/datar/git/playalong-monorepo/node_modules/execa/index.js:210:11)
+569 error execute     at process._tickCallback (internal/process/next_tick.js:109:7)
+569 error execute   stack: 'Error: Command failed: npm install\nnpm WARN checkPermissions Missing write access to /Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules/guitartunerapp\nnpm WARN angularfire@2.3.0 requires a peer of firebase@3.x.x but none was installed.\nnpm WARN eslint-config-react-app@1.0.5 requires a peer of eslint@^3.19.0 but none was installed.\nnpm WARN eslint-plugin-import@2.3.0 requires a peer of eslint@2.x - 3.x but none was installed.\nnpm WARN html-webpack-plugin@2.28.0 requires a peer of webpack@1 || ^2 || ^2.1.0-beta || ^2.2.0-rc but none was installed.\nnpm WARN tslint-microsoft-contrib@5.0.0 requires a peer of tsutils@1.6.0 but none was installed.\nnpm WARN webpack-dev-middleware@1.10.2 requires a peer of webpack@1 || ^2.1.0-beta || ^2.2.0-rc.0 but none was installed.\nnpm WARN webpack-dev-server@2.4.5 requires a peer of webpack@^2.2.0 but none was installed.\nnpm WARN playalong-web No repository field.\nnpm WARN playalong-web No license field.\nnpm ERR! Darwin 16.7.0\nnpm ERR! argv "/usr/local/bin/node" "/usr/local/bin/npm" "install"\nnpm ERR! node v6.11.0\nnpm ERR! npm  v3.10.10\nnpm ERR! path /Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules/guitartunerapp\nnpm ERR! code ENOENT\nnpm ERR! errno -2\nnpm ERR! syscall access\n\nnpm ERR! enoent ENOENT: no such file or directory, access \'/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules/guitartunerapp\'\nnpm ERR! enoent ENOENT: no such file or directory, access \'/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules/guitartunerapp\'\nnpm ERR! enoent This is most likely not a problem with npm itself\nnpm ERR! enoent and is related to npm not being able to find a file.\nnpm ERR! enoent \n\nnpm ERR! Please include the following file with any support request:\nnpm ERR!     /Users/datar/git/playalong-monorepo/packages/playalong-web/npm-debug.log\n/Users/datar/git/playalong-monorepo/packages/playalong-web\n├─┬ angular-youtube-embed@1.3.1\n│ └── angular@1.6.5 \n├─┬ angularfire@2.3.0\n│ └─┬ firebase@3.9.0\n│   ├── base64url@2.0.0 \n│   ├── buffer-equal-constant-time@1.0.1 \n│   ├── dom-storage@2.0.2 \n│   ├── ecdsa-sig-formatter@1.0.9 \n│   ├── faye-websocket@0.9.3 \n│   ├── hoek@2.16.3 \n│   ├── isemail@1.2.0 \n│   ├── joi@6.10.1 \n│   ├── jsonwebtoken@7.4.0 \n│   ├── jwa@1.1.5 \n│   ├── jws@3.1.4 \n│   ├── lodash.once@4.1.1 \n│   ├── moment@2.18.1 \n│   ├── ms@0.7.3 \n│   ├── promise-polyfill@6.0.2 \n│   ├── safe-buffer@5.0.1 \n│   ├── topo@1.1.0 \n│   ├── websocket-driver@0.6.5 \n│   ├── websocket-extensions@0.1.1 \n│   ├── xmlhttprequest@1.8.0 \n│   └── xtend@4.0.1 \n├── UNMET PEER DEPENDENCY eslint@4.0.0\n├─┬ UNMET PEER DEPENDENCY firebase@4.1.2\n│ ├── base64url@2.0.0 \n│ ├── buffer-equal-constant-time@1.0.1 \n│ ├── dom-storage@2.0.2 \n│ ├── ecdsa-sig-formatter@1.0.9 \n│ ├── faye-websocket@0.9.3 \n│ ├── hoek@2.16.3 \n│ ├── isemail@1.2.0 \n│ ├── joi@6.10.1 \n│ ├── jsonwebtoken@7.4.1 \n│ ├── jwa@1.1.5 \n│ ├── jws@3.1.4 \n│ ├── lodash.once@4.1.1 \n│ ├── moment@2.18.1 \n│ ├── ms@2.0.0 \n│ ├── promise-polyfill@6.0.2 \n│ ├── safe-buffer@5.1.0 \n│ ├── topo@1.1.0 \n│ ├── websocket-driver@0.6.5 \n│ ├── websocket-extensions@0.1.1 \n│ ├── xmlhttprequest@1.8.0 \n│ └── xtend@4.0.1 \n├─┬ firebase-tools@3.9.1\n│ └─┬ firebase@2.4.2\n│   └─┬ faye-websocket@0.9.3 \n│     └─┬ websocket-driver@0.5.2 \n│       └── websocket-extensions@0.1.1 \n├── guitartunerapp@0.0.0  extraneous (git+https://github.com/oankarberg/Guitar-Tuner-Webapp.git#058076138d80d62eaf7ddf3759e9cf5fdfbd36b0)\n├─┬ nsp@2.6.3\n│ ├─┬ chalk@1.1.3 \n│ │ ├── ansi-styles@2.2.1 \n│ │ ├── escape-string-regexp@1.0.5 \n│ │ ├─┬ has-ansi@2.0.0 \n│ │ │ └── ansi-regex@2.0.0 \n│ │ ├─┬ strip-ansi@3.0.1 \n│ │ │ └── ansi-regex@2.0.0 \n│ │ └── supports-color@2.0.0 \n│ ├─┬ cli-table@0.3.1 \n│ │ └── colors@1.0.3 \n│ ├── cvss@1.0.1 \n│ ├─┬ https-proxy-agent@1.0.0 \n│ │ ├─┬ agent-base@2.0.1 \n│ │ │ └── semver@5.0.3 \n│ │ ├─┬ debug@2.2.0 \n│ │ │ └── ms@0.7.1 \n│ │ └── extend@3.0.0 \n│ ├─┬ joi@6.10.1 \n│ │ ├── hoek@2.16.3 \n│ │ ├── isemail@1.2.0 \n│ │ ├── moment@2.12.0 \n│ │ └── topo@1.1.0 \n│ ├── nodesecurity-npm-utils@5.0.0 \n│ ├── path-is-absolute@1.0.0 \n│ ├─┬ rc@1.1.6 \n│ │ ├── deep-extend@0.4.1 \n│ │ ├── ini@1.3.4 \n│ │ ├── minimist@1.2.0 \n│ │ └── strip-json-comments@1.0.4 \n│ ├── semver@5.1.0 \n│ ├─┬ subcommand@2.0.3 \n│ │ ├── cliclopts@1.1.1 \n│ │ ├─┬ debug@2.2.0 \n│ │ │ └── ms@0.7.1 \n│ │ ├── minimist@1.2.0 \n│ │ └── xtend@4.0.1 \n│ └─┬ wreck@6.3.0 \n│   ├── boom@2.10.1 \n│   └── hoek@2.16.3 \n└── UNMET PEER DEPENDENCY webpack@3.0.0\n\n\n    at Promise.all.then.arr (/Users/datar/git/playalong-monorepo/node_modules/execa/index.js:210:11)\n    at process._tickCallback (internal/process/next_tick.js:109:7)',
+569 error execute   code: 254,
+569 error execute   killed: false,
+569 error execute   stdout: '/Users/datar/git/playalong-monorepo/packages/playalong-web\n├─┬ angular-youtube-embed@1.3.1\n│ └── angular@1.6.5 \n├─┬ angularfire@2.3.0\n│ └─┬ firebase@3.9.0\n│   ├── base64url@2.0.0 \n│   ├── buffer-equal-constant-time@1.0.1 \n│   ├── dom-storage@2.0.2 \n│   ├── ecdsa-sig-formatter@1.0.9 \n│   ├── faye-websocket@0.9.3 \n│   ├── hoek@2.16.3 \n│   ├── isemail@1.2.0 \n│   ├── joi@6.10.1 \n│   ├── jsonwebtoken@7.4.0 \n│   ├── jwa@1.1.5 \n│   ├── jws@3.1.4 \n│   ├── lodash.once@4.1.1 \n│   ├── moment@2.18.1 \n│   ├── ms@0.7.3 \n│   ├── promise-polyfill@6.0.2 \n│   ├── safe-buffer@5.0.1 \n│   ├── topo@1.1.0 \n│   ├── websocket-driver@0.6.5 \n│   ├── websocket-extensions@0.1.1 \n│   ├── xmlhttprequest@1.8.0 \n│   └── xtend@4.0.1 \n├── UNMET PEER DEPENDENCY eslint@4.0.0\n├─┬ UNMET PEER DEPENDENCY firebase@4.1.2\n│ ├── base64url@2.0.0 \n│ ├── buffer-equal-constant-time@1.0.1 \n│ ├── dom-storage@2.0.2 \n│ ├── ecdsa-sig-formatter@1.0.9 \n│ ├── faye-websocket@0.9.3 \n│ ├── hoek@2.16.3 \n│ ├── isemail@1.2.0 \n│ ├── joi@6.10.1 \n│ ├── jsonwebtoken@7.4.1 \n│ ├── jwa@1.1.5 \n│ ├── jws@3.1.4 \n│ ├── lodash.once@4.1.1 \n│ ├── moment@2.18.1 \n│ ├── ms@2.0.0 \n│ ├── promise-polyfill@6.0.2 \n│ ├── safe-buffer@5.1.0 \n│ ├── topo@1.1.0 \n│ ├── websocket-driver@0.6.5 \n│ ├── websocket-extensions@0.1.1 \n│ ├── xmlhttprequest@1.8.0 \n│ └── xtend@4.0.1 \n├─┬ firebase-tools@3.9.1\n│ └─┬ firebase@2.4.2\n│   └─┬ faye-websocket@0.9.3 \n│     └─┬ websocket-driver@0.5.2 \n│       └── websocket-extensions@0.1.1 \n├── guitartunerapp@0.0.0  extraneous (git+https://github.com/oankarberg/Guitar-Tuner-Webapp.git#058076138d80d62eaf7ddf3759e9cf5fdfbd36b0)\n├─┬ nsp@2.6.3\n│ ├─┬ chalk@1.1.3 \n│ │ ├── ansi-styles@2.2.1 \n│ │ ├── escape-string-regexp@1.0.5 \n│ │ ├─┬ has-ansi@2.0.0 \n│ │ │ └── ansi-regex@2.0.0 \n│ │ ├─┬ strip-ansi@3.0.1 \n│ │ │ └── ansi-regex@2.0.0 \n│ │ └── supports-color@2.0.0 \n│ ├─┬ cli-table@0.3.1 \n│ │ └── colors@1.0.3 \n│ ├── cvss@1.0.1 \n│ ├─┬ https-proxy-agent@1.0.0 \n│ │ ├─┬ agent-base@2.0.1 \n│ │ │ └── semver@5.0.3 \n│ │ ├─┬ debug@2.2.0 \n│ │ │ └── ms@0.7.1 \n│ │ └── extend@3.0.0 \n│ ├─┬ joi@6.10.1 \n│ │ ├── hoek@2.16.3 \n│ │ ├── isemail@1.2.0 \n│ │ ├── moment@2.12.0 \n│ │ └── topo@1.1.0 \n│ ├── nodesecurity-npm-utils@5.0.0 \n│ ├── path-is-absolute@1.0.0 \n│ ├─┬ rc@1.1.6 \n│ │ ├── deep-extend@0.4.1 \n│ │ ├── ini@1.3.4 \n│ │ ├── minimist@1.2.0 \n│ │ └── strip-json-comments@1.0.4 \n│ ├── semver@5.1.0 \n│ ├─┬ subcommand@2.0.3 \n│ │ ├── cliclopts@1.1.1 \n│ │ ├─┬ debug@2.2.0 \n│ │ │ └── ms@0.7.1 \n│ │ ├── minimist@1.2.0 \n│ │ └── xtend@4.0.1 \n│ └─┬ wreck@6.3.0 \n│   ├── boom@2.10.1 \n│   └── hoek@2.16.3 \n└── UNMET PEER DEPENDENCY webpack@3.0.0\n\n',
+569 error execute   stderr: 'npm WARN checkPermissions Missing write access to /Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules/guitartunerapp\nnpm WARN angularfire@2.3.0 requires a peer of firebase@3.x.x but none was installed.\nnpm WARN eslint-config-react-app@1.0.5 requires a peer of eslint@^3.19.0 but none was installed.\nnpm WARN eslint-plugin-import@2.3.0 requires a peer of eslint@2.x - 3.x but none was installed.\nnpm WARN html-webpack-plugin@2.28.0 requires a peer of webpack@1 || ^2 || ^2.1.0-beta || ^2.2.0-rc but none was installed.\nnpm WARN tslint-microsoft-contrib@5.0.0 requires a peer of tsutils@1.6.0 but none was installed.\nnpm WARN webpack-dev-middleware@1.10.2 requires a peer of webpack@1 || ^2.1.0-beta || ^2.2.0-rc.0 but none was installed.\nnpm WARN webpack-dev-server@2.4.5 requires a peer of webpack@^2.2.0 but none was installed.\nnpm WARN playalong-web No repository field.\nnpm WARN playalong-web No license field.\nnpm ERR! Darwin 16.7.0\nnpm ERR! argv "/usr/local/bin/node" "/usr/local/bin/npm" "install"\nnpm ERR! node v6.11.0\nnpm ERR! npm  v3.10.10\nnpm ERR! path /Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules/guitartunerapp\nnpm ERR! code ENOENT\nnpm ERR! errno -2\nnpm ERR! syscall access\n\nnpm ERR! enoent ENOENT: no such file or directory, access \'/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules/guitartunerapp\'\nnpm ERR! enoent ENOENT: no such file or directory, access \'/Users/datar/git/playalong-monorepo/packages/playalong-web/node_modules/guitartunerapp\'\nnpm ERR! enoent This is most likely not a problem with npm itself\nnpm ERR! enoent and is related to npm not being able to find a file.\nnpm ERR! enoent \n\nnpm ERR! Please include the following file with any support request:\nnpm ERR!     /Users/datar/git/playalong-monorepo/packages/playalong-web/npm-debug.log\n',
+569 error execute   failed: true,
+569 error execute   signal: null,
+569 error execute   cmd: 'npm install',
+569 error execute   timedOut: false }

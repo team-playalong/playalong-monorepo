@@ -5,7 +5,7 @@ function clickHandler() {
   alert('Clicked!');
 }
 
-/** Custom message */
+/** Example for Playalong Button */
 export default function ExamplePlyButton() {
   return <Button
           label="I Am a Button!"

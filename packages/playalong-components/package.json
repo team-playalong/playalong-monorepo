@@ -1,5 +1,6 @@
 {
   "name": "playalong-components",
+  "private": false,
   "scripts": {
     "prestart": "npm run gen:docs",
     "start": "npm-run-all --parallel start:docs gen:docs-watch test",
@@ -9,7 +10,6 @@
     "gen:docs": "node scripts/generateComponentData.js",
     "gen:docs-watch": "npm run gen:docs --watch",
     "build:docs": "node scripts/build.js",
-    "predeploy:docs": "yarn build:docs",
     "deploy:docs": "gh-pages -d build",
     "prebuild": "rimraf lib",
     "build": "npm-run-all --parallel build:commonjs build:utils build:css build:copy-files build:docs",
