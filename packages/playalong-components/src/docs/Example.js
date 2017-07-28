@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import CodeExample from './CodeExample';
+import COLORS from '../utils/colors';
 
 class Example extends React.Component {
   constructor(props) {
@@ -11,6 +12,8 @@ class Example extends React.Component {
   styles = {
     showCode: {
       cursor: 'pointer',
+      color:COLORS.SECONDARY,
+      textDecoration: 'underline',
     },
   }
 
