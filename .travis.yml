@@ -1,0 +1,13 @@
+sudo: false
+language: node_js
+node_js: 7.1.0
+before_script:
+- npm i -g lerna
+- lerna bootstrap
+script:
+- lerna run build
+after_success:
+# - firebase use default
+# - firebase deploy --token $FIREBASE_TOKEN
+env:
+- PORT=3000
