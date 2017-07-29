@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Snapshot testing 1`] = `
-<div>
+<div
+  className="ply-radio-buttons"
+>
   <div
     className={undefined}
     style={

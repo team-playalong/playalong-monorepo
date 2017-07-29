@@ -1,10 +1,12 @@
 import * as React from 'react';
 import { array } from 'prop-types';
+import styled from 'styled-components';
 
 import { SpeedDial, SpeedDialItem } from 'react-mui-speeddial';
 import PlyIcon from '../Icon';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import THEME from '../../utils/theme';
+import COLORS from '../../utils/colors';
 
 import '../../utils/tap-events';
 
@@ -12,9 +14,12 @@ import '../../utils/tap-events';
 import ContentAdd from 'material-ui/svg-icons/content/add';
 import NavigationClose from 'material-ui/svg-icons/navigation/close';
 
-const styles = {
-  
-};
+const FabComponent = styled.div`
+  .fa {
+    color: ${COLORS.WHITE};
+  }
+
+`;
 
 function renderFabItems({ fabItems = [],}) {
   return fabItems.map((fi, i) => {
@@ -35,16 +40,18 @@ function PlyFab({
 }) {
   return (
     <MuiThemeProvider muiTheme={THEME}>
-      <SpeedDial
-        fabContentOpen={
-          <ContentAdd />
-        }
-        fabContentClose={
-          <NavigationClose />
-        }
-      >
-      { renderFabItems({ fabItems }) }
-      </SpeedDial>
+      <FabComponent>
+        <SpeedDial
+          fabContentOpen={
+            <ContentAdd />
+          }
+          fabContentClose={
+            <NavigationClose />
+          }
+        >
+        { renderFabItems({ fabItems }) }
+        </SpeedDial>
+      </FabComponent>
     </MuiThemeProvider>
   );
 }

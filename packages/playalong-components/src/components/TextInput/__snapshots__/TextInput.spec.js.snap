@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Text Input Snapshot testing 1`] = `
-<div>
+<div
+  className="ply-text-input"
+>
   <label
     htmlFor="123"
   >
