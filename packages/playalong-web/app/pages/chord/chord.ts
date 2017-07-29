@@ -30,15 +30,27 @@ export function ChordCtrl(
     chords.increaseChordHitCount($scope.chord.$id || $scope.chord.chordKey);
     $scope.isRtl = Common.isRtlContent($scope.chord.content);
     $scope.chordContentClass = 'ply-chord-container-content';
-    $scope.chordFab = {
-      topDirections: ['left', 'up'],
-      bottomDirections: ['down', 'right'],
-      isOpen: false,
-      availableModes: ['md-fling', 'md-scale'],
-      selectedMode: 'md-fling',
-      availableDirections: ['up', 'down', 'left', 'right'],
-      selectedDirection: 'up',
-    };
+    // $scope.chordFab = {
+    //   topDirections: ['left', 'up'],
+    //   bottomDirections: ['down', 'right'],
+    //   isOpen: false,
+    //   availableModes: ['md-fling', 'md-scale'],
+    //   selectedMode: 'md-fling',
+    //   availableDirections: ['up', 'down', 'left', 'right'],
+    //   selectedDirection: 'up',
+    // };
+    $scope.fabItems = [
+      {
+        icon: 'arrow-up',
+        label: 'Transpose Up',
+        callback: () => $scope.transposeChords(-1),
+      },
+      {
+        icon: 'arrow-down',
+        label: 'Transpose Down',
+        callback: () => $scope.transposeChords(1),
+      },
+    ];
     // Disable autoscroll on redirect
     $rootScope.$on('$stateChangeStart',
     function(event, toState, toParams, fromState, fromParams){

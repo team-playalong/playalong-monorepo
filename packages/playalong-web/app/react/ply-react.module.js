@@ -24,6 +24,7 @@ import AutoScroll, { props as AutoScrollProps } from 'playalong-components/lib/c
 import PlyToggle from 'playalong-components/lib/components/Toggle';
 import PlyImage from 'playalong-components/lib/components/Image';
 import PlyDropdown from 'playalong-components/lib/components/Dropdown';
+import PlyFab from 'playalong-components/lib/components/Fab';
 
 angular.module('PlyReact', [
   'react',
@@ -50,4 +51,5 @@ angular.module('PlyReact', [
 .component('plyToggle', react2angular(PlyToggle))
 .component('plyImage', react2angular(PlyImage))
 .component('plyDropdown', react2angular(PlyDropdown))
+.component('plyFab', react2angular(PlyFab))
 ;

@@ -15,6 +15,7 @@ import ContentAdd from 'material-ui/svg-icons/content/add';
 import NavigationClose from 'material-ui/svg-icons/navigation/close';
 
 const FabComponent = styled.div`
+  padding-bottom: 5px;
   .fa {
     color: ${COLORS.WHITE};
   }
@@ -36,7 +37,7 @@ function renderFabItems({ fabItems = [],}) {
 }
 
 function PlyFab({
-  fabItems,
+  fabItems = [],
 }) {
   return (
     <MuiThemeProvider muiTheme={THEME}>
