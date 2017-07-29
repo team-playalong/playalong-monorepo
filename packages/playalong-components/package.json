@@ -10,14 +10,13 @@
     "gen:docs": "node scripts/generateComponentData.js",
     "gen:docs-watch": "npm run gen:docs --watch",
     "build:docs": "node scripts/build.js",
-    "deploy:docs": "gh-pages -d build",
     "prebuild": "rimraf lib",
     "build": "npm-run-all --parallel build:commonjs build:utils build:css build:copy-files build:docs",
     "build:copy-files": "node scripts/copyBuildFiles.js",
     "build:css": "cpx \"./src/components/**/*.css\" ./lib",
     "build:commonjs": "cross-env NODE_ENV=production babel ./src/components --out-dir ./lib/components --ignore spec.js",
     "build:utils": "cross-env NODE_ENV=production babel ./src/utils --out-dir ./lib/utils --ignore spec.js",
-    "publish": "deploy:docs"
+    "deploy": "gh-pages -d build"
   },
   "version": "0.1.19",
   "main": "./lib/index.js",
