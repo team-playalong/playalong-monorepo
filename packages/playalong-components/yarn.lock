@@ -5477,6 +5477,10 @@ react-fontawesome@^1.6.1:
   dependencies:
     prop-types "^15.5.6"
 
+react-mui-speeddial@^0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/react-mui-speeddial/-/react-mui-speeddial-0.0.6.tgz#072e0be07f3013d7d137f13d87c5ad7d3b77a107"
+
 react-svg-gauge@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/react-svg-gauge/-/react-svg-gauge-1.0.4.tgz#9f8f72c6001b739bdc1365826d3a195dbdf4b728"

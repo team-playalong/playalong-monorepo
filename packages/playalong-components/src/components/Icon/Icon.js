@@ -39,5 +39,4 @@ function PlyIcon({ size, icon, flag, click, tooltip }) {
   );
 }
 
-export const props = ['icon', 'click', 'tooltip', 'size', 'flag'];
 export default PlyIcon;

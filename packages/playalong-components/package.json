@@ -53,6 +53,7 @@
     "react-docgen": "^2.15.0",
     "react-dom": "^15.5.4",
     "react-fontawesome": "^1.6.1",
+    "react-mui-speeddial": "^0.0.6",
     "react-svg-gauge": "^1.0.4",
     "react-tap-event-plugin": "^2.0.1",
     "react-tooltip": "^3.3.0",
