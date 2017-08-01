@@ -1,0 +1,13 @@
+{
+  "root": true,
+  "plugins": [
+    "prettier",
+    "html"
+  ],
+  "extends": [
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": "error"
+  }
+}

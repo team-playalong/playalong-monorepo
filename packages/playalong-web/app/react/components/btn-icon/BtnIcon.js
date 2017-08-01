@@ -1,15 +1,6 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
 import FontAwesome from 'react-fontawesome';
 import ReactTooltip from 'react-tooltip';
-
-// TODO
-// interface BtnIconProps {
-//   icon: string;
-//   click?: any;
-//   tooltip?: string;
-//   size?: string;
-// }
 
 const styles = {
   cursor: 'pointer',
