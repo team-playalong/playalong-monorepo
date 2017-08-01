@@ -1,5 +1,4 @@
 {
-  "root": true,
   "parserOptions": {
     "ecmaVersion": 5
   },
@@ -30,12 +29,10 @@
     "consistent-return": "off",
     "func-names": "off",
     "object-shorthand": "off",
-    "space-before-function": "off",
     "prefer-arrow-callback": "off",
     "prefer-template": "off",
     "no-else-return": "off",
     "no-use-before-define": "off",
-    "space-before-function-paren": "off",
     "no-mixed-spaces-and-tabs": "off",
     "brace-style": "off",
     "max-len": "off",
