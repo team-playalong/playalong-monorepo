@@ -39,18 +39,6 @@ export function ChordCtrl(
     //   availableDirections: ['up', 'down', 'left', 'right'],
     //   selectedDirection: 'up',
     // };
-    $scope.fabItems = [
-      {
-        icon: 'arrow-up',
-        label: 'Transpose Up',
-        callback: () => $scope.transposeChords(-1),
-      },
-      {
-        icon: 'arrow-down',
-        label: 'Transpose Down',
-        callback: () => $scope.transposeChords(1),
-      },
-    ];
     // Disable autoscroll on redirect
     $rootScope.$on('$stateChangeStart',
     function(event, toState, toParams, fromState, fromParams){
@@ -130,9 +118,20 @@ export function ChordCtrl(
     else {
       $scope.initCtrl();
     }
-
   }
-
+  
+  $scope.fabItems = [
+    {
+      icon: 'arrow-up',
+      label: 'Transpose Up',
+      callback: () => $scope.transposeChords(-1),
+    },
+    {
+      icon: 'arrow-down',
+      label: 'Transpose Down',
+      callback: () => $scope.transposeChords(1),
+    },
+  ];
   $scope.transposition = 0;
   $scope.transposeChords = function(numTones) {
     const chords = angular.element(document.querySelectorAll('.ply-chord-container-content .chord'));

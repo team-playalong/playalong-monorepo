@@ -2,20 +2,31 @@
 
 #chord {
 	position: relative;
+
 	.ply-chord-container {
 		padding-left:30px;
     .ply-icon-favorites {
       color: $ply-pink;
-      .fa {
+
+	    .fa {
       	font-size: $ply-icon-xl;
       }
 
     }
 	}
+
 	.ply-autoscroll {
 		z-index: 1;
 	}
+
 	.ply-spinner-wrapper {
 		min-height: 300px;
 	}
+
+	ply-fab {
+		position: fixed;
+	  bottom: 2%;
+    left: 2%;
+	}
+
 }
