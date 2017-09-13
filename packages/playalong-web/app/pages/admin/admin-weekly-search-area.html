@@ -46,9 +46,13 @@
             </md-input-container>
           </div>
           <div flex="20">
-            <md-button flex class="md-raised md-accent" type="submit" ng-click="$ctrl.searchChords()"
+            <ply-button
+              label="'Go'"
+              click="$ctrl.searchChords"
+            ></ply-button>
+            <!-- <md-button flex class="md-raised md-accent" type="submit" ng-click="$ctrl.searchChords()"
             aria-label="Go"
-            translate=".SEARCH_BOTTON"></md-button>
+            translate=".SEARCH_BOTTON"></md-button> -->
           </div>
         </div>
         <md-list ng-repeat="result in $ctrl.searchResults track by $index">
