@@ -1,0 +1,15 @@
+{
+  "name": "playalong-notifier",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "config": "^1.26.2",
+    "cors": "^2.8.4",
+    "express": "^4.15.4",
+    "mailgun-js": "^0.13.1"
+  }
+}
