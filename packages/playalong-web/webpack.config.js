@@ -58,7 +58,9 @@ module.exports = {
           {
             loader: 'ts-loader',
             options: {
-              sourceMap: IS_DEV,
+              compilerOptions: {
+                "sourceMap": true
+              },
             },
           },
         ],

@@ -10,7 +10,7 @@
     "gen:docs": "node scripts/generateComponentData.js",
     "gen:docs-watch": "npm run gen:docs --watch",
     "build:docs": "node scripts/build.js",
-    "prebuild": "rimraf lib",
+    "prebuild": "rimraf lib && npm i",
     "build": "npm-run-all --parallel build:commonjs build:utils build:css build:copy-files build:docs",
     "build:copy-files": "node scripts/copyBuildFiles.js",
     "build:css": "cpx \"./src/components/**/*.css\" ./lib",
