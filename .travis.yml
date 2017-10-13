@@ -1,12 +1,9 @@
 sudo: false
 language: node_js
 node_js: 8.0.0
-before_script:
-- npm i -g lerna yarn
-- lerna bootstrap
 script:
-- lerna run build
+- npm run build
 after_success:
-- lerna run deploy
+- npm run deploy
 env:
 - PORT=3000

@@ -1,10 +1,19 @@
 {
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "build:assets": "lerna run build",
+    "prebuild": "npm i",
+    "deploy": "lerna run deploy",
+    "build": "npm-run-all bootstrap build:assets"
+  },
   "devDependencies": {
     "eslint": "^4.3.0",
     "eslint-config-prettier": "^2.3.0",
     "eslint-plugin-html": "^3.1.1",
     "eslint-plugin-prettier": "^2.1.2",
     "lerna": "^2.0.0",
-    "prettier": "^1.5.3"
+    "npm-run-all": "^4.1.1",
+    "prettier": "^1.5.3",
+    "yarn": "^1.2.1"
   }
 }
