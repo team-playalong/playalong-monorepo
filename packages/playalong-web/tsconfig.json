@@ -15,8 +15,7 @@
   },
   "exclude": [
     "node_modules",
-    "bower_components",
-    "typings"
+    "bower_components"
   ],
   "paths": {
       "react": ["node_modules/@types/react"]

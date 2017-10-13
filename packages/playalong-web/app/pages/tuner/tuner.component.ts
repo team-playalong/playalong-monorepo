@@ -303,13 +303,13 @@ function TunerCtrl(login, $scope, $timeout, $state, $rootScope) {
   let sampleRate;
   for (let i = 0; i < hammingWindowFilter.length; i++) {
     hammingWindowFilter[i] = 0.54 - 0.46 * Math.cos(2 * Math.PI * i / (hammingWindowFilter.length - 1));
-  };
+  }
   let fft;
 
   function applyHamming(inputVector, outputVector) {
     for (let i = 0; i < inputVector.length; i++) {
       outputVector[i] = inputVector[i] * hammingWindowFilter[i];
-    };
+    }
   }
 
   function log2(val) {
