@@ -6,7 +6,7 @@
     "start": "npm-run-all --parallel start:docs gen:docs-watch test",
     "start:docs": "node scripts/start.js",
     "test": "node scripts/test.js --env=jsdom",
-    "test:single": "jest",
+    "test:single": "jest --coverage",
     "gen:docs": "node scripts/generateComponentData.js",
     "gen:docs-watch": "npm run gen:docs --watch",
     "build:docs": "node scripts/build.js",
