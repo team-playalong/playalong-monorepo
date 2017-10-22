@@ -1,7 +1,13 @@
-sudo: false
+sudo: required
+services:
+  - docker
 language: node_js
 node_js: 8.0.0
 script:
-- npm run build
+  #Playalong Components
+# - cd pacakges/playalong-components
+# - docker build -t=playalong-components .
+# - docker push atardadi/playalong-components
+#
 env:
 - PORT=3000

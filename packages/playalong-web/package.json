@@ -3,7 +3,7 @@
   "private": false,
   "license": "MIT",
   "scripts": {
-    "test": "jest",
+    "test": "jest --coverage",
     "test:watch": "jest --watch",
     "watch": "npm-run-all --parallel test:watch start",
     "start": "NODE_ENV=development webpack-dev-server --port 3000 --progress --config webpack.config.dev.js",
