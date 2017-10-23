@@ -11,3 +11,4 @@
 /test/coverage
 /dist
 .DS_Store
+/reports

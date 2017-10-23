@@ -4,15 +4,19 @@
     "build:assets": "lerna run build",
     "prebuild": "npm i",
     "deploy": "lerna run deploy",
-    "build": "npm-run-all bootstrap build:assets"
+    "build": "npm-run-all bootstrap build:assets",
+    "code:analysis": "node scripts/plato.js"
   },
   "devDependencies": {
     "eslint": "^4.3.0",
     "eslint-config-prettier": "^2.3.0",
     "eslint-plugin-html": "^3.1.1",
     "eslint-plugin-prettier": "^2.1.2",
+    "glob": "^7.1.2",
     "lerna": "^2.0.0",
     "npm-run-all": "^4.1.1",
-    "prettier": "^1.5.3"
+    "plato": "^1.7.0",
+    "prettier": "^1.5.3",
+    "yarn": "^1.2.1"
   }
 }
