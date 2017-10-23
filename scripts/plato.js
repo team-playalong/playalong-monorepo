@@ -1,26 +1,36 @@
-var plato = require('plato');
-var glob = require('glob');
-// options is optional
-var fileList = [
-  '',
+const plato = require('es6-plato');
+const src = [
+  './packages/playalong-components/src/**/*.js',
+  './packages/playalong-web/app/**/*.js',
 ];
+let outputDir = './artifacts/reports';
 
-var options = {};
-glob('./packages/playalong-components/src/**/*.js', {} /* options */, function (er, files) {
-  // files is an array of filenames.
-  // If the `nonull` option is set, and nothing
-  // was found, then files is ["**/*.js"]
-  // er is an error object or null.
-  fileList = files;
-  var outputDir = './reports';
-  // null options for this example
-  var options = {
-    title: 'Your Plato Report',
-  };
+let platoArgs = {
+  title: 'Your Plato Report',
+};
 
-  function callback(report){
-    console.log('Plato complete');
-  }
+//you can use the reports in the callback.
+function callback(reports){
+  let overview = plato.getOverviewReport(reports);
+  let {
+    total,
+    average
+  } = overview.summary;
 
-  plato.inspect(files, outputDir, options, callback);
-});
+  let output = `total
+    ----------------------
+    eslint: ${total.eslint}
+    sloc: ${total.sloc}
+    maintainability: ${total.maintainability}
+    average
+    ----------------------
+    eslint: ${average.eslint}
+    sloc: ${average.sloc}
+    maintainability: ${average.maintainability}`;
+
+  console.log(output);
+}
+
+
+//usage is plato.inspect
+plato.inspect(src, outputDir, platoArgs, callback);
