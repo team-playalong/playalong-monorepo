@@ -16,7 +16,8 @@
     "build:css": "cpx \"./src/components/**/*.css\" ./lib",
     "build:commonjs": "cross-env NODE_ENV=production babel ./src/components --out-dir ./lib/components --ignore spec.js",
     "build:utils": "cross-env NODE_ENV=production babel ./src/utils --out-dir ./lib/utils --ignore spec.js",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "serve": "cd build && http-server"
   },
   "version": "0.1.19",
   "main": "./lib/index.js",
@@ -106,7 +107,6 @@
     "webpack-manifest-plugin": "1.2.1",
     "whatwg-fetch": "2.0.3"
   },
-  "homepage": "https://team-playalong.github.io/playalong-components/",
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx}"
