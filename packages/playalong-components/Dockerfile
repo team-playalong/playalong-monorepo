@@ -4,7 +4,6 @@ ENV root /playalong-components
 
 WORKDIR ${root}
 
-
 #install node modules
 RUN echo 'Starting installs'
 COPY /package.json ${root}
@@ -17,6 +16,7 @@ COPY /public ${root}/public
 COPY /config ${root}/config
 COPY /src ${root}/src
 
+EXPOSE 80
 
 # Build Playalong Components
 RUN npm run build:docs
