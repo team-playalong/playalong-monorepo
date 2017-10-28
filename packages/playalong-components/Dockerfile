@@ -20,3 +20,4 @@ EXPOSE 80
 
 # Build Playalong Components
 RUN npm run build:docs
+
