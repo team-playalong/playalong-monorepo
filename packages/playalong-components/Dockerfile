@@ -18,7 +18,7 @@ COPY /public ${root}/public
 COPY /config ${root}/config
 COPY /src ${root}/src
 
-EXPOSE 8080:8080
+EXPOSE 8080
 
 # Build Playalong Components
 RUN npm run build:docs
