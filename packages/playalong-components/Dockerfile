@@ -24,7 +24,7 @@ EXPOSE 80
 RUN npm run build:docs
 
 #Copy build files into nginx root folder
-COPY /build /usr/html
+RUN cp -R build /usr/html
 
 # #This will run on container creation
 ENTRYPOINT nginx
