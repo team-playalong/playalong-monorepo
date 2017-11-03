@@ -1,4 +1,4 @@
-FROM node
+FROM smebberson/alpine-nginx-nodejs
 LABEL maintainer="atardadi@gmail.com"
 
 ENV root /playalong-components
@@ -7,7 +7,7 @@ WORKDIR ${root}
 
 #install node modules
 RUN echo 'Starting installs'
-RUN npm i -g http-server yarn
+RUN npm i -g yarn
 COPY /package.json ${root}
 RUN yarn
 
@@ -18,10 +18,13 @@ COPY /public ${root}/public
 COPY /config ${root}/config
 COPY /src ${root}/src
 
-EXPOSE 8080
+EXPOSE 80
 
 # Build Playalong Components
 RUN npm run build:docs
 
-#This will run on container creation
-ENTRYPOINT http-server build
+#Copy build files into nginx root folder
+COPY /build /usr/html
+
+# #This will run on container creation
+ENTRYPOINT nginx
