@@ -22,3 +22,6 @@ EXPOSE 8080
 
 # Build Playalong Components
 RUN npm run build:docs
+
+#This will run on container creation
+ENTRYPOINT http-server build
