@@ -2,6 +2,7 @@ FROM smebberson/alpine-nginx-nodejs
 LABEL maintainer="atardadi@gmail.com"
 
 ENV root /playalong-components
+ENV NGINX_ROOT /usr/html
 
 WORKDIR ${root}
 
@@ -19,12 +20,15 @@ COPY /config ${root}/config
 COPY /src ${root}/src
 
 EXPOSE 80
+EXPOSE 443
 
 # Build Playalong Components
 RUN npm run build:docs
 
 #Copy build files into nginx root folder
-RUN cp -R build /usr/html
+RUN cd build && cp -Rf . ${NGINX_ROOT}
+
+WORKDIR ${NGINX_ROOT}
 
 # #This will run on container creation
 ENTRYPOINT nginx
