@@ -8,6 +8,7 @@ const cors = require('cors');
 const apiKey = config.get('mailgun.api');
 const domain = config.get('mailgun.domain');
 const mailgun = require('mailgun-js')({ apiKey, domain });
+logger.info(`mailgun initializes with domain ${domain}`);
 
 const app = express();
 app.use(bodyParser.json());
@@ -24,11 +25,11 @@ app.get('/healthcheck', function (req, res) {
 });
 
 
-app.get('/login', (req, res) => {
+app.post('/login', (req, res) => {
   const body = req.body;
   const { uid, displayName, email } = body;
 
-  logger.info('`${displayName} has logged in!. Email ${email}`,');
+  logger.info(`${displayName} has logged in!. Email ${email}`);
 
   const data = {
     from: 'Playalong Notifier <contact@playalong.io>',

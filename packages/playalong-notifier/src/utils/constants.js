@@ -15,3 +15,7 @@ export const FILE_PATHS = {
 export const NODE_ENVS = {
   DEVELOPMENT: 'development',
 };
+
+export const EMAIL = {
+  
+};

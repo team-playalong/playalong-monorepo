@@ -9,3 +9,4 @@
 *.map
 /dist
 /lib
+/logs
