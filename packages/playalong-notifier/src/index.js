@@ -1,5 +1,7 @@
+const bodyParser = require('body-parser');
 const config = require('config');
 const express = require('express');
+const { logger } = require('./utils/logger');
 const cors = require('cors');
 
 // https://www.npmjs.com/package/mailgun-js
@@ -8,6 +10,7 @@ const domain = config.get('mailgun.domain');
 const mailgun = require('mailgun-js')({ apiKey, domain });
 
 const app = express();
+app.use(bodyParser.json());
 app.use(cors());
 
 app.get('/', function (req, res) {
@@ -17,6 +20,27 @@ app.get('/', function (req, res) {
 app.get('/healthcheck', function (req, res) {
   res.json({
     status: 'All Good!'
+  });
+});
+
+
+app.get('/login', (req, res) => {
+  const body = req.body;
+  const { uid, displayName, email } = body;
+
+  logger.info('`${displayName} has logged in!. Email ${email}`,');
+
+  const data = {
+    from: 'Playalong Notifier <contact@playalong.io>',
+    to: 'contact@playalong.io',
+    subject: `User Logged in - ${uid}`,
+    text: `${displayName} has logged in!. Email ${email}`,
+  };
+
+  mailgun.messages()
+  .send(data, (error, body) => {
+    console.log(body);
+    res.send('Message sent!');
   });
 });
 
