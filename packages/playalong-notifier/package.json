@@ -7,7 +7,10 @@
     "serve": "node index.js",
     "watch": "npm-run-all --parallel compile:watch serve:watch",
     "serve:watch": "nodemon lib/index.js",
-    "compile:watch": "cross-env NODE_ENV=development babel src --out-dir lib --watch"
+    "compile:watch": "cross-env NODE_ENV=development babel src --out-dir lib --watch",
+    "compile": "babel src --out-dir lib",
+    "copy:config": "cp -R config lib",
+    "build": "cross-env NODE_ENV=production npm-run-all compile copy:config"
   },
   "dependencies": {
     "config": "^1.26.2",
