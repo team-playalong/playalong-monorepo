@@ -4,11 +4,12 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "serve": "node index.js",
+    "serve": "node lib/index.js",
     "watch": "npm-run-all --parallel compile:watch serve:watch",
     "serve:watch": "nodemon lib/index.js",
     "compile:watch": "cross-env NODE_ENV=development babel src --out-dir lib --watch",
     "compile": "babel src --out-dir lib",
+    "start": "npm-run-all compile serve",
     "copy:config": "cp -R config lib",
     "build": "cross-env NODE_ENV=production npm-run-all compile copy:config"
   },

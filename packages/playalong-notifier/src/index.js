@@ -10,6 +10,21 @@ const domain = config.get('mailgun.domain');
 const mailgun = require('mailgun-js')({ apiKey, domain });
 logger.info(`mailgun initializes with domain ${domain}`);
 
+function handleSentMessage(res) {
+  return function (error, body) {
+    if (error) {
+      console.error(`Something went wrong`, error);
+      res.status(500).send(`Message not sent! ${error.message}`);
+    }
+    else {
+      console.log(body);
+      res.send({ message: 'Message Sent' });
+    }
+  }
+}
+
+
+
 const app = express();
 app.use(bodyParser.json());
 app.use(cors());
@@ -39,10 +54,7 @@ app.post('/login', (req, res) => {
   };
 
   mailgun.messages()
-  .send(data, (error, body) => {
-    console.log(body);
-    res.send('Message sent!');
-  });
+  .send(data, handleSentMessage(res));
 });
 
 
