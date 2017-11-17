@@ -13,7 +13,9 @@ RUN yarn
 
 #Copy Src files
 RUN echo 'Starting copies'
+RUN mkdir src
 RUN ls -l
+
 COPY /src ${ROOT}/src
 COPY /config ${ROOT}/config
 
