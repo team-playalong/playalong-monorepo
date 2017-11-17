@@ -14,7 +14,7 @@ RUN yarn
 #Copy Src files
 RUN echo 'Starting copies'
 COPY /src ${root}/src
-RUN mkdir /src
+RUN cd / && mkdir src
 COPY /config ${root}/config
 
 EXPOSE 80:80
