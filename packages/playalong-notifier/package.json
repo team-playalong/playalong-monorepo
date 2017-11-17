@@ -32,6 +32,7 @@
     "cross-env": "^5.1.1",
     "nodemon": "^1.12.1",
     "npm-run-all": "^4.1.2",
+    "webpack": "^3.8.1",
     "winston": "^2.4.0"
   }
 }

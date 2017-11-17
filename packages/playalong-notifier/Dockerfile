@@ -14,6 +14,7 @@ RUN yarn
 #Copy Src files
 RUN echo 'Starting copies'
 COPY /src ${root}/src
+RUN mkdir /src
 COPY /config ${root}/config
 
 EXPOSE 80:80
@@ -25,4 +26,4 @@ RUN yarn build
 WORKDIR ${root}/lib
 
 # #This will run on container creation
-ENTRYPOINT forever start index.js && bash 
+ENTRYPOINT forever start index.js && bash
