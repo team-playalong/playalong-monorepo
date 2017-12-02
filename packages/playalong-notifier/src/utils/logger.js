@@ -1,8 +1,8 @@
-import winston from 'winston';
-import fs from 'fs';
-import 'winston-daily-rotate-file';
-import moment from 'moment';
-import {LOG_LEVELS, FILE_PATHS, NODE_ENVS} from './constants';
+const winston = require('winston');
+const fs = require('fs');
+require('winston-daily-rotate-file');
+const moment = require('moment');
+const {LOG_LEVELS, FILE_PATHS, NODE_ENVS} = require('./constants');
 
 const env = process.env.NODE_ENV || NODE_ENVS.DEVELOPMENT;
 
