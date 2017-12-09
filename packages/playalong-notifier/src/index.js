@@ -17,27 +17,12 @@ const domain = config.get('mailgun.domain');
 const mailgun = require('mailgun-js')({ apiKey, domain });
 logger.info(`mailgun initializes with domain ${domain}`);
 
-function handleSentMessage(res) {
-  return function (error, body) {
-    if (error) {
-      console.error(`Something went wrong`, error);
-      res.status(500).send(`Message not sent! ${error.message}`);
-    }
-    else {
-      console.log(body);
-      res.send({ message: 'Message Sent' });
-    }
-  }
-}
-
-
-
 const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
-app.use('/api/v1', apiRoutes);
+app.use('/api', apiRoutes);
 
 app.use('/login', login);
 
