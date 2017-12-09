@@ -1,9 +1,11 @@
 const bodyParser = require('body-parser');
 const config = require('config');
 const express = require('express');
+
 const { logger } = require('./utils/logger');
 const cors = require('cors');
-const login = require('./routes/login');
+import login from './routes/login';
+import apiRoutes from './routes/v1';
 
 // Swagger
 const swaggerUi = require('swagger-ui-express');
@@ -34,8 +36,8 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-// app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
-// app.use('/api/v1', router);
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+app.use('/api/v1', apiRoutes);
 
 app.use('/login', login);
 
