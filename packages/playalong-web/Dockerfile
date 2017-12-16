@@ -1,19 +1,34 @@
-FROM centos:centos6
+FROM smebberson/alpine-nginx-nodejs
+LABEL maintainer="atardadi@gmail.com"
 
-MAINTAINER atardadi@gmail.com
+ENV root /playalong-web
+ENV NGINX_ROOT /usr/html
 
-# Enable EPEL for Node.js
-RUN rpm -Uvh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm
+WORKDIR ${root}
 
-# Install Node...
-RUN yum install -y npm
+#install node modules
+RUN echo 'Starting installs'
+RUN npm i -g yarn
+COPY /package.json ${root}
+RUN yarn
 
-# Copy app to /src
-COPY . /src
+#Copy Src files
+RUN echo 'Starting copies'
+COPY /scripts ${root}/scripts
+COPY /public ${root}/public
+COPY /config ${root}/config
+COPY /src ${root}/src
 
-# Install app and dependencies into /src
-RUN cd /src; npm install
+EXPOSE 80
+EXPOSE 443
 
-EXPOSE 8080
+# Build Playalong Components
+RUN npm run build:docs
 
-CMD cd /src && node ./app.js
+#Copy build files into nginx root folder
+RUN cd build && cp -Rf . ${NGINX_ROOT}
+
+WORKDIR ${NGINX_ROOT}
+
+# #This will run on container creation
+ENTRYPOINT nginx

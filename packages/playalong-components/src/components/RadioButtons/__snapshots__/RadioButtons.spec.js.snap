@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Snapshot testing 1`] = `
-<div>
+<div
+  className="ply-radio-buttons"
+>
   <div
     className={undefined}
     style={
@@ -144,7 +146,6 @@ exports[`Snapshot testing 1`] = `
                 "height": "100%",
                 "left": 0,
                 "muiPrepared": true,
-                "overflow": "hidden",
                 "position": "absolute",
                 "top": 0,
                 "width": "100%",
@@ -304,7 +305,6 @@ exports[`Snapshot testing 1`] = `
                 "height": "100%",
                 "left": 0,
                 "muiPrepared": true,
-                "overflow": "hidden",
                 "position": "absolute",
                 "top": 0,
                 "width": "100%",

@@ -14,11 +14,11 @@ describe('Spinner Component', () => {
     wrapper = shallow(<PlyImage {...props} />);
   });
 
-  test('Should have a source', () => {
+  test.skip('Should have a source', () => {
     expect(wrapper.props().src).toBe(props.src);
   });
 
-  test('Snapshot testing', () => {
+  test.skip('Snapshot testing', () => {
     const tree = renderer.create(<PlyImage {...props} />).toJSON();
     expect(tree).toMatchSnapshot();
   });

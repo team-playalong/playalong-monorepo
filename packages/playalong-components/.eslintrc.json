@@ -1,0 +1,40 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 5
+  },
+  "globals": {
+    "window": true,
+    "app": true,
+    "angular": false,
+    "mockData": true,
+    "inject": false,
+    "dump": false
+  },
+  "env": {
+    "jasmine": true,
+    "protractor": true
+  },
+  "extends": "react-app",
+  "rules": {
+  	"indent": "off",
+    "no-tabs": "off",
+    "no-var": "off",
+    "strict": "off",
+    "padded-blocks": "off",
+    "no-param-reassign": "off",
+    "consistent-return": "off",
+    "func-names": "off",
+    "object-shorthand": "off",
+    "prefer-arrow-callback": "off",
+    "prefer-template": "off",
+    "no-else-return": "off",
+    "no-use-before-define": "off",
+    "no-mixed-spaces-and-tabs": "off",
+    "brace-style": "off",
+    "max-len": "off",
+    "no-trailing-spaces": "off",
+    "spaced-comment": "off",
+    "wrap-iife": "off",
+    "eol-last": "off"
+  }
+}

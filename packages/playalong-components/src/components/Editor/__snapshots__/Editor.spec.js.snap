@@ -10,11 +10,11 @@ exports[`Text Input Snapshot testing 1`] = `
     <div
       aria-activedescendant={undefined}
       aria-autocomplete={undefined}
+      aria-controls={undefined}
       aria-describedby={null}
-      aria-expanded={undefined}
-      aria-haspopup={undefined}
+      aria-expanded={null}
       aria-label={undefined}
-      aria-owns={undefined}
+      aria-multiline={undefined}
       autoCapitalize={undefined}
       autoComplete={undefined}
       autoCorrect={undefined}
@@ -45,7 +45,9 @@ exports[`Text Input Snapshot testing 1`] = `
       spellCheck={false}
       style={
         Object {
+          "WebkitUserSelect": "text",
           "outline": "none",
+          "userSelect": "text",
           "whiteSpace": "pre-wrap",
           "wordWrap": "break-word",
         }
@@ -59,15 +61,15 @@ exports[`Text Input Snapshot testing 1`] = `
         <div
           className=""
           data-block={true}
-          data-editor="d0820"
-          data-offset-key="cd3po-0-0"
+          data-editor="frm20"
+          data-offset-key="b9g6a-0-0"
         >
           <div
             className="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"
-            data-offset-key="cd3po-0-0"
+            data-offset-key="b9g6a-0-0"
           >
             <span
-              data-offset-key="cd3po-0-0"
+              data-offset-key="b9g6a-0-0"
               style={Object {}}
             >
               <br

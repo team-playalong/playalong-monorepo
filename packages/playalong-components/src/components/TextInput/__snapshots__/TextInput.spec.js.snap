@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Text Input Snapshot testing 1`] = `
-<div>
+<div
+  className="ply-text-input"
+>
   <label
     htmlFor="123"
   >
@@ -36,8 +38,8 @@ exports[`Text Input Snapshot testing 1`] = `
       onFocus={[Function]}
       style={
         Object {
+          "WebkitOpacity": 1,
           "WebkitTapHighlightColor": "rgba(0,0,0,0)",
-          "WebkitTextFillColor": "#212121",
           "appearance": "textfield",
           "backgroundColor": "rgba(0,0,0,0)",
           "border": "none",
@@ -59,7 +61,8 @@ exports[`Text Input Snapshot testing 1`] = `
         aria-hidden="true"
         style={
           Object {
-            "borderBottom": "solid 1px",
+            "borderBottomStyle": "solid",
+            "borderBottomWidth": 1,
             "borderColor": "#e0e0e0",
             "borderLeft": "none",
             "borderRight": "none",
@@ -77,7 +80,8 @@ exports[`Text Input Snapshot testing 1`] = `
         aria-hidden="true"
         style={
           Object {
-            "borderBottom": "solid 2px",
+            "borderBottomStyle": "solid",
+            "borderBottomWidth": 2,
             "borderColor": "#ec407a",
             "borderLeft": "none",
             "borderRight": "none",

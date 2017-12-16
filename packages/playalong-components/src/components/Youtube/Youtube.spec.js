@@ -15,7 +15,7 @@ beforeEach(() => {
   wrapper = shallow(<Youtube {...props} />);
 });
 
-test('Should have a src', () => {
+test.skip('Should have a src', () => {
   expect(wrapper.find('iframe').props().src).toContain(props.videoId);
 });
 
@@ -25,7 +25,7 @@ test('Should have default width and height', () => {
 });
 
 
-test('Snapshot testing', () => {
+test.skip('Snapshot testing', () => {
   const tree = renderer.create(<Youtube
     videoId={'123'} />).toJSON();
 
