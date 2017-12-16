@@ -5,7 +5,6 @@ const express = require('express');
 const { logger } = require('./utils/logger');
 const cors = require('cors');
 import login from './routes/login';
-import apiRoutes from './routes/v1';
 
 // Swagger
 const swaggerUi = require('swagger-ui-express');
@@ -22,8 +21,6 @@ app.use(bodyParser.json());
 app.use(cors());
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
-app.use('/api', apiRoutes);
-
 app.use('/login', login);
 
 app.get('/', function (req, res) {

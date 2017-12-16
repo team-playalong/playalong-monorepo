@@ -1,12 +1,26 @@
 const express = require('express');
 const config = require('config');
 
+import { logger } from '../utils/logger';
 const router = express.Router();
 const apiKey = config.get('mailgun.api');
 const domain = config.get('mailgun.domain');
 const mailgun = require('mailgun-js')({ apiKey, domain });
 
-router.post('/login', (req, res) => {
+function handleSentMessage(res) {
+  return function (error, body) {
+    if (error) {
+      console.error(`Something went wrong`, error);
+      res.status(500).send(`Message not sent! ${error.message}`);
+    }
+    else {
+      console.log(body);
+      res.send({ message: 'Message Sent' });
+    }
+   }
+ }
+
+router.post('/', (req, res) => {
   const { body } = req;
   const { uid, displayName, email } = body;
 

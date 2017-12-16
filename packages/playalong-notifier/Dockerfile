@@ -8,16 +8,8 @@ WORKDIR ${ROOT}
 #install node modules
 RUN echo 'Starting installs'
 RUN npm i -g yarn forever
-COPY /package.json ${ROOT}
+COPY . ${ROOT}
 RUN yarn
-
-#Copy Src files
-RUN echo 'Starting copies'
-RUN mkdir src
-RUN ls -l
-
-COPY /src ${ROOT}/src
-COPY /config ${ROOT}/config
 
 EXPOSE 80:80
 EXPOSE 443:443
