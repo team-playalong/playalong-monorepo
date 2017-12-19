@@ -1,4 +1,4 @@
-FROM smebberson/alpine-nginx-nodejs
+FROM smebberson/alpine-nginx-nodejs:latest
 LABEL maintainer="atardadi@gmail.com"
 
 ENV root /playalong-web
@@ -19,16 +19,16 @@ COPY /public ${root}/public
 COPY /config ${root}/config
 COPY /src ${root}/src
 
-EXPOSE 80
-EXPOSE 443
-
 # Build Playalong Components
-RUN npm run build:docs
+RUN yarn build
 
 #Copy build files into nginx root folder
 RUN cd build && cp -Rf . ${NGINX_ROOT}
 
 WORKDIR ${NGINX_ROOT}
+
+EXPOSE 80
+EXPOSE 443
 
 # #This will run on container creation
 ENTRYPOINT nginx
