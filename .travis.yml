@@ -4,6 +4,8 @@ services:
 language: node_js
 node_js: 8.0.0
 script:
+  - cd pacakges/playalong-web
+  - npm run build
 deploy:
   provider: firebase
   token:

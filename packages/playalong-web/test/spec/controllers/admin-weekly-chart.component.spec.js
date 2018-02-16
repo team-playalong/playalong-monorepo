@@ -1,6 +1,6 @@
 'use strict';
 
-describe('admin-weekly-chart.component', function () {
+xdescribe('admin-weekly-chart.component', function () {
 
   // load the controller's module
   beforeEach(module('playalongWebApp'));

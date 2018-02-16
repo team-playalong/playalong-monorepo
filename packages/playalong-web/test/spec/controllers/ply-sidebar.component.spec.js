@@ -1,7 +1,7 @@
 (function() {
 	'use strict';
 
-	describe('Controller: SidebarCtrl', function () {
+	xdescribe('Controller: SidebarCtrl', function () {
 
 		// load the controller's module
 		beforeEach(module('playalongWebApp'));

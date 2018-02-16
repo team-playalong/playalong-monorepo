@@ -14,7 +14,7 @@ function ChordSearchPage() {
 }
 
 
-describe('chord search', function() {
+xdescribe('chord search', function() {
   var chordSearchPage = new ChordSearchPage();
 
   beforeEach(chordSearchPage.get);
