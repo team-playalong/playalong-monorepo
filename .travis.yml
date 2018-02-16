@@ -1,13 +1,15 @@
 sudo: required
 services:
-  - docker
+- docker
 language: node_js
 node_js: 8.0.0
 script:
-  #Playalong Components
-# - cd pacakges/playalong-components
-# - docker build -t=playalong-components .
-# - docker push atardadi/playalong-components
-#
+deploy:
+  provider: firebase
+  token:
+    secure: WTkPmtqhmfTgH6zRcCwygxYWQ949tTGkdDunP35lZAb9bcKnUz7VLhmW+hC/WuaEwR2pJ+1R5zErtCrXzdNEs6DbDoUaThzIpOl5TaMUc0Bl03EerFPDZXm17cxfcQmQB5+fVBGYL4bucsSsCKHrz/p+ks4eT2KnLQWrbNxzY9QdcIb9th6v6L7ipoUPLzqQ7GFCnBM4j1baRhrWreRKGNz1OIH8YNyMeCebl14VGBYWBpMlqPxB3OwBmoTGPYSP1gIE1k8V+/glohGGVPWNokSZeMZ6alfq/NbJcUqVKei7uUXLDjIAbJIrEj/O9B0vriMgloE4xzVhnEO3Lfirqn/2rbveubT6bzd+7L2ITIqmGy9I8SaDj5CmYgvh4SEChvbjUWASmve7bKdHM4U9TCg7iOCZqYFYTR5e0yyGvFllFD/WP0w0vI6mjxEhXRqNWAXro2jD9jmOXPA3/UJlukVG763SqEz+F7hdVTBl8KdNrm2dVtBaP/Uaf+vYg8Lmt5QDLxfz22ljX1me1R56+vUhi9CAOwgSN4llJ33xKKi9pTR97HQQZPQdxxXvIgjnnfiZtPcvc/klb2qNIr5MuMl3sdJC4dpW16vftdeJ36ofyTwKsMDgDVpZQMR7IlnC15WLFmGdmmqphzjEzoLsJX9hQ1PvC4Ltxs0Xlyy++rE=
 env:
-- PORT=3000
+  matrix:
+  - PORT=3000
+  global:
+    secure: WTkPmtqhmfTgH6zRcCwygxYWQ949tTGkdDunP35lZAb9bcKnUz7VLhmW+hC/WuaEwR2pJ+1R5zErtCrXzdNEs6DbDoUaThzIpOl5TaMUc0Bl03EerFPDZXm17cxfcQmQB5+fVBGYL4bucsSsCKHrz/p+ks4eT2KnLQWrbNxzY9QdcIb9th6v6L7ipoUPLzqQ7GFCnBM4j1baRhrWreRKGNz1OIH8YNyMeCebl14VGBYWBpMlqPxB3OwBmoTGPYSP1gIE1k8V+/glohGGVPWNokSZeMZ6alfq/NbJcUqVKei7uUXLDjIAbJIrEj/O9B0vriMgloE4xzVhnEO3Lfirqn/2rbveubT6bzd+7L2ITIqmGy9I8SaDj5CmYgvh4SEChvbjUWASmve7bKdHM4U9TCg7iOCZqYFYTR5e0yyGvFllFD/WP0w0vI6mjxEhXRqNWAXro2jD9jmOXPA3/UJlukVG763SqEz+F7hdVTBl8KdNrm2dVtBaP/Uaf+vYg8Lmt5QDLxfz22ljX1me1R56+vUhi9CAOwgSN4llJ33xKKi9pTR97HQQZPQdxxXvIgjnnfiZtPcvc/klb2qNIr5MuMl3sdJC4dpW16vftdeJ36ofyTwKsMDgDVpZQMR7IlnC15WLFmGdmmqphzjEzoLsJX9hQ1PvC4Ltxs0Xlyy++rE=
