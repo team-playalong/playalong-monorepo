@@ -12,7 +12,7 @@
 				"test:e2e": "testcafe chrome test/E2E/chord-search-page.e2e.ts",
 				"deploy": "firebase use default && firebase deploy --token $FIREBASE_TOKEN",
 				"prebuild": "npm-run-all test",
-				"build": "webpack -p --progress --config webpack.config.build.js",
+				"build": "cross-env NODE_ENV=production webpack -p --progress --config webpack.config.build.js",
 				"ci": "npm run build && npm run deploy",
 				"clean": "rm -rf bower_components && rm -rf node_modules && npm cache clean"
 		},
