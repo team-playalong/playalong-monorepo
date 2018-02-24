@@ -3,6 +3,7 @@
     "bootstrap": "lerna bootstrap",
     "build:assets": "lerna run build",
     "deploy": "lerna run deploy",
+    "test": "lerna run test",
     "prebuild": "npm i",
     "setenv": "cross-env NODE_ENV=production",
     "build": "npm-run-all setenv bootstrap build:assets",
