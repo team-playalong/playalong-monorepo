@@ -3,6 +3,7 @@
     "bootstrap": "lerna bootstrap",
     "build:assets": "lerna run build",
     "deploy": "lerna run deploy",
+    "prebuild": "npm i",
     "build": "npm-run-all bootstrap build:assets",
     "code:analysis": "node scripts/plato.js"
   },
