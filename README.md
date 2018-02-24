@@ -3,3 +3,9 @@
 
 # playalong-monorepo
 Monorepo approach for all of Playalong's apps
+
+### Developer?
+`npm start`
+
+### Deployer?
+`npm run build`
