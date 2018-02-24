@@ -1,10 +1,10 @@
 import * as React from 'react';
 import {Card, CardHeader, CardText} from 'material-ui/Card';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import RadioButtons from 'playalong-components/lib/components/RadioButtons';
-import PlyButton from 'playalong-components/lib/components/Button';
+import RadioButtons from 'playalong-components/components/RadioButtons';
+import PlyButton from 'playalong-components/components/Button';
 import { func } from 'prop-types';
-import TextInput from 'playalong-components/lib/components/TextInput';
+import TextInput from 'playalong-components/components/TextInput';
 import THEME from '../../helpers/theme';
 
 class PlyChordSearchCard extends React.Component {

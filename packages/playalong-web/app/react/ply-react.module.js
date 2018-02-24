@@ -7,23 +7,23 @@ import './components/styled';
 
 // Native Components
 import PlyChordResultList from './components/chord-result-list/chord-result-list';
-import TextInput from 'playalong-components/lib/components/TextInput';
-import Rating, { props as RatingProps } from 'playalong-components/lib/components/Rating';
+import TextInput from 'playalong-components/components/TextInput';
+import Rating, { props as RatingProps } from 'playalong-components/components/Rating';
 import FavoriteBtn, { props as FavoriteBtnProps } from './components/favorites-btn/FavoriteBtn';
-import TextSlider, { props as TextSliderProps } from 'playalong-components/lib/components/TextSlider';
-import Button, { props as ButtonProps } from 'playalong-components/lib/components/Button';
+import TextSlider, { props as TextSliderProps } from 'playalong-components/components/TextSlider';
+import Button, { props as ButtonProps } from 'playalong-components/components/Button';
 import BtnIcon, { props as BtnIconProps } from './components/btn-icon/BtnIcon';
-import Youtube, { props as YoutubeProps } from 'playalong-components/lib/components/Youtube';
+import Youtube, { props as YoutubeProps } from 'playalong-components/components/Youtube';
 import PlyLogo, { props as PlyLogoProps } from './components/logo/Logo';
 import PlyChordSearchCard from './components/chord-search-card/chord-search-card';
 
 // playalong-components
-import RadioButtons, { props as RadioButtonsProps } from 'playalong-components/lib/components/RadioButtons';
-import PlySpinner, { props as PlySpinnerProps } from 'playalong-components/lib/components/Spinner';
-import AutoScroll, { props as AutoScrollProps } from 'playalong-components/lib/components/AutoScroll';
-import PlyToggle from 'playalong-components/lib/components/Toggle';
-import PlyImage from 'playalong-components/lib/components/Image';
-import PlyDropdown from 'playalong-components/lib/components/Dropdown';
+import RadioButtons, { props as RadioButtonsProps } from 'playalong-components/components/RadioButtons';
+import PlySpinner, { props as PlySpinnerProps } from 'playalong-components/components/Spinner';
+import AutoScroll, { props as AutoScrollProps } from 'playalong-components/components/AutoScroll';
+import PlyToggle from 'playalong-components/components/Toggle';
+import PlyImage from 'playalong-components/components/Image';
+import PlyDropdown from 'playalong-components/components/Dropdown';
 
 angular.module('PlyReact', [
   'react',
