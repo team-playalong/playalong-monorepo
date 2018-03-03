@@ -7,7 +7,7 @@ import { connect } from 'react-redux'
 import THEME from '../../helpers/theme';
 import ChordResult from '../chord-result/chord-result';
 
-function PlyChordResultList({ chords = [], click }) {
+function PlyChordResultList({ chords = [], onChordClick }) {
   const ChordResultListComp = styled.div`
 
   `;
@@ -17,7 +17,7 @@ function PlyChordResultList({ chords = [], click }) {
       <ChordResult
         key={chord.chordKey + i}
         chord={chord}
-        click={click}
+        click={onChordClick}
       />
     );
   }
@@ -25,7 +25,7 @@ function PlyChordResultList({ chords = [], click }) {
   return (
     <MuiThemeProvider muiTheme={THEME}>
       <ChordResultListComp>
-        { chords.map(renderChordResult) }
+        { (chords || []).map(renderChordResult) }
       </ChordResultListComp>
     </MuiThemeProvider>
   );
@@ -33,11 +33,14 @@ function PlyChordResultList({ chords = [], click }) {
 
 // Retrieve data from store as props
 const mapStateToProps = state => {
-  return { chords: state.chordSearch.results || [] };
+  return {
+    chords: state.chordSearch.results,
+  };
 };
 
 PlyChordResultList.propTypes = {
   chords: array,
-  click: func,
+  onChordClick: func,
 };
+
 export default connect(mapStateToProps)(PlyChordResultList);

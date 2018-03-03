@@ -1,6 +1,6 @@
 import Spinner from '../../services/spinner.service';
 import ChordSearchModel from './chord-search.model';
-import { SET_CHORD_SEARCH_RESULTS } from '../../redux/constants/action-types';
+import { setChordSearchResults } from '../../redux/actions/chord-search';
 
 enum SearchByOptions {
   ARTIST = 'artist',
@@ -24,15 +24,16 @@ class HomeCtrl {
   public Spinner;
   public ChordSearchModel;
   public store;
+  public setChordSearchResults;
 
   constructor(
-    public $rootScope, public chords, public $translate,
+    private $rootScope, private chords, public $translate,
     public $q, private $ngRedux,
   ) {
     this.Spinner = new Spinner();
     this.ChordSearchModel = ChordSearchModel;
-    // map state to this
-		$ngRedux.connect(null, { setChordSearchResults: this.setChordSearchResults })(this);
+    // map state / dispath to this
+		$ngRedux.connect(null, { setChordSearchResults })(this);
 		this.$ngRedux = $ngRedux;
     this.store = $ngRedux;
   }
@@ -59,13 +60,9 @@ class HomeCtrl {
         this.$rootScope.currPage = toState.title;
       }
     });
-  }
 
-  setChordSearchResults(results) {
-    return {
-			type: SET_CHORD_SEARCH_RESULTS,
-			payload: results,
-		};
+    this.chords.getNewestChords(50)
+    .then(this.setChordSearchResults);
   }
 
   texts = {
@@ -74,15 +71,16 @@ class HomeCtrl {
 
   formatResultMessage = () => {
     return new Promise((resolve, reject) => {
+      const searchResults = this.$ngRedux.getState().chordSearch.results;
       let toTranslate;
       let manyResults;
-      if (!this.searchResults || !this.searchResults.length) {
+      if (!searchResults || !searchResults.length) {
         toTranslate = 'home.EMPTY_RESULT_MESSAGE';
       }
-      else if (this.searchResults && this.searchResults.length === 1) {
+      else if (searchResults && searchResults.length === 1) {
         toTranslate = 'home.SINGLE_RESULT_MESSAGE';
       }
-      else if (this.searchResults && this.searchResults.length > 1) {
+      else if (searchResults && searchResults.length > 1) {
         manyResults = true;
         toTranslate = 'home.MANY_RESULT_MESSAGE';
       }
@@ -90,7 +88,7 @@ class HomeCtrl {
       .then(translations => {
         let res = translations[toTranslate];
         if (manyResults && res.indexOf('{numResults}') !== -1) {
-          res = res.replace('{numResults}', this.searchResults.length);
+          res = res.replace('{numResults}', searchResults.length);
         }
         resolve(res);
       });
@@ -125,6 +123,7 @@ class HomeCtrl {
     this.searchResults = [];
     this.chords.searchChordsBy(searchBy, searchInput)
       .then(this.setChordSearchResults)
+      .then(this.chordsFinallyHandler)
       .catch(error => {
         // Try searching with an upper case for the first letter of each word
         if (numAttempts < 2) {

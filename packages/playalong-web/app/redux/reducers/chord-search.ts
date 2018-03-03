@@ -1,4 +1,7 @@
-import { SEARCH_CHORDS, SET_CHORD_SEARCH_RESULTS } from '../constants/action-types';
+import {
+	SEARCH_CHORDS,
+	SET_CHORD_SEARCH_RESULTS,
+} from '../constants/action-types';
 
 export function chordSearchReducer(state = { results: null }, action) {
 	switch (action.type) {
