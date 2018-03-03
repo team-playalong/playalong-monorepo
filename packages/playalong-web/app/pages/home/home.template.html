@@ -3,13 +3,9 @@
   <section>
     <ply-chord-search-card on-chord-search-clicked="home.searchChords"></ply-chord-search-card>
   </section>
-
   <!-- search results -->
-  <section  ng-include="'./app/views/topChords.html'"
-        ng-if="!home.searchResults"
-        ng-controller="TopchordsCtrl as top"></section>
-  <section>
-    <md-card layout-align="center" ng-if="!!home.searchResults" class="ply-search-results">
+    <section>
+    <md-card layout-align="center" class="ply-search-results">
       <ply-spinner trigger-start-event="startSearchChordsSpinner" trigger-stop-event="stopSearchChordsSpinner"></ply-spinner>
       <md-card-content>
 
@@ -19,14 +15,10 @@
           ng-if="home.resultMessage"
           ng-bind="home.resultMessage">
         </h1>
-        <h5 ng-if="!home.searchResults.length">
-          <span translate=".REQUEST_SONG"></span>
-          <a href="mailto:contact@playalong.io?subject=Please get me my beautiful song!" target="_blank" translate=".HERE"></a>
-        </h5>
         <ply-chord-result-list
-          chords="home.searchResults"
-          click="$root.goToChordPage"
-          ></ply-chord-result-list>
+          store="home.store"
+        >
+        </ply-chord-result-list>
       </md-card-content>
     </md-card>
   </section>

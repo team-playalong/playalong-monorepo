@@ -16,15 +16,6 @@ function RouteConfig($stateProvider, $urlRouterProvider) {
       template: '<ply-chord></ply-chord>',
       controller: 'ChordCtrl',
     })
-    .state('topChords', {
-        url: '/topChords',
-        templateUrl: 'app/views/topChords.html',
-        controller: 'TopchordsCtrl',
-        controllerAs: 'top',
-        data: {
-          title: 'Top Chords',
-        },
-    })
     .state('weeklyChart', {
         url: '/weekly-chart',
         template: '<ply-weekly-chart></ply-weekly-chart>',

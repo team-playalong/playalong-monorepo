@@ -1,3 +1,7 @@
+var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cooked, raw) {
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
+};
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     return new (P || (P = Promise))(function (resolve, reject) {
         function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
@@ -35,7 +39,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 var _this = this;
 import { Selector } from 'testcafe';
-(_a = ["https://www.playalong.io"], _a.raw = ["https://www.playalong.io"], (_b = ["Chord Search Page"], _b.raw = ["Chord Search Page"], fixture(_b)).page(_a));
+fixture(templateObject_1 || (templateObject_1 = __makeTemplateObject(["Chord Search Page"], ["Chord Search Page"]))).page(templateObject_2 || (templateObject_2 = __makeTemplateObject(["https://www.playalong.io"], ["https://www.playalong.io"])));
 test('Chord search', function (t) { return __awaiter(_this, void 0, void 0, function () {
     return __generator(this, function (_a) {
         switch (_a.label) {
@@ -49,5 +53,5 @@ test('Chord search', function (t) { return __awaiter(_this, void 0, void 0, func
         }
     });
 }); });
-var _b, _a;
+var templateObject_1, templateObject_2;
 //# sourceMappingURL=chord-search-page.e2e.js.map

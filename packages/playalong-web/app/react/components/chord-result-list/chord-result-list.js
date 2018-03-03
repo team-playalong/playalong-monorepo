@@ -1,12 +1,13 @@
-import * as React from 'react';
+import React from 'react';
 import { array, func } from 'prop-types';
 import styled from 'styled-components';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import { connect } from 'react-redux'
 
 import THEME from '../../helpers/theme';
 import ChordResult from '../chord-result/chord-result';
 
-function PlyChordResultList({ chords = [], click }) {
+function PlyChordResultList({ chords = [], onChordClick }) {
   const ChordResultListComp = styled.div`
 
   `;
@@ -14,9 +15,9 @@ function PlyChordResultList({ chords = [], click }) {
   function renderChordResult(chord, i) {
     return (
       <ChordResult
-        key={chord.chordKey}
+        key={chord.chordKey + i}
         chord={chord}
-        click={click}
+        click={onChordClick}
       />
     );
   }
@@ -24,14 +25,22 @@ function PlyChordResultList({ chords = [], click }) {
   return (
     <MuiThemeProvider muiTheme={THEME}>
       <ChordResultListComp>
-        { chords.map(renderChordResult) }
+        { (chords || []).map(renderChordResult) }
       </ChordResultListComp>
     </MuiThemeProvider>
   );
 }
 
+// Retrieve data from store as props
+const mapStateToProps = state => {
+  return {
+    chords: state.chordSearch.results,
+  };
+};
+
 PlyChordResultList.propTypes = {
   chords: array,
-  click: func,
+  onChordClick: func,
 };
-export default PlyChordResultList;
+
+export default connect(mapStateToProps)(PlyChordResultList);

@@ -11,6 +11,7 @@ import 'angular-translate-loader-static-files';
 import 'angular-material-icons';
 import 'angular-ui-bootstrap';
 import 'angular-local-storage';
+import 'ng-redux';
 
 // Modules
 import './components/ply-toolbar';
@@ -40,6 +41,7 @@ import '../assets/styles/main.scss';
 import RouteConfig from './config/config.route';
 import configThemes from './config/config.themes';
 import { wysiwygConfig, translateConfig, sceConfig, runConfig } from './config/config.run';
+import configNgRedux from './config/ngRedux';
 
 // Controllers
 import main from './main';
@@ -81,6 +83,7 @@ angular.module('playalongWebApp', [
   'ui.bootstrap',
   'ngAnimate',
   'LocalStorageModule',
+  'ngRedux',
 ])
 .component('chordResult', ChordResult)
 .directive('compile', compile)
@@ -95,4 +98,5 @@ angular.module('playalongWebApp', [
 .config(wysiwygConfig)
 .config(translateConfig)
 .config(sceConfig)
+.config(configNgRedux)
 .run(runConfig);

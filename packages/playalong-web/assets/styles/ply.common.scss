@@ -5,7 +5,6 @@
 
 body {
 	outline: none !important;
-	background: $ply-grey-light;
 	::selection {
 		background: $ply-pink;
 		color: $ply-white;
@@ -31,7 +30,6 @@ body {
 
 .ply-app {
 	#plyContent {
-		background: $ply-grey-light;
 		.ply-main-container {
 			margin-top: 70px;
 			&.sidebar-open {
@@ -89,7 +87,6 @@ body {
 	}
 
 	.footer {
-		background: $ply-grey-light;
 		.ply-alert-container {
 			float:right;
 			width: 30%;
