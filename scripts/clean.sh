@@ -1,1 +1,1 @@
-rimraf node_modules $PLAYALONG_COMPONENTS/node_modules $PLAYALONG_WEB/node_modules
+rimraf $PLAYALONG_MONOREPO/node_modules $PLAYALONG_COMPONENTS/node_modules $PLAYALONG_WEB/node_modules

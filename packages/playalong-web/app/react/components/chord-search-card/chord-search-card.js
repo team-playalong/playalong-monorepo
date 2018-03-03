@@ -30,8 +30,8 @@ class PlyChordSearchCard extends React.Component {
     this.searchButtonClicked();
   }
 
-  radioButtonChanged(searchBy) {
-    this.setState({ searchBy });
+  radioButtonChanged(e) {
+    this.setState({ searchBy: e.target.value });
   }
 
   searchInputChanged(searchInput) {
@@ -70,6 +70,9 @@ class PlyChordSearchCard extends React.Component {
       flex: '1',
       paddingBottom: '10px',
     },
+    radioButton: {
+      margin: '0 10px',
+    },
     searchInput: {
       flex: '4',
       paddingBottom: '10px',
@@ -79,6 +82,12 @@ class PlyChordSearchCard extends React.Component {
       paddingBottom: '10px',
     },
   }
+
+  // TODO: Stabilize
+  // <RadioButtons
+  //   inputs={this.radioButtonInputs}
+  //   onRadioChanged={this.radioButtonChanged}
+  // />
 
   render() {
     return (
@@ -95,10 +104,26 @@ class PlyChordSearchCard extends React.Component {
                 onSubmit={this.searchFormSubmitted}>
 
                 <span style={this.styles.radioButtons}>
-                  <RadioButtons
-                    inputs={this.radioButtonInputs}
-                    onRadioChanged={this.radioButtonChanged}
+                  <input
+                    style={this.styles.radioButton}
+                    name="searchBy"
+                    id="artist"
+                    value="artist"
+                    type="radio"
+                    onChange={this.radioButtonChanged}
                   />
+                  <label htmlFor="artist">Artist</label>
+
+                  <input
+                    style={this.styles.radioButton}
+                    name="searchBy"
+                    id="title"
+                    type="radio"
+                    value="title"
+                    onChange={this.radioButtonChanged}
+                  />
+                  <label htmlFor="title">Title</label>
+
                 </span>
                 <span style={this.styles.searchInput}>
                   <TextInput
