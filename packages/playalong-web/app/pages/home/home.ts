@@ -1,5 +1,6 @@
 import Spinner from '../../services/spinner.service';
 import ChordSearchModel from './chord-search.model';
+import { SET_CHORD_SEARCH_RESULTS } from '../../redux/constants/action-types';
 
 enum SearchByOptions {
   ARTIST = 'artist',
@@ -25,10 +26,13 @@ class HomeCtrl {
 
   constructor(
     public $rootScope, public chords, public $translate,
-    public $q,
+    public $q, private $ngRedux,
   ) {
     this.Spinner = new Spinner();
     this.ChordSearchModel = ChordSearchModel;
+    // map state to this
+		$ngRedux.connect(null, { setChordSearchResults: this.setChordSearchResults })(this);
+		this.$ngRedux = $ngRedux;
   }
 
   $onInit() {
@@ -53,6 +57,13 @@ class HomeCtrl {
         this.$rootScope.currPage = toState.title;
       }
     });
+  }
+
+  setChordSearchResults(results) {
+    return {
+			type: SET_CHORD_SEARCH_RESULTS,
+			payload: results,
+		};
   }
 
   texts = {
@@ -111,10 +122,7 @@ class HomeCtrl {
     this.Spinner.start();
     this.searchResults = [];
     this.chords.searchChordsBy(searchBy, searchInput)
-      .then((data) => {
-        this.handleChordResults(data);
-        this.chordsFinallyHandler();
-      })
+      .then(this.setChordSearchResults)
       .catch(error => {
         // Try searching with an upper case for the first letter of each word
         if (numAttempts < 2) {
@@ -131,7 +139,7 @@ class HomeCtrl {
   }
 }
 HomeCtrl.$inject = [
-  '$rootScope', 'chords', '$translate', '$q',
+  '$rootScope', 'chords', '$translate', '$q', '$ngRedux',
 ];
 
 export { PlyHome, HomeCtrl };

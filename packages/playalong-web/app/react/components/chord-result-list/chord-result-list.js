@@ -2,6 +2,7 @@ import * as React from 'react';
 import { array, func } from 'prop-types';
 import styled from 'styled-components';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import { connect } from 'react-redux'
 
 import THEME from '../../helpers/theme';
 import ChordResult from '../chord-result/chord-result';
@@ -34,4 +35,4 @@ PlyChordResultList.propTypes = {
   chords: array,
   click: func,
 };
-export default PlyChordResultList;
+export default connect(state => state)(PlyChordResultList);
