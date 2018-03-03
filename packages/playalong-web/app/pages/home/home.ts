@@ -23,6 +23,7 @@ class HomeCtrl {
   public plyOnChange;
   public Spinner;
   public ChordSearchModel;
+  public store;
 
   constructor(
     public $rootScope, public chords, public $translate,
@@ -33,6 +34,7 @@ class HomeCtrl {
     // map state to this
 		$ngRedux.connect(null, { setChordSearchResults: this.setChordSearchResults })(this);
 		this.$ngRedux = $ngRedux;
+    this.store = $ngRedux;
   }
 
   $onInit() {

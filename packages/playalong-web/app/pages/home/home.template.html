@@ -9,7 +9,7 @@
         ng-if="!home.searchResults"
         ng-controller="TopchordsCtrl as top"></section>
   <section>
-    <md-card layout-align="center" ng-if="!!home.searchResults" class="ply-search-results">
+    <md-card layout-align="center" class="ply-search-results">
       <ply-spinner trigger-start-event="startSearchChordsSpinner" trigger-stop-event="stopSearchChordsSpinner"></ply-spinner>
       <md-card-content>
 
@@ -23,9 +23,9 @@
           <span translate=".REQUEST_SONG"></span>
           <a href="mailto:contact@playalong.io?subject=Please get me my beautiful song!" target="_blank" translate=".HERE"></a>
         </h5>
+        {{home.store || 'asdasd'}}
         <ply-chord-result-list
-          store="store"        
-          chords="home.searchResults"
+          store="home.store"
           click="$root.goToChordPage"
           ></ply-chord-result-list>
       </md-card-content>

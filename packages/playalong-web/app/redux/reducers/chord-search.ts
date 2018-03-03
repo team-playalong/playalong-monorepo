@@ -5,7 +5,7 @@ export function chordSearchReducer(state = { results: null }, action) {
 		case SEARCH_CHORDS:
 			return Object.assign({}, state, action.payload);
 		case SET_CHORD_SEARCH_RESULTS:
-			return Object.assign({}, state.results, action.payload);
+			return Object.assign({ }, { results: action.payload });
 		default:
 			return state;
 	}

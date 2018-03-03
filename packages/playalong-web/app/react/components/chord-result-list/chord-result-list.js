@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { array, func } from 'prop-types';
 import styled from 'styled-components';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
@@ -15,7 +15,7 @@ function PlyChordResultList({ chords = [], click }) {
   function renderChordResult(chord, i) {
     return (
       <ChordResult
-        key={chord.chordKey}
+        key={chord.chordKey + i}
         chord={chord}
         click={click}
       />
@@ -31,8 +31,13 @@ function PlyChordResultList({ chords = [], click }) {
   );
 }
 
+// Retrieve data from store as props
+const mapStateToProps = state => {
+  return { chords: state.chordSearch.results || [] };
+};
+
 PlyChordResultList.propTypes = {
   chords: array,
   click: func,
 };
-export default connect(state => state)(PlyChordResultList);
+export default connect(mapStateToProps)(PlyChordResultList);

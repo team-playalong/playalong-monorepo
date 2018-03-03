@@ -49,5 +49,4 @@ angular.module('PlyReact', [
 .component('plyAutoScroll', react2angular(AutoScroll, AutoScrollProps ))
 .component('plyToggle', react2angular(PlyToggle))
 .component('plyImage', react2angular(PlyImage))
-.component('plyDropdown', react2angular(PlyDropdown))
-;
+.component('plyDropdown', react2angular(PlyDropdown));
