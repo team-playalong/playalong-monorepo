@@ -4,6 +4,7 @@
 @import 'ply.chord.scss';
 
 body {
+	background: $ply-grey-light;
 	outline: none !important;
 	::selection {
 		background: $ply-pink;
@@ -30,11 +31,9 @@ body {
 
 .ply-app {
 	#plyContent {
+		background: $ply-grey-light;
 		.ply-main-container {
 			margin-top: 70px;
-			&.sidebar-open {
-			}
-
 			.ply-fab {
 				position: fixed;
 				bottom:15px;
@@ -87,6 +86,7 @@ body {
 	}
 
 	.footer {
+		background: $ply-grey-light;
 		.ply-alert-container {
 			float:right;
 			width: 30%;
