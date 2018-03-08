@@ -1,7 +1,7 @@
 import Spinner from './services/spinner.service';
 import { Paths } from './config/config.constants';
 
-function MainCtrl($scope, $timeout, $mdSidenav, $mdUtil, $state, login, $rootScope) {
+function MainCtrl($scope, $timeout, $mdSidenav, $mdUtil, $state, login, $rootScope, $ngRedux) {
   $scope.Math = Math;
   $scope.Spinner = new Spinner();
   $scope.initCtrl = function() {
@@ -15,6 +15,8 @@ function MainCtrl($scope, $timeout, $mdSidenav, $mdUtil, $state, login, $rootSco
     $scope.mainCtrlConfig = {
       alertTimeout: 3000,
     };
+
+    $ngRedux.subscribe($rootScope.goToChordPage);
   };
 
   /**
@@ -22,7 +24,7 @@ function MainCtrl($scope, $timeout, $mdSidenav, $mdUtil, $state, login, $rootSco
    * report completion in console
    */
   $scope.buildToggler = navId => {
-    const debounceFn = $mdUtil.debounce(function(){
+    const debounceFn = $mdUtil.debounce(function() {
       $mdSidenav(navId)
         .toggle()
         .then(function () {
@@ -32,13 +34,12 @@ function MainCtrl($scope, $timeout, $mdSidenav, $mdUtil, $state, login, $rootSco
     return debounceFn;
   };
 
-  $rootScope.goToChordPage = function(chord) {
-    if (typeof chord === 'object') {
-      $scope.chord = chord;
-      $state.go('chord', { chordKey: chord.chordKey || chord.$id });
-    }
-    else if (typeof chord === 'string') {
-      $state.go('chord', { chordKey: chord });
+  $rootScope.goToChordPage = () => {
+    const state = $ngRedux.getState();
+    const currentChordId = (state.singleChord || {}).currentChordId || null;  
+
+    if (currentChordId) { 
+      $state.go('chord', { chordKey: currentChordId });
     }
 
   };
@@ -53,7 +54,7 @@ function MainCtrl($scope, $timeout, $mdSidenav, $mdUtil, $state, login, $rootSco
 }
 MainCtrl.$inject = [
     '$scope', '$timeout', '$mdSidenav', '$mdUtil',
-    '$state', 'login', '$rootScope',
+    '$state', 'login', '$rootScope', '$ngRedux',
   ];
 
 export default MainCtrl;

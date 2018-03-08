@@ -1,32 +1,33 @@
 import React from 'react';
-import { array, func } from 'prop-types';
+import { array } from 'prop-types';
 import styled from 'styled-components';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import { connect } from 'react-redux'
+import { chordClicked } from '../../../redux/actions/chord-search';
 
 import THEME from '../../helpers/theme';
 import ChordResult from '../chord-result/chord-result';
 
-function PlyChordResultList({ chords = [], onChordClick }) {
+function PlyChordResultList({ chords = [], onChordClicked }) {
   const ChordResultListComp = styled.div`
-
+  
   `;
-
+  
   function renderChordResult(chord, i) {
     return (
       <ChordResult
-        key={chord.chordKey + i}
-        chord={chord}
-        click={onChordClick}
+      key={chord.chordKey + i}
+      chord={chord}
+      click={onChordClicked}
       />
     );
   }
-
+  
   return (
     <MuiThemeProvider muiTheme={THEME}>
-      <ChordResultListComp>
-        { (chords || []).map(renderChordResult) }
-      </ChordResultListComp>
+    <ChordResultListComp>
+    { (chords || []).map(renderChordResult) }
+    </ChordResultListComp>
     </MuiThemeProvider>
   );
 }
@@ -38,9 +39,16 @@ const mapStateToProps = state => {
   };
 };
 
+const mapDispatchToProps = (dispatch, ownProps) => {
+  return {
+    onChordClicked: chord => {     
+      dispatch(chordClicked(chord));
+    }
+  }
+}
+
 PlyChordResultList.propTypes = {
   chords: array,
-  onChordClick: func,
 };
 
-export default connect(mapStateToProps)(PlyChordResultList);
+export default connect(mapStateToProps, mapDispatchToProps)(PlyChordResultList);

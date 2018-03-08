@@ -1,6 +1,6 @@
 import Spinner from '../../services/spinner.service';
 import ChordSearchModel from './chord-search.model';
-import { setChordSearchResults } from '../../redux/actions/chord-search';
+import { setChordSearchResults, clearChordSearch } from '../../redux/actions/chord-search';
 
 enum SearchByOptions {
   ARTIST = 'artist',
@@ -25,6 +25,7 @@ class HomeCtrl {
   public ChordSearchModel;
   public store;
   public setChordSearchResults;
+  public goToChordPage;
 
   constructor(
     private $rootScope, private chords, public $translate,
@@ -36,6 +37,7 @@ class HomeCtrl {
 		$ngRedux.connect(null, { setChordSearchResults })(this);
 		this.$ngRedux = $ngRedux;
     this.store = $ngRedux;
+    this.goToChordPage = $rootScope.goToChordPage;
   }
 
   $onInit() {
@@ -55,11 +57,13 @@ class HomeCtrl {
 
     this.$rootScope.$on('$stateChangeSuccess',
 
-    (event, toState, toParams, fromState, fromParams) => {
-      if (toState.title) {
-        this.$rootScope.currPage = toState.title;
-      }
+      (event, toState, toParams, fromState, fromParams) => {
+        if (toState.title) {
+          this.$rootScope.currPage = toState.title;
+        }
     });
+
+    this.$ngRedux.dispatch(clearChordSearch());
 
     this.chords.getNewestChords(50)
     .then(this.setChordSearchResults);
