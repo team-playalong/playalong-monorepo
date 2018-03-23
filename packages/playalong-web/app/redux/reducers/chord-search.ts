@@ -1,7 +1,6 @@
 import {
 	SEARCH_CHORDS,
 	SET_CHORD_SEARCH_RESULTS,
-    CHORD_CLICKED,
 	CLEAR_CHORD_SEARCH,
 } from '../constants/action-types';
 

@@ -35,7 +35,7 @@ angular.module('playalongWebApp')
         scope.middleFreq = scope.maxFreq / 2;
         scope.stapleAverageAmp = [];
 
-        scope.updateStaple = function(staple){
+        scope.updateStaple = function(staple) {
           sum = 0;
           stpl = 0;
           // set average of staples and number of staples

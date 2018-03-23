@@ -1,7 +1,7 @@
 user.$inject = ['PlyFirebase', '$q', 'login'];
 function user(PlyFirebase, $q, login) {
 
-  function addRemoveFavorites(params) {
+  function addRemoveFavorites(params: any = {}) {
     return new Promise((resolve, reject) => {
       if (!login.isLoggedIn()) {
         reject({
@@ -9,7 +9,6 @@ function user(PlyFirebase, $q, login) {
         });
       }
 
-      params = params || {};
       // Get the user's favorite section
       params.chordObj = params.chordObj || {};
       const favoritesRelPath = 'users/' + params.userKey + '/favorites/';

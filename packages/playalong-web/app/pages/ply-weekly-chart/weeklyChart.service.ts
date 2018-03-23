@@ -9,7 +9,7 @@ interface WeeklyChart {
   dateCreated: number;
   weekNumber: number;
   year: number;
-  songs: Array<Song>;
+  songs: Song[];
 }
 
 WeeklyChart.$inject = ['PlyFirebase'];

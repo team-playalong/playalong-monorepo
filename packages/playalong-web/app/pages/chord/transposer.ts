@@ -75,18 +75,18 @@ class Transposer {
 		const oldChord = angular.copy(chord);
 		const chordRegex = RegexStore.get('basicChord');
 		// Extract what needs to be transposed
-		chord = chord.match(chordRegex);
+		let matchedChord = chord.match(chordRegex);
 
 		if (!chord || !numTones || typeof numTones !== 'number') {
 			return null;
 		}
 		const direction = numTones < 0 ? 'prev' : 'next';
-		numTones = Math.abs(numTones);
+		const numTonesFormatted = Math.abs(numTones);
 
-		for (let i = 0; i < numTones; i++) {
-			chord = this.getEqualChord(chord);
-			if (ChordTranposeMap[chord] && ChordTranposeMap[chord][direction]) {
-				chord = ChordTranposeMap[chord][direction];
+		for (let i = 0; i < numTonesFormatted; i++) {
+			matchedChord = this.getEqualChord(matchedChord);
+			if (ChordTranposeMap[matchedChord] && ChordTranposeMap[matchedChord][direction]) {
+				matchedChord = ChordTranposeMap[matchedChord][direction];
 			}
 			else {
 				return null;

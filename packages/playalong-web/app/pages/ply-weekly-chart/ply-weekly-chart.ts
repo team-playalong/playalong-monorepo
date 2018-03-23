@@ -2,10 +2,9 @@ import Spinner from '../../services/spinner.service';
 
 weeklyChartCtrl.$inject = ['WeeklyChart', '$rootScope'];
 function weeklyChartCtrl(WeeklyChart, $rootScope) {
-	const $ctrl = this;
 	const _Spinner = new Spinner();
 
-	$ctrl.buildSubheaderMessage = weeklyChartData => {
+	this.buildSubheaderMessage = weeklyChartData => {
 		return `
       {{'weeklyChart.CREATED' | translate}}:
 			<b>{{ ${weeklyChartData.dateCreated} | date}}</b>
@@ -13,7 +12,7 @@ function weeklyChartCtrl(WeeklyChart, $rootScope) {
 
 	};
 
-	$ctrl.formatData = rawData => {
+	this.formatData = rawData => {
 		const songsArr = [];
 
 		for (const songKey in rawData.songs) {
@@ -25,12 +24,12 @@ function weeklyChartCtrl(WeeklyChart, $rootScope) {
 		return rawData;
 	};
 
-	$ctrl.$onInit = () => {
+	this.$onInit = () => {
 		_Spinner.start();
 		$rootScope.currPage = 'weeklyChart.PAGE_TITLE';
 		WeeklyChart.getLatestChart()
 		.then(result => {
-			$ctrl.weeklyChartData = $ctrl.formatData(result);
+			this.weeklyChartData = this.formatData(result);
 			_Spinner.stop();
 		})
 		.catch(_Spinner.stop);

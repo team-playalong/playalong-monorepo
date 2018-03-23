@@ -30,8 +30,8 @@ const plySidebar = {
 
 SidebarCtrl.$inject = ['$mdSidenav', 'login'];
 function SidebarCtrl($mdSidenav, login) {
-  const vm = this;
-  vm.menuItems = [
+  
+  this.menuItems = [
     {
       text: 'sidebar.menu.SEARCH',
       ref: 'home',
@@ -77,16 +77,19 @@ function SidebarCtrl($mdSidenav, login) {
       isAdmin: true,
     },
   ];
-  vm.close = function () {
+  this.close = function () {
     $mdSidenav('left').close();
   };
-  vm.showMenuItem = item => {
+  this.showMenuItem = item => {
+    let result;
     if (!item || !item.isAdmin) {
-      return true;
+      result = true;
     }
     else {
-      return login.isSuperUser();
+      result = login.isSuperUser();
     }
+
+    return result;
   };
 }
 

@@ -2,32 +2,30 @@ import Toast from '../../services/ply-utils/toast';
 
 PlyfavoritebtnCtrl.$inject = ['$scope', 'user', 'login'];
 function PlyfavoritebtnCtrl($scope, user, login) {
-  const $ctrl = this;
-
   function resetValues() {
-    $ctrl.favorites = undefined;
+    this.favorites = undefined;
   }
 
-  $ctrl.toggleFavorites = function() {
+  this.toggleFavorites = function() {
 
     if (!login.isLoggedIn()) {
       resetValues();
       return;
     }
     const params = {
-      isAddFlag: !$ctrl.isFavorite,
+      isAddFlag: !this.isFavorite,
       chordObj: {
-        chordKey: $ctrl.chord.chordKey,
-        artist: $ctrl.chord.artist,
-        title: $ctrl.chord.title,
+        chordKey: this.chord.chordKey,
+        artist: this.chord.artist,
+        title: this.chord.title,
       },
       userKey: login.getUser().userKey,
     };
     user.addRemoveFavorites(params)
     .then(function() {
       let message;
-      $ctrl.isFavorite = !$ctrl.isFavorite;
-      if ($ctrl.isFavorite) {
+      this.isFavorite = !this.isFavorite;
+      if (this.isFavorite) {
         message = 'favorites.ADDED_MESSAGE';
       }
       else {
@@ -39,23 +37,23 @@ function PlyfavoritebtnCtrl($scope, user, login) {
   };
 
   function checkIsFavorite() {
-    user.isChordFavorite(login.getUser().userKey, $ctrl.chord.$id || $ctrl.chord.chordKey)
+    user.isChordFavorite(login.getUser().userKey, this.chord.$id || this.chord.chordKey)
     .then(function(isFavorite) {
-      $ctrl.isFavorite = !!isFavorite;
+      this.isFavorite = !!isFavorite;
     });
   }
   function checkForChord() {
-    if (!$ctrl.chord) {
-      $scope.$watch(() => $ctrl.chord, function(newValue) {
+    if (!this.chord) {
+      $scope.$watch(() => this.chord, function(newValue) {
       if (!!newValue) {
         newValue.chordKey = newValue.chordKey || newValue.$id;
-        $ctrl.chord = newValue;
+        this.chord = newValue;
         checkIsFavorite();
       }
     });
     }
     else {
-      if ($ctrl.isFavorite === undefined) {
+      if (this.isFavorite === undefined) {
         checkIsFavorite();
       }
     }

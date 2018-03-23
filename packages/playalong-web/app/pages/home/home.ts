@@ -131,8 +131,8 @@ class HomeCtrl {
       .catch(error => {
         // Try searching with an upper case for the first letter of each word
         if (numAttempts < 2) {
-          searchInput = (this.uppercaseFirstLetter(searchInput));
-          this.searchChords({ searchBy, searchInput, numAttempts: numAttempts + 1 });
+          const searchInputFormatted = (this.uppercaseFirstLetter(searchInput));
+          this.searchChords({ searchBy, searchInput: searchInputFormatted, numAttempts: numAttempts + 1 });
         }
         else {
           this.searchResults = [];

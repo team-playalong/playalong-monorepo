@@ -108,7 +108,6 @@ const adminWeeklyChordResults: ng.IComponentOptions = {
 
 adminWeeklyChartCtrl.$inject = ['WeeklyChart'];
 function adminWeeklyChartCtrl(WeeklyChart) {
-  const vm = this;
   this.weeklyChart = {
     year: 2017,
     weekNumber: 20,
@@ -161,7 +160,7 @@ function adminWeeklyChartCtrl(WeeklyChart) {
   };
 
   this.saveChart = () => {
-    const wc = angular.copy(vm.weeklyChart);
+    const wc = angular.copy(this.weeklyChart);
 
     wc.songs = this.addPositionDifference(wc.songs, this.lastWeekChart.songs);
 

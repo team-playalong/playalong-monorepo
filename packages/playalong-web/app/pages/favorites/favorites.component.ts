@@ -45,12 +45,11 @@ FavoritesCtrl.$inject = [
 	'login', 'user', '$rootScope', '$scope',
 ];
 function FavoritesCtrl(login, user, $rootScope, $scope) {
-  const vm = this;
   if (!!window.mixpanel) {
     window.mixpanel.track('ply_page_view_favorites');
   }
 
-  vm.removeFavorite = ($event, favorite) => {
+  this.removeFavorite = ($event, favorite) => {
     $event.preventDefault();
     $event.stopPropagation();
     const params = {
@@ -65,34 +64,34 @@ function FavoritesCtrl(login, user, $rootScope, $scope) {
     user.addRemoveFavorites(params)
     .then(() => {
       Toast.showToastByTranslation('favorites.REMOVED_MESSAGE');
-      vm.init();
+      this.init();
     });
   };
 
 	$rootScope.currPage = 'favorites.PAGE_TITLE';
-  vm.Spinner = new Spinner();
-	vm.init = () => {
-    vm.favorites = null;
-		vm.userModel = login.getUser();
-		if (vm.userModel && vm.userModel.userKey) {
-			vm.Spinner.start();
-			user.getFavorites(vm.userModel.userKey)
+  this.Spinner = new Spinner();
+	this.init = () => {
+    this.favorites = null;
+		this.userModel = login.getUser();
+		if (this.userModel && this.userModel.userKey) {
+			this.Spinner.start();
+			user.getFavorites(this.userModel.userKey)
   		.then(function(data) {
   			if (data) {
-  				vm.favorites = data;
+  				this.favorites = data;
   			}
-        vm.Spinner.stop();
+        this.Spinner.stop();
   		})
-      .catch(vm.Spinner.stop);
+      .catch(this.Spinner.stop);
 		}
 
 	};
-  vm.login = login;
+  this.login = login;
   if (login.isLoggedIn()) {
-  	vm.init();
+  	this.init();
   }
   else {
-  	$scope.$on('plyUserLoggedIn', vm.init);
+  	$scope.$on('plyUserLoggedIn', this.init);
   }
 }
 
