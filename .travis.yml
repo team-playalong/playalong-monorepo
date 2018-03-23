@@ -4,10 +4,7 @@ services:
 language: node_js
 node_js: 8.0.0
 script:
-  #Playalong Components
-# - cd pacakges/playalong-components
-# - docker build -t=playalong-components .
-# - docker push atardadi/playalong-components
-#
+- npm run build
+- npm run test
 env:
 - PORT=3000
