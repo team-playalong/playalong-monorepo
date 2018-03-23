@@ -9,13 +9,13 @@ const props = {
   src: 'www.image.com',
 };
 
-describe('Spinner Component', () => {
+describe('Image Component', () => {
   beforeEach(() => {
     wrapper = shallow(<PlyImage {...props} />);
   });
 
   test('Should have a source', () => {
-    expect(wrapper.props().src).toBe(props.src);
+    expect(wrapper.props()['data-src']).toBe(props.src);
   });
 
   test('Snapshot testing', () => {

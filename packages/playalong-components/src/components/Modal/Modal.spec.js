@@ -2,7 +2,7 @@ import * as React from 'react';
 import { shallow } from 'enzyme';
 import renderer from 'react-test-renderer';
 
-import PlyModal from './PlyModal';
+import PlyModal from './Modal';
 
 describe('PlyModal Component', () => {
   let wrapper;

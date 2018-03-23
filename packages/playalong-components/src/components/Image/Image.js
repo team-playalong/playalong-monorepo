@@ -2,6 +2,7 @@ import 'lazysizes/lazysizes.min.js';
 import * as React from 'react';
 import styled from 'styled-components';
 import { string, oneOf } from 'prop-types';
+import { log } from 'util';
 
 PlyImage.propTypes = {
   src: string.isRequired,
@@ -26,6 +27,7 @@ function PlyImage({
       border-radius: 50%;
     }
   `;
+
 
 
   return (
