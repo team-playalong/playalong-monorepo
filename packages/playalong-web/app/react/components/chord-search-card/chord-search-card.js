@@ -84,12 +84,6 @@ class PlyChordSearchCard extends React.Component {
     },
   }
 
-  // TODO: Stabilize
-  // <RadioButtons
-  //   inputs={this.radioButtonInputs}
-  //   onRadioChanged={this.radioButtonChanged}
-  // />
-
   render() {
     return (
       <MuiThemeProvider muiTheme={THEME}>
