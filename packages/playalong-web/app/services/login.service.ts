@@ -1,5 +1,4 @@
 import CustomerIoHelper from './customeriohelper';
-import Config from '../config/config';
 
 login.$inject = ['$q', '$rootScope', 'PlyFirebase'];
 function login($q: ng.IQService, $rootScope, PlyFirebase) {
@@ -20,14 +19,17 @@ function login($q: ng.IQService, $rootScope, PlyFirebase) {
     }
     else {
       authModel = authData;
-      //Check if user is signed up
+      // Check if user is signed up
       const usersRef = PlyFirebase.getRef('users');
       usersRef.orderByChild('uid').equalTo(authData.uid).on('value', function(snapshot) {
         const rawData = snapshot.val();
 
         if (!rawData) {
-          //Add it
-          let email, firstName, lastName, fullName;
+          // Add it
+          let email;
+          let firstName;
+          let lastName;
+          let fullName;
           const providerData = getProviderData();
           switch (providerData.providerId) {
             case 'google.com':
@@ -47,11 +49,11 @@ function login($q: ng.IQService, $rootScope, PlyFirebase) {
           }
 
           userModel = {
-            //TODO - Validations and extract by platform
-            uid: authData.uid,
+            // TODO - Validations and extract by platform
             email,
             firstName,
             lastName,
+            uid: authData.uid,
             userType: 'normal',
             creationDate: new Date().getTime() / 1000,
           };
@@ -61,13 +63,13 @@ function login($q: ng.IQService, $rootScope, PlyFirebase) {
 
           userModel = rawData[Object.keys(rawData)[0]];
 
-          //Append the key to the model
+          // Append the key to the model
           userModel.userKey = Object.keys(rawData)[0];
 
         }
         $rootScope.$broadcast('plyUserLoggedIn', userModel);
 
-        //Identify against customerIo
+        // Identify against customerIo
         CustomerIoHelper.identifyUser(userModel);
         if (!!window.mixpanel) {
           window.mixpanel.identify(userModel.uid);
@@ -130,12 +132,13 @@ function login($q: ng.IQService, $rootScope, PlyFirebase) {
   }
 
   const getAuth = () => authModel;
-
-  const getFullName = () => getFirstName() + ' ' + getLastName();
+  
+  const getFirstName = () => userModel ? userModel.firstName : '';
 
   const getLastName = () => userModel ? userModel.lastName : '';
 
-  const getFirstName = () => userModel ? userModel.firstName : '';
+  const getFullName = () => getFirstName() + ' ' + getLastName();
+
 
   function isSuperUser() {
     return  getUser() && getUser().userType &&
@@ -161,24 +164,6 @@ function login($q: ng.IQService, $rootScope, PlyFirebase) {
       .catch(error => reject(error));
     });
   }
-
-  // TODO - uncomment after tslint errors fixed
-  // function changePassword(email: string, oldPassword: string, newPassword: string) {
-  //   return new Promise((resolve, reject) => {
-  //     const ref = new Firebase(config.paths.firebase);
-  //
-  //     ref.changePassword({ email, oldPassword, newPassword }, function(error) {
-  //       if (error === null) {
-  //         console.log(`Password Changed`);
-  //         resolve();
-  //       } else {
-  //         console.log('Error changing password: ', error);
-  //         reject(error);
-  //       }
-  //     });
-  //   });
-  // }
-
   return {
     loginSocial,
     loginEmail,

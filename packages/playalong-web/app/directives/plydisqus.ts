@@ -12,13 +12,13 @@ angular.module('playalongWebApp')
       templateUrl: 'views/templates/disqus.html',
       restrict: 'E',
       link: function postLink(scope, element, attrs: any) {
-		    /* jshint unused:false */
-		    const disqus_config = function () {
+		    // tslint:disable-next-line
+		    function disqus_config() {
           // Replace PAGE_URL with your page's canonical URL variable
 	        this.page.url = attrs.plyDisqusUrl;
           // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 	        this.page.identifier = attrs.plyDisqusId;
-		    };
+		    }
 
 		    (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
 		        const d = document;

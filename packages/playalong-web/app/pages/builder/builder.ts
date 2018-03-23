@@ -43,21 +43,21 @@ function BuilderCtrl(
       youtubeLink: '',
     };
 
-    $scope.createChordInDb = function(){
+    $scope.createChordInDb = function() {
       $scope.chord.creator = login.getUser() ? login.getUser().uid : '';
       $scope.isApproved = login.isSuperUser();
       chords.addChord($scope.chord)
       .then(handleChordSuccess)
-      .catch(function(error){
+      .catch(function(error) {
           console.warn(error);
         });
     };
   }
 
-  $scope.scanForChords = function(str){
+  $scope.scanForChords = function(str) {
     if (!str) { return; }
 
-    $timeout(function(){
+    $timeout(function() {
       const strWithChords = str.replace(RegexStore.get('chord'), '<span class="chord">$2$3</span>');
       $scope.chord.content = strWithChords;
     }, 0);

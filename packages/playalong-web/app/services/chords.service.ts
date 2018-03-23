@@ -1,5 +1,4 @@
 import * as angular from 'angular';
-import Common from './ply-utils/common';
 
 chords.$inject = [
   '$q', 'PlyFirebase', '$firebaseObject',

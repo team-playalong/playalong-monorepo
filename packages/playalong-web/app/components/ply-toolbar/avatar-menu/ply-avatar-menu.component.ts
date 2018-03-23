@@ -2,55 +2,52 @@ import * as angular from 'angular';
 import { Paths } from '../../../config/config.constants';
 
 resetPassword.$inject = ['login', '$mdDialog'];
-function resetPassword(login, $mdDialog) {
-	const ctrl = this;
-	ctrl.$mdDialog = $mdDialog;
+function resetPassword(login: any, $mdDialog: any) {
+	this.$mdDialog = $mdDialog;
 
-	ctrl.resetPassword = (email: string) => {
-		login.resetPassword(ctrl.email)
+	this.resetPassword = (email: string) => {
+		login.resetPassword(this.email)
 		.then(data => {
-			ctrl.resetSuccess = true;
-			ctrl.resetError = false;
+			this.resetSuccess = true;
+			this.resetError = false;
 		})
 		.catch(error => {
-			ctrl.resetSuccess = false;
-			ctrl.resetError = true;
+			this.resetSuccess = false;
+			this.resetError = true;
 		});
 	};
 }
 
 changePassword.$inject = ['login', '$mdDialog'];
 function changePassword(login, $mdDialog) {
-	const ctrl = this;
-	ctrl.$mdDialog = $mdDialog;
+	this.$mdDialog = $mdDialog;
 
-	ctrl.passwordType = 'password';
-	ctrl.emailType = 'email';
+	this.passwordType = 'password';
+	this.emailType = 'email';
 
-	ctrl.changePassword = (email: string, oldPassword: string, newPassword: string) => {
+	this.changePassword = (email: string, oldPassword: string, newPassword: string) => {
 		login.changePassword(email, oldPassword, newPassword)
 		.then(data => {
-			ctrl.changeSuccess = true;
-			ctrl.changeError = false;
+			this.changeSuccess = true;
+			this.changeError = false;
 		})
 		.catch(error => {
-			ctrl.changeSuccess = false;
-			ctrl.changeError = true;
+			this.changeSuccess = false;
+			this.changeError = true;
 		});
 	};
 }
 
 ctrl.$inject = ['$mdDialog', 'login', '$translate', 'PlyNotifier'];
 function ctrl($mdDialog, login, $translate, PlyNotifier) {
-	const ctrl = this;
-	ctrl.login = login;
-	ctrl.paths = Paths;
+	this.login = login;
+	this.paths = Paths;
 
-	ctrl.$onInit = () => {
-		ctrl.passwordText = 'password';
+	this.$onInit = () => {
+		this.passwordText = 'password';
 	};
 
-	ctrl.loginSocial = function(platform) {
+	this.loginSocial = function(platform) {
 	  login.loginSocial(platform)
 	  .then(user => {
       if (user.user && user.user.providerData && user.user.providerData.length) {
@@ -61,7 +58,7 @@ function ctrl($mdDialog, login, $translate, PlyNotifier) {
 	  });
 	};
 
-	ctrl.setMenuStyles = () => {
+	this.setMenuStyles = () => {
 		const result = {
 			minHeight: '85px',
 		};
@@ -73,7 +70,7 @@ function ctrl($mdDialog, login, $translate, PlyNotifier) {
 		return result;
 	};
 
-	ctrl.loginEmail = (email: string, password: string) => {
+	this.loginEmail = (email: string, password: string) => {
 		login.loginEmail(email, password)
 			.catch(error => {
 				$mdDialog.show(
@@ -87,7 +84,7 @@ function ctrl($mdDialog, login, $translate, PlyNotifier) {
 				});
 	};
 
-	ctrl.openResetPasswordModal = (event) => {
+	this.openResetPasswordModal = (event) => {
 		$mdDialog.show({
 		  controller: resetPassword,
 		  bindToController: true,
@@ -136,7 +133,7 @@ function ctrl($mdDialog, login, $translate, PlyNotifier) {
 		});
 	};
 
-	ctrl.openChangePasswordModal = (event) => {
+	this.openChangePasswordModal = (event) => {
 		$mdDialog.show({
 		  controller: changePassword,
 		  bindToController: true,
@@ -204,7 +201,7 @@ function ctrl($mdDialog, login, $translate, PlyNotifier) {
 	};
 
   const DEFAULT_AVATAR_IMAGE = 'http://static1.squarespace.com/static/5446859fe4b00f6c90e96077/t/54ca8f77e4b06817122e0839/1422561145086/Horton.jpg';
-	ctrl.setAvatarImage = () => {
+	this.setAvatarImage = () => {
 	  if (!login.isLoggedIn()) {
       return DEFAULT_AVATAR_IMAGE;
 	  }

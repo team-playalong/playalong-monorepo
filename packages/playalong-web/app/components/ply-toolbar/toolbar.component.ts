@@ -1,3 +1,4 @@
+// tslint:disable-next-line
 import * as angular from 'angular';
 import { getNestedProperty } from '../../react/helpers/object';
 

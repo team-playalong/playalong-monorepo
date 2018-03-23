@@ -1,5 +1,5 @@
-import * as angular from 'angular';
-const viewsPefix = 'app/views';
+// tslint:disable-next-line
+import * as angular from 'angular'; 
 
 RouteConfig.$inject = ['$stateProvider', '$urlRouterProvider'];
 function RouteConfig($stateProvider, $urlRouterProvider) {

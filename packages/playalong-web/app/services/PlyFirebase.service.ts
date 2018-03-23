@@ -31,16 +31,16 @@ function PlyFirebase($firebaseObject) {
   const getRef = (path: string) => database().ref(path);
   const authentication = auth();
 
-  function selecteByAggregate(relPath: string, fieldName = '', operator = '') {
-    fieldName = fieldName.trim();
-    operator = operator.trim();
+  function selecteByAggregate(relPath: string, fieldName = '') {
+    const fieldNameTrimmed = fieldName.trim();
+    
     return new Promise((resolve, reject) => {
       const ref = getRef(relPath);
       ref
-        .orderByChild(fieldName)
+        .orderByChild(fieldNameTrimmed)
         .once('value')
         .then(snapshot => {
-          resolve(getMax(snapshot, fieldName));
+          resolve(getMax(snapshot, fieldNameTrimmed));
         });
     });
   }
@@ -50,11 +50,11 @@ function PlyFirebase($firebaseObject) {
     let maxItem;
     let currentItem;
 
-    fieldName = fieldName.trim();
+    const fieldNameTrimmed = fieldName.trim();
     collection.forEach(curr => {
       currentItem = curr.val();
-      if (!max || currentItem[fieldName] > max) {
-        max = currentItem[fieldName];
+      if (!max || currentItem[fieldNameTrimmed] > max) {
+        max = currentItem[fieldNameTrimmed];
         maxItem = currentItem;
       }
     });
@@ -63,16 +63,17 @@ function PlyFirebase($firebaseObject) {
   }
 
   function selectSimpleQuery(relPath = '', fieldName = '', operator = '', fieldValue = '', refFlag: boolean) {
-    fieldName = fieldName.trim();
-    operator = operator.trim();
+    const fieldNameTrimmed = fieldName.trim();
+    const operatorTrimmed = operator.trim();
+    let fieldValueTrimmed;
     if (typeof fieldValue === 'string') {
-      fieldValue = fieldValue.trim();
+      fieldValueTrimmed = fieldValue.trim();
     }
 
     return new Promise((resolve, reject) => {
       const ref = getRef(relPath);
       ref
-        .orderByChild(fieldName)[operator](fieldValue)
+        .orderByChild(fieldNameTrimmed)[operatorTrimmed](fieldValueTrimmed)
         .once('value')
         .then(snapshot => {
           const res = refFlag ? snapshot : snapshot.val();
@@ -82,14 +83,15 @@ function PlyFirebase($firebaseObject) {
   }
 
   function removeWithQuery(relPath = '', fieldName = '', operator = '', fieldValue = '') {
-    fieldName = fieldName.trim();
-    operator = operator.trim();
+    const fieldNameTrimmed = fieldName.trim();
+    const operatorTrimmed = operator.trim();
+    let fieldValueTrimmed;
     if (typeof fieldValue === 'string') {
-      fieldValue = fieldValue.trim();
+      fieldValueTrimmed = fieldValue.trim();
     }
 
     return new Promise((resolve, reject) => {
-      selectSimpleQuery(relPath, fieldName, operator, fieldValue, true)
+      selectSimpleQuery(relPath, fieldNameTrimmed, operatorTrimmed, fieldValueTrimmed, true)
         .then((data: any) => {
           if (data.hasChildren()) {
             data.forEach(function(childRef) {
@@ -120,11 +122,10 @@ function PlyFirebase($firebaseObject) {
 
   }
 
-  function getNode(params) {
+  function getNode(params: any = {}) {
     return new Promise((resolve, reject) => {
-      params = params || {};
+
       const ref = getRef(params.relPath);
-      const response = params.isOnce ? 'once' : 'on';
       ref.once('value')
         .then((snapshot) => {
           if (params.isFirebaseObject) {

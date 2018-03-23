@@ -57,24 +57,23 @@ const plyTuner = {
 TunerCtrl.$inject = ['login', '$scope', '$timeout', '$state', '$rootScope'];
 
 function TunerCtrl(login, $scope, $timeout, $state, $rootScope) {
-  const $ctrl = this;
-
+  
   const numTicks = 10;
   const dialDegrees = 45;
   let timerInterval;
 
-  $ctrl.currPage = 'tuner.PAGE_TITLE';
-  $ctrl.login = login;
-  $ctrl.noteFreq = 0;
-  $ctrl.timer = 'Pausad';
+  this.currPage = 'tuner.PAGE_TITLE';
+  this.login = login;
+  this.noteFreq = 0;
+  this.timer = 'Pausad';
 
-  $ctrl.$onInit = () => {
+  this.$onInit = () => {
     if (!!window.mixpanel) {
       window.mixpanel.track('ply_page_view_tuner');
     }
 
     $rootScope.$on('$stateChangeStart',
-      function(event, toState, toParams, fromState, fromParams){
+      function(event, toState, toParams, fromState, fromParams) {
        if (fromState.name === 'tuner') {
          pause();
        }
@@ -100,21 +99,21 @@ function TunerCtrl(login, $scope, $timeout, $state, $rootScope) {
      div.className = 'pause';
      startAudio();
      startClock();
-     $ctrl.playing = true;
+     this.playing = true;
    }
 
    function pause() {
      const div = document.getElementById('playPause');
      div.className = 'play';
      stopAudio();
-     $ctrl.playing = false;
-     $ctrl.timer = 'Pausad';
+     this.playing = false;
+     this.timer = 'Pausad';
      clearInterval(timerInterval);
    }
 
-   $ctrl.playPause = function () {
+   this.playPause = function () {
 
-    if ($ctrl.playing === true) {
+    if (this.playing === true) {
        pause();
      }
      else {
@@ -147,11 +146,11 @@ function TunerCtrl(login, $scope, $timeout, $state, $rootScope) {
      }
      const minutes = Math.floor(timeoutLengthSeconds / 60);
      const seconds = Math.floor(timeoutLengthSeconds % 60);
-     let mytimeout = $timeout($scope.onTimeout, 100);
-    $scope.onTimeout = function(){
+     $timeout($scope.onTimeout, 100);
+    $scope.onTimeout = function() {
       if ($state.current.name === 'tuner') {
-        mytimeout = $timeout($scope.onTimeout, 100);
-        $ctrl.timer = formatNumberLength(minutes, 2) + ':' + formatNumberLength(seconds, 2);
+        $timeout($scope.onTimeout, 100);
+        this.timer = formatNumberLength(minutes, 2) + ':' + formatNumberLength(seconds, 2);
       }
     };
   }
@@ -167,7 +166,7 @@ function TunerCtrl(login, $scope, $timeout, $state, $rootScope) {
     const sharpHtml = '<sup class="sharp">#</sup>';
     const notes = ['C', 'C' + sharpHtml, 'D', 'D' + sharpHtml, 'E', 'F', 'F' + sharpHtml, 'G', 'G' + sharpHtml, 'A', 'A' + sharpHtml, 'B'];
 
-    $ctrl.noteFreq = Math.round(noteFrequency);
+    this.noteFreq = Math.round(noteFrequency);
     const needle = document.getElementById('needle2');
 
     const degrees = noteError * 2.0 * dialDegrees;
@@ -278,10 +277,7 @@ function TunerCtrl(login, $scope, $timeout, $state, $rootScope) {
 
       let peakMax = 0;
       let peakMaxInd = 0;
-      const size = inputVector.length * 2;
-      const whichStaple = 0;
-      const sum = 0;
-
+      
       for (let i = 7; i < numFreq; i++) {
         const amplitude = sumVec[i];
 
@@ -318,8 +314,7 @@ function TunerCtrl(login, $scope, $timeout, $state, $rootScope) {
 
   function getNoteInfo(frequency) {
     const note = (Math.round(57 + log2(frequency / 440.0) * 12)) % 12;
-    const note2 = Math.round(57 + log2(frequency / 440.0) * 12);
-
+    
     const noteFull = Math.round(log2(frequency / 440.0) * 12); // runda ner till semiton
     const noteFreq = Math.pow(2, noteFull / 12.0) * 440.0; // ta fram notfreq från rundad semiton - nära grundfreq
 
@@ -377,7 +372,7 @@ function TunerCtrl(login, $scope, $timeout, $state, $rootScope) {
 
     function startAudio() {
       // onaudioprocess är en eventhandler.
-      scriptProcessorNode.onaudioprocess = function(e){
+      scriptProcessorNode.onaudioprocess = function(e) {
         const timeVector = e.inputBuffer.getChannelData(0); // Hämta vektorn med audioData
         audioWindow.set(audioWindow.subarray(timeVector.length)); // fixa med hamming
         audioWindow.set(timeVector, audioWindowSize - timeVector.length); // fixa med hamming

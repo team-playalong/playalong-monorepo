@@ -2,7 +2,7 @@ import * as angular from 'angular';
 
 import Common from '../../services/ply-utils/common';
 import Toast from '../../services/ply-utils/toast';
-import ChordModel from './chord.model';
+// tslint:disable-next-line
 import Transposer, { EqualChordsMap } from './transposer';
 
 ChordCtrl.$inject = [
@@ -15,7 +15,6 @@ export function ChordCtrl(
   $sce: ng.ISCEService, EqualChordsMap,
   $translate,
 ) {
-  $scope.ChordModel = ChordModel;
   $scope.login = login;
   $scope.initCtrl = function() {
     if (!!window.mixpanel) {
@@ -41,9 +40,9 @@ export function ChordCtrl(
     };
     // Disable autoscroll on redirect
     $rootScope.$on('$stateChangeStart',
-    function(event, toState, toParams, fromState, fromParams){
+    function(event, toState, toParams, fromState, fromParams) {
       if (fromState.name === 'chord') {
-        $timeout(function(){
+        $timeout(function() {
           $scope.disableAutoscroll();
         }, 0);
       }
@@ -125,7 +124,7 @@ export function ChordCtrl(
   $scope.transposeChords = function(numTones) {
     const chords = angular.element(document.querySelectorAll('.ply-chord-container-content .chord'));
 
-    angular.forEach(chords, function(value){
+    angular.forEach(chords, function(value) {
       const oldText = angular.element(value).text();
       const newText = Transposer.transpose(oldText, numTones);
       angular.element(value).text(newText);

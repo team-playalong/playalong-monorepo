@@ -3,9 +3,8 @@ LanguageModalDialogController.$inject = [
   '$mdDialog', '$translate', '$rootScope', 'PlyStorage',
 ];
 export function LanguageModalDialogController($mdDialog, $translate, $rootScope, PlyStorage) {
-  const vm = this;
 
-  vm.languages = [
+  this.languages = [
     {
       locale: 'he',
       label: 'עברית',
@@ -18,25 +17,25 @@ export function LanguageModalDialogController($mdDialog, $translate, $rootScope,
     },
   ];
 
-  vm.changeLanguage = function(locale) {
+  this.changeLanguage = function(locale) {
     if (locale) {
       $translate.use(locale);
       PlyStorage.set('locale', locale);
       $rootScope.app = {
-        dir: locale === 'he' ? 'rtl' : 'ltr',
         locale,
+        dir: locale === 'he' ? 'rtl' : 'ltr',
       };
       $rootScope.$broadcast('ply_dirChanged');
     }
-    vm.cancel();
+    this.cancel();
   };
-  vm.hide = function() {
+  this.hide = function() {
     $mdDialog.hide();
   };
-  vm.cancel = function() {
+  this.cancel = function() {
     $mdDialog.cancel();
   };
-  vm.answer = function(answer) {
+  this.answer = function(answer) {
     $mdDialog.hide(answer);
   };
 }
@@ -45,9 +44,7 @@ PlylanguagepickerCtrl.$inject = [
   '$scope', '$mdDialog', '$mdMedia', '$rootScope',
 ];
 export function PlylanguagepickerCtrl($scope, $mdDialog, $mdMedia, $rootScope) {
-  const vm = this;
-
-  vm.getFlagClass = function() {
+  this.getFlagClass = function() {
     let res = 'il';
     if ($rootScope.app && $rootScope.app.locale === 'en') {
       res = 'us';
@@ -56,7 +53,7 @@ export function PlylanguagepickerCtrl($scope, $mdDialog, $mdMedia, $rootScope) {
     return res;
   };
 
-  vm.showLanguageModal = function(ev) {
+  this.showLanguageModal = function(ev) {
     $mdDialog.show({
       controller: 'LanguageModalDialogController',
       controllerAs: 'vm',
@@ -65,13 +62,13 @@ export function PlylanguagepickerCtrl($scope, $mdDialog, $mdMedia, $rootScope) {
       parent: angular.element(document.body),
       targetEvent: ev,
       clickOutsideToClose: true,
-      fullscreen: $mdMedia('sm') && vm.customFullscreen,
+      fullscreen: $mdMedia('sm') && this.customFullscreen,
     });
 
     $scope.$watch(function() {
       return $mdMedia('sm');
     }, function(sm) {
-      vm.customFullscreen = (sm === true);
+      this.customFullscreen = (sm === true);
     });
     };
 }
