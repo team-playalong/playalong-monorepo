@@ -18,8 +18,4 @@ describe('Image Component', () => {
     expect(wrapper.props()['data-src']).toBe(props.src);
   });
 
-  test('Snapshot testing', () => {
-    const tree = renderer.create(<PlyImage {...props} />).toJSON();
-    expect(tree).toMatchSnapshot();
-  });
 });

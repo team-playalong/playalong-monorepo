@@ -11,26 +11,18 @@ const props = {
   height: undefined,
 };
 
-xdescribe('Youtube component', () => {
+describe('Youtube component', () => {
   beforeEach(() => {
     wrapper = shallow(<Youtube {...props} />);
   });
   
   test('Should have a src', () => {
-    expect(wrapper.find('iframe').props().src).toContain(props.videoId);
+    expect(wrapper.find('iframe').props()['data-src']).toContain(props.videoId);
   });
   
   test('Should have default width and height', () => {
     expect(wrapper.find('iframe').props().width).toBe(300);
     expect(wrapper.find('iframe').props().height).toBe(150);
-  });
-  
-  
-  test('Snapshot testing', () => {
-    const tree = renderer.create(<Youtube
-      videoId={'123'} />).toJSON();
-  
-    expect(tree).toMatchSnapshot();
   });
   
 });

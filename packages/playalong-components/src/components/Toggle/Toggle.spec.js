@@ -20,13 +20,4 @@ describe('Toggle Component', () => {
     expect(true).toBe(true);
   });
 
-
-  // https://github.com/callemall/material-ui/issues/5354
-  test.skip('Snapshot testing', () => {
-
-    const tree = renderer.create(<PlyToggle
-      {...props}  />).toJSON();
-
-    expect(tree).toMatchSnapshot();
-  });
 });

@@ -42,6 +42,7 @@ import RouteConfig from './config/config.route';
 import configThemes from './config/config.themes';
 import { wysiwygConfig, translateConfig, sceConfig, runConfig } from './config/config.run';
 import configNgRedux from './config/ngRedux';
+import './config/sentry.config';
 
 // Controllers
 import main from './main';

@@ -38,13 +38,3 @@ test('Rating should respond to click on one of the options', () => {
   getWrapper().find('li').first().simulate('click');
   expect(props.click.mock.calls[0][0]).toBe(1);
 });
-
-test('Snapshot testing', () => {
-  const tree = renderer.create(<Rating
-    readonly={true}
-    max={5}
-    value={3}
-    click={function () {}} />).toJSON();
-
-  expect(tree).toMatchSnapshot();
-});
