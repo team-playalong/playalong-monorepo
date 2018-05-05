@@ -1,7 +1,9 @@
 import { Selector } from 'testcafe';
 
-fixture `Chord Search Page`
+/* eslint-disable */
+fixture `Chord Search Page` 
     .page `https://www.playalong.io`;
+/* eslint-enable */
 
 test('Chord search', async t => {
   await t
