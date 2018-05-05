@@ -25,7 +25,7 @@
     "eslint-plugin-protractor": "^1.40.0",
     "eslint-plugin-react": "^7.4.0",
     "glob": "^7.1.2",
-    "lerna": "^2.0.0",
+    "lerna": "^2.4.0",
     "npm-run-all": "^4.1.1",
     "prettier": "^1.5.3",
     "yarn": "^1.2.1"
