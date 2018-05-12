@@ -24,13 +24,4 @@ describe('Text Input', () => {
     const input = wrapper.find('TextField').first();
     expect(input.props().defaultValue).toBe(props.value);
   });
-
-  test('Snapshot testing', () => {
-    const tree = renderer.create(<TextInput
-      label='My Text Input'
-      id="123"
-      value='My Val' />).toJSON();
-
-    expect(tree).toMatchSnapshot();
-  });
 });

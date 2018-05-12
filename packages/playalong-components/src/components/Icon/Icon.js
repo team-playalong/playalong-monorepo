@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { oneOfType, string, number, func } from 'prop-types';
 import FontAwesome from 'react-fontawesome';
 import ReactTooltip from 'react-tooltip';

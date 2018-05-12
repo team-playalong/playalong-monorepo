@@ -25,10 +25,4 @@ describe('Button component', () => {
     expect(props.click.mock.calls[0][0]).toBe(undefined);
   });
 
-  test('Snapshot testing', () => {
-    const tree = renderer.create(<PlyButton {...props} />).toJSON();
-
-    expect(tree).toMatchSnapshot();
-  });
-
 });

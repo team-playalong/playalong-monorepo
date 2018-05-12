@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Image Component Snapshot testing 1`] = `
-<img
-  alt="No Image Available"
-  className="lazyload  sc-htpNat hMEHPi"
-  data-src="www.image.com"
-/>
-`;

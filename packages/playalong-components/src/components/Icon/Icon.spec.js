@@ -42,9 +42,4 @@ describe('PlyIcon Component', () => {
 
     expect(wrapper.hasClass('flag-icon-il')).toBe(true);
   });
-
-  test('Snapshot testing', () => {
-    const tree = renderer.create(<PlyIcon {...props} />).toJSON();
-    expect(tree).toMatchSnapshot();
-  });
 });

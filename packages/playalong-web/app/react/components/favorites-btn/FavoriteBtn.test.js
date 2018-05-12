@@ -13,8 +13,7 @@ beforeEach(() => {
 });
 
 // TODO - stablize
-test.skip('should have the correct icon based on isFavorite', () => {
-  console.log(wrapper);
+test('should have the correct icon based on isFavorite', () => {
   const icon = wrapper.children().first();
   expect(icon.props().icon).toBe('heart');
 });

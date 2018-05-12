@@ -9,17 +9,12 @@ const props = {
   src: 'www.image.com',
 };
 
-xdescribe('Spinner Component', () => {
+describe('Spinner Component', () => {
   beforeEach(() => {
     wrapper = shallow(<PlyImage {...props} />);
   });
 
   test('Should have a source', () => {
-    expect(wrapper.props().src).toBe(props.src);
-  });
-
-  test('Snapshot testing', () => {
-    const tree = renderer.create(<PlyImage {...props} />).toJSON();
-    expect(tree).toMatchSnapshot();
+    expect(wrapper.props()['data-src']).toBe(props.src);
   });
 });

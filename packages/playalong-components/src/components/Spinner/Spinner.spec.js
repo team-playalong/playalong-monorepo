@@ -17,11 +17,4 @@ describe('Spinner Component', () => {
   test('Should be hidden if not active', () => {
     expect(wrapper.props().style.display).toBe('none');
   });
-
-  test.skip('Snapshot testing', () => {
-    const tree = renderer.create(<Spinner
-      isActive={false} />).toJSON();
-
-    expect(tree).toMatchSnapshot();
-  });
 });
