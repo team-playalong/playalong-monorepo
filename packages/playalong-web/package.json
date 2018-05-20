@@ -20,7 +20,6 @@
 	},
 	"dependencies": {
 		"@types/jquery": "^3.2.13",
-		"Guitar-Tuner-Webapp": "https://github.com/oankarberg/Guitar-Tuner-Webapp.git",
 		"angular": "^1.5.8",
 		"angular-animate": "^1.4.12",
 		"angular-aria": "^1.5.8",
@@ -45,7 +44,6 @@
 		"firebase": "^4.1.2",
 		"flag-icon-css": "^2.8.0",
 		"font-awesome": "^4.7.0",
-		"guitartunerapp": "https://github.com/oankarberg/Guitar-Tuner-Webapp.git",
 		"jquery": "~3.1.1",
 		"jquery-ui": "^1.12.1",
 		"json3": "^3.3.2",
@@ -122,12 +120,12 @@
 		"serve": "^6.0.0",
 		"static": "^2.0.0",
 		"style-loader": "^0.18.0",
-		"testcafe": "^0.18.6",
+		"testcafe": "^15.1.317522",
 		"ts-loader": "^2.0.3",
 		"tslint": "^5.4.2",
 		"tslint-config-prettier": "^1.10.0",
 		"typescript": "^2.2.1",
-		"url-loader": "^0.5.8",
+		"url-loader": "^1.0.1",
 		"vinyl-fs": "2.4.4"
 	},
 	"jest": {
