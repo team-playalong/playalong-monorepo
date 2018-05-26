@@ -2,30 +2,31 @@ import Toast from '../../services/ply-utils/toast';
 
 PlyfavoritebtnCtrl.$inject = ['$scope', 'user', 'login'];
 function PlyfavoritebtnCtrl($scope, user, login) {
+  const $ctrl = this; // tslint:disable-line
   function resetValues() {
-    this.favorites = undefined;
+    $ctrl.favorites = undefined;
   }
 
-  this.toggleFavorites = function() {
+  $ctrl.toggleFavorites = function() {
 
     if (!login.isLoggedIn()) {
       resetValues();
       return;
     }
     const params = {
-      isAddFlag: !this.isFavorite,
+      isAddFlag: !$ctrl.isFavorite,
       chordObj: {
-        chordKey: this.chord.chordKey,
-        artist: this.chord.artist,
-        title: this.chord.title,
+        chordKey: $ctrl.chord.chordKey,
+        artist: $ctrl.chord.artist,
+        title: $ctrl.chord.title,
       },
       userKey: login.getUser().userKey,
     };
     user.addRemoveFavorites(params)
     .then(function() {
       let message;
-      this.isFavorite = !this.isFavorite;
-      if (this.isFavorite) {
+      $ctrl.isFavorite = !$ctrl.isFavorite;
+      if ($ctrl.isFavorite) {
         message = 'favorites.ADDED_MESSAGE';
       }
       else {
@@ -37,23 +38,23 @@ function PlyfavoritebtnCtrl($scope, user, login) {
   };
 
   function checkIsFavorite() {
-    user.isChordFavorite(login.getUser().userKey, this.chord.$id || this.chord.chordKey)
+    user.isChordFavorite(login.getUser().userKey, $ctrl.chord.$id || $ctrl.chord.chordKey)
     .then(function(isFavorite) {
-      this.isFavorite = !!isFavorite;
+      $ctrl.isFavorite = !!isFavorite;
     });
   }
   function checkForChord() {
-    if (!this.chord) {
-      $scope.$watch(() => this.chord, function(newValue) {
+    if (!$ctrl.chord) {
+      $scope.$watch(() => $ctrl.chord, function(newValue) {
       if (!!newValue) {
         newValue.chordKey = newValue.chordKey || newValue.$id;
-        this.chord = newValue;
+        $ctrl.chord = newValue;
         checkIsFavorite();
       }
     });
     }
     else {
-      if (this.isFavorite === undefined) {
+      if ($ctrl.isFavorite === undefined) {
         checkIsFavorite();
       }
     }
