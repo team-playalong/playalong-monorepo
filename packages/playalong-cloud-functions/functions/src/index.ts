@@ -1,5 +1,5 @@
 import * as functions from 'firebase-functions';
-
+export { onUserCreate, onUserDelete } from './on-login';
 // // Start writing Firebase Functions
 // // https://firebase.google.com/docs/functions/typescript
 //
