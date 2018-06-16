@@ -2,6 +2,7 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "build:assets": "lerna run build",
+    "commit": "commit",
     "commitmsg": "commitlint -E GIT_PARAMS",
     "deploy": "lerna run deploy",
     "test": "lerna run test --ignore playalong-notifier",
@@ -13,6 +14,8 @@
   "devDependencies": {
     "@commitlint/cli": "^7.0.0",
     "@commitlint/config-conventional": "^7.0.1",
+    "@commitlint/prompt-cli": "^7.0.0",
+    "@commitlint/travis-cli": "^7.0.0",
     "babel-eslint": "^8.2.3",
     "cross-env": "^5.1.3",
     "es6-plato": "^1.0.18",
