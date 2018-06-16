@@ -3,12 +3,10 @@
   "private": false,
   "scripts": {
     "prestart": "npm run gen:docs",
-    "start": "npm-run-all --parallel start:docs gen:docs-watch test",
+    "start": "npm-run-all --parallel storybook test",
     "start:docs": "node scripts/start.js",
     "test": "node scripts/test.js --env=jsdom",
     "test:single": "jest --coverage",
-    "gen:docs": "node scripts/generateComponentData.js",
-    "gen:docs-watch": "npm run gen:docs --watch",
     "build:docs": "node scripts/build.js",
     "prebuild": "rimraf lib",
     "build": "npm-run-all --parallel build:commonjs build:utils build:css build:copy-files build:docs",
@@ -17,7 +15,8 @@
     "build:commonjs": "cross-env NODE_ENV=production babel ./src/components --out-dir ./lib/components --ignore spec.js",
     "build:utils": "cross-env NODE_ENV=production babel ./src/utils --out-dir ./lib/utils --ignore spec.js",
     "deploy": "gh-pages -d build",
-    "serve": "cd build && http-server"
+    "serve": "cd build && http-server",
+    "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "version": "0.1.19",
   "main": "./lib/index.js",
@@ -61,6 +60,7 @@
     "styled-components": "^2.0.1"
   },
   "devDependencies": {
+    "@storybook/react": "^3.4.7",
     "autoprefixer": "7.1.2",
     "babel-cli": "^6.24.1",
     "babel-core": "6.25.0",
