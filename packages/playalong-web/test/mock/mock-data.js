@@ -1,59 +1,59 @@
 /* eslint no-unused-vars: "off" */
 
-const mockData = (function() {
-	function getMockChord() {
+const mockData = (function () {
+	function getMockChord () {
 		return {
 			artist: 'Test Artist',
 			title: 'Test Title',
 			chordKey: 1,
-			content: '<div>hello</div>',
-		};
+			content: '<div>hello</div>'
+		}
 	}
 
-	function getMockChordResults() {
-		return [getMockChord()];
+	function getMockChordResults () {
+		return [getMockChord()]
 	}
 
-	function getMockGoogleUser() {
+	function getMockGoogleUser () {
 		return {
 			provider: 'facebook',
 			facebook: {
-				profileImageURL: 'myGoogleImagePath.png',
+				profileImageURL: 'myGoogleImagePath.png'
 			},
-			userKey: 1,
-		};
+			userKey: 1
+		}
 	}
 
-	function getMockFacebookUser() {
+	function getMockFacebookUser () {
 		return {
 			provider: 'facebook',
 			facebook: {
-				profileImageURL: 'myImagePath.png',
-			},
-		};
+				profileImageURL: 'myImagePath.png'
+			}
+		}
 	}
 
-	function getMockFavorites() {
+	function getMockFavorites () {
 		return {
 			1: {
 				artist: 'Dadi',
-				title: 'test',
+				title: 'test'
 			},
 			2: {
 				artist: 'Dadi2',
-				title: 'test2',
-			},
-		};
+				title: 'test2'
+			}
+		}
 	}
 
-	function getMockWeeklyChart() {
+	function getMockWeeklyChart () {
 		return {
 			songs: [
 				{
-					rank: '1',
-				},
-			],
-		};
+					rank: '1'
+				}
+			]
+		}
 	}
 
 	return {
@@ -62,6 +62,6 @@ const mockData = (function() {
 		getMockGoogleUser: getMockGoogleUser,
 		getMockFacebookUser: getMockFacebookUser,
 		getMockFavorites: getMockFavorites,
-		getMockWeeklyChart: getMockWeeklyChart,
-	};
-})();
+		getMockWeeklyChart: getMockWeeklyChart
+	}
+})()

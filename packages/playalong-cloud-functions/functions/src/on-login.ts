@@ -14,8 +14,8 @@
 * limitations under the License.
 */
 
-const functions = require('firebase-functions');
-const nodemailer = require('nodemailer');
+import functions from 'firebase-functions';
+import nodemailer from 'nodemailer';
 // Configure the email transport using the default SMTP transport and a GMail account.
 // For Gmail, enable these:
 // 1. https://www.google.com/settings/security/lesssecureapps

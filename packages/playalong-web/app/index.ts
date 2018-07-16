@@ -1,7 +1,7 @@
 // Third Parties
 import * as angular from 'angular';
 import 'angular-material';
-import 'angular-ui-router';
+import '@uirouter/angularjs';
 import 'angularfire';
 import 'angular-translate';
 import 'textangular';

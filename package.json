@@ -8,7 +8,8 @@
     "test": "lerna run test --ignore playalong-notifier",
     "prebuild": "npm i",
     "setenv": "cross-env NODE_ENV=production",
-    "build": "npm-run-all setenv bootstrap build:assets",
+    "lint": "lerna run lint",
+    "build": "npm-run-all setenv bootstrap lint build:assets",
     "code:analysis": "node scripts/plato.js"
   },
   "devDependencies": {
