@@ -1,4 +1,4 @@
-function invokeIfFunction(func, params) {
+function invokeIfFunction (func, params) {
   if (!Array.isArray(params) && typeof params !== 'object') {
     params = [params];
   }

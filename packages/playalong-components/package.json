@@ -8,7 +8,7 @@
     "test:single": "jest --coverage",
     "build:docs": "node scripts/build.js",
     "clean": "rimraf lib",
-    "lint": "npm-run-all --parallel eslint",
+    "lint": "eslint --fix src/**/*.js",
     "prebuild": "npm-run-all clean lint",
     "build": "npm-run-all --parallel build:commonjs build:utils build:css build:copy-files build:docs",
     "build:copy-files": "node scripts/copyBuildFiles.js",
@@ -23,7 +23,7 @@
   "version": "0.1.19",
   "main": "./lib/index.js",
   "engines": {
-    "node": ">=4.0.0"
+    "node": ">=6.0.0"
   },
   "author": {
     "name": "Dadi Atar",
@@ -82,13 +82,16 @@
     "css-loader": "0.28.4",
     "dotenv": "4.0.0",
     "enzyme": "^2.8.2",
-    "eslint": "4.3.0",
+    "eslint": "^5.1.0",
     "eslint-config-react-app": "^1.0.4",
+    "eslint-config-standard": "^12.0.0-alpha.0",
     "eslint-loader": "1.9.0",
-    "eslint-plugin-flowtype": "2.35.0",
     "eslint-plugin-import": "2.7.0",
     "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^3.8.0",
     "eslint-plugin-react": "7.1.0",
+    "eslint-plugin-standard": "^3.1.0",
     "extract-text-webpack-plugin": "3.0.0",
     "fbjs": "^0.8.12",
     "file-loader": "0.11.2",
@@ -143,8 +146,5 @@
     "presets": [
       "react-app"
     ]
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   }
 }

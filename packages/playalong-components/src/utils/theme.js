@@ -7,7 +7,7 @@ import * as colors from 'material-ui/styles/colors';
 const THEME = getMuiTheme({
   palette: {
     textColor: colors.grey900,
-    primary1Color: colors.pink400,
+    primary1Color: colors.pink400
     // primary2Color: cyan700,
     // primary3Color: grey400,
     // accent1Color: pinkA200,
@@ -21,7 +21,7 @@ const THEME = getMuiTheme({
     // pickerHeaderColor: cyan500,
     // clockCircleColor: fade(darkBlack, 0.07),
     // shadowColor: fullBlack,
-  },
+  }
 });
 
 export default THEME;

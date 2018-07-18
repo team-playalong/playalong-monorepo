@@ -26,25 +26,24 @@ const NavigationComp = styled.div`
   }
 `;
 
-
 const Navigation = ({components}) => {
   return (
     <NavigationComp>
       <h1>Playalong Components</h1>
       <ul className="navigation">
         {
-          components.map( name => {
+          components.map(name => {
             return (
               <li key={name} className="navigationp-item">
                 <a href={`#${name}`}>{name}</a>
               </li>
-            )
+            );
           })
         }
       </ul>
     </NavigationComp>
-  )
-}
+  );
+};
 
 Navigation.propTypes = {
   components: PropTypes.array.isRequired

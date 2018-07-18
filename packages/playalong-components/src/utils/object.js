@@ -1,4 +1,4 @@
-export function getNestedProperty(obj, propString) {
+export function getNestedProperty (obj, propString) {
   if (!obj || !propString) { return false; }
 
   const props = propString.split('.');
