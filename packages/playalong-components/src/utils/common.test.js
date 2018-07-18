@@ -15,7 +15,6 @@ test('should invoke if there is a function', () => {
 });
 
 test('invokeIfFunction should support params that are not an array', () => {
-
   invokeIfFunction(func, funcParamNonArr);
   expect(func.mock.calls[0][0]).toBe(funcParamNonArr);
 });

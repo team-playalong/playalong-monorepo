@@ -65,11 +65,8 @@ function PlyFirebase($firebaseObject) {
   function selectSimpleQuery(relPath = '', fieldName = '', operator = '', fieldValue = '', refFlag: boolean) {
     const fieldNameTrimmed = fieldName.trim();
     const operatorTrimmed = operator.trim();
-    let fieldValueTrimmed;
-    if (typeof fieldValue === 'string') {
-      fieldValueTrimmed = fieldValue.trim();
-    }
-
+    const fieldValueTrimmed = fieldValue.trim();
+    
     return new Promise((resolve, reject) => {
       const ref = getRef(relPath);
       ref
@@ -85,11 +82,8 @@ function PlyFirebase($firebaseObject) {
   function removeWithQuery(relPath = '', fieldName = '', operator = '', fieldValue = '') {
     const fieldNameTrimmed = fieldName.trim();
     const operatorTrimmed = operator.trim();
-    let fieldValueTrimmed;
-    if (typeof fieldValue === 'string') {
-      fieldValueTrimmed = fieldValue.trim();
-    }
-
+    const fieldValueTrimmed = fieldValue.trim();
+    
     return new Promise((resolve, reject) => {
       selectSimpleQuery(relPath, fieldNameTrimmed, operatorTrimmed, fieldValueTrimmed, true)
         .then((data: any) => {

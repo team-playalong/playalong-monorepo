@@ -7,8 +7,7 @@ export function getNestedProperty (obj, propString) {
   for (let i = 0; i < props.length; i++) {
     if (!!tmpObj && tmpObj[props[i]] !== undefined) {
       tmpObj = tmpObj[props[i]];
-    }
-    else {
+    } else {
       return null;
     }
   }

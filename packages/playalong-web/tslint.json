@@ -4,6 +4,11 @@
     "tslint-config-airbnb",
     "tslint-config-prettier"
   ],
+  "linterOptions": {
+    "exclude": [
+      "app/pages/tuner/tuner.component.ts"
+    ]
+  },
   "rules": {
     "class-name": true,
     "no-extra-boolean-cast": false,
