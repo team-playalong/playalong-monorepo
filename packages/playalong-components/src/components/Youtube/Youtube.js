@@ -6,28 +6,27 @@ Youtube.propTypes = {
   id: PropTypes.string,
   width: PropTypes.number,
   height: PropTypes.number,
-  videoId: PropTypes.string.isRequired,
-}
+  videoId: PropTypes.string.isRequired
+};
 
 const defaultProps = {
   id: 'plyYoutubeIframe',
   width: 300,
-  height: 150,
+  height: 150
 };
 
 const youtubePrefix = 'https://www.youtube.com/embed/';
 
-function buildVideoId(videoId) {
+function buildVideoId (videoId) {
   return youtubePrefix + videoId;
 }
 
-function Youtube({
+function Youtube ({
   id = defaultProps.id,
   width = defaultProps.width,
   height = defaultProps.height,
-  videoId,
+  videoId
 }) {
-
   return (
     <iframe
       title="playalong youtube"

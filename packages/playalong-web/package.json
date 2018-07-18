@@ -8,7 +8,7 @@
 		"test:watch": "jest --watch",
 		"watch": "npm-run-all --parallel test:watch start",
 		"start": "NODE_ENV=development webpack-dev-server --port 3000 --progress --config webpack.config.dev.js",
-		"tslint": "tslint --project ./tsconfig.json './app/**/*.ts'",
+		"tslint": "tslint --fix --project ./tsconfig.json './app/**/*.ts'",
 		"eslint": "eslint --fix test",
 		"lint": "npm-run-all --parallel tslint eslint",
 		"test:e2e": "testcafe chrome test/E2E/chord-search-page.e2e.js",

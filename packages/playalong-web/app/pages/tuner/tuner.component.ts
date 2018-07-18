@@ -1,3 +1,5 @@
+/* tslint:disable */
+
 import './dsp';
 
 const plyTuner = {
