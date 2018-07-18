@@ -19,7 +19,6 @@
     "prefer-arrow-callback": "off",
     "no-else-return": "off",
     "no-use-before-define": "off",
-    "no-mixed-spaces-and-tabs": "off",
     "brace-style": "off",
     "max-len": "off",
     "semi": [2,"always"]
