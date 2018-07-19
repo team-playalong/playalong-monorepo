@@ -1,1 +1,1 @@
-export {default, props} from './Image.js';
+export {default, props} from './Image';

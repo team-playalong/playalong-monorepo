@@ -7,13 +7,11 @@ import Transposer, { EqualChordsMap } from './transposer';
 
 ChordCtrl.$inject = [
   '$scope', '$rootScope', '$state', 'chords', '$stateParams',
-  'login' , '$timeout', '$sce',
-  '$translate',
+  'login' , '$timeout', '$sce', '$translate',
 ];
 export function ChordCtrl(
   $scope, $rootScope, $state, chords, $stateParams, login, $timeout,
-  $sce: ng.ISCEService, EqualChordsMap,
-  $translate,
+  $sce: ng.ISCEService, $translate,
 ) {
   $scope.login = login;
   $scope.initCtrl = function() {
@@ -122,9 +120,9 @@ export function ChordCtrl(
 
   $scope.transposition = 0;
   $scope.transposeChords = function(numTones) {
-    const chords = angular.element(document.querySelectorAll('.ply-chord-container-content .chord'));
+    const allChords = angular.element(document.querySelectorAll('.ply-chord-container-content .chord'));
 
-    angular.forEach(chords, function(value) {
+    angular.forEach(allChords, function(value) {
       const oldText = angular.element(value).text();
       const newText = Transposer.transpose(oldText, numTones);
       angular.element(value).text(newText);

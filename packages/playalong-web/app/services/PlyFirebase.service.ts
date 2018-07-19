@@ -105,8 +105,8 @@ function PlyFirebase($firebaseObject) {
       const ref = getRef(relPath);
       if (ref && ref.push) {
         ref.push(dataObj)
-        .then(ref => {
-          resolve($firebaseObject(ref));
+        .then(childRef => {
+          resolve($firebaseObject(childRef));
         });
       }
       else {

@@ -1,15 +1,15 @@
 {
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "build:assets": "lerna run build",
+    "build:packages": "lerna run build",
     "commit": "commit",
     "commitmsg": "commitlint -E GIT_PARAMS",
     "deploy": "lerna run deploy",
-    "test": "lerna run test --ignore playalong-notifier",
+    "test": "lerna run test",
     "prebuild": "npm i",
     "setenv": "cross-env NODE_ENV=production",
     "lint": "lerna run lint",
-    "build": "npm-run-all setenv bootstrap lint build:assets",
+    "build": "npm-run-all setenv bootstrap lint test build:packages",
     "code:analysis": "node scripts/plato.js"
   },
   "devDependencies": {
@@ -30,7 +30,7 @@
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-prettier": "^2.1.2",
     "eslint-plugin-protractor": "^1.40.0",
-    "eslint-plugin-react": "^7.4.0",
+    "eslint-plugin-react": "^7.10.0",
     "glob": "^7.1.2",
     "lerna": "^2.11.0",
     "npm-run-all": "^4.1.1",

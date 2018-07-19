@@ -1,6 +1,7 @@
 {
   "parserOptions": {
-    "ecmaVersion": 5
+    "ecmaVersion": 6,
+    "sourceType": "module"
   },
   "globals": {
     "window": true,
@@ -10,10 +11,15 @@
     "inject": false,
     "dump": false
   },
+  "extends": [
+    
+    "plugin:react/recommended"
+  ],
   "rules": {
   	"indent": "off",
     "no-tabs": "off",
     "no-var": "off",
+    "space-before-function-paren": 0,
     "strict": "off",
     "padded-blocks": "off",
     "no-param-reassign": "off",

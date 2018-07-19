@@ -22,7 +22,7 @@ function chords($q: ng.IQService, PlyFirebase, $firebaseObject) {
   }
 
   function extractApprovedChords(rawData) {
-    const result = [];
+    const result: number[] = [];
     // Currently Workaround
     angular.forEach(rawData, function(value, chordKey) {
       if (value.approved) {
@@ -60,7 +60,7 @@ function chords($q: ng.IQService, PlyFirebase, $firebaseObject) {
   }
 
   function objectToChordArray(obj = {}) {
-		const res = [];
+		const res: any[] = [];
 		let currObj;
 		for (const curr in obj) {
 			currObj = Object.assign({}, { $id: curr, chordKey: curr }, obj[curr]);
@@ -139,7 +139,7 @@ function chords($q: ng.IQService, PlyFirebase, $firebaseObject) {
         rating = Math.min(rating, 5);
         localRef.child('countRating').set(countRating + 1);
         localRef.child('rating').set(rating);
-        return resolve();
+        resolve();
       })
       .catch((error) => reject(error));
       // TODO - add the rating to the user as well
