@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { arrayOf, shape, string } from 'prop-types';
+import { arrayOf, shape, string, func } from 'prop-types';
 import { RadioButton, RadioButtonGroup } from 'material-ui/RadioButton';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import THEME from '../../utils/theme';
@@ -42,6 +42,8 @@ const inputProp = shape({
 RadioButtons.propTypes = {
   legend: string,
   inputs: arrayOf(inputProp),
+  onRadioChanged: func,
+  radioName: string,
 };
 export const props = ['inputs', 'onRadioChanged'];
 export default RadioButtons;

@@ -16,6 +16,5 @@ describe('Directive: autoscroll', function () {
     element = angular.element('<div autoscroll></div>')
     element = $compile(element)(scope)
     expect(element).toBeDefined()
-    //expect(element.text()).toBe('this is the autoscroll directive');
   }))
 })

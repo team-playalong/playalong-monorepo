@@ -1,5 +1,5 @@
-import getMuiTheme from 'material-ui/styles/getMuiTheme';
-import * as colors from 'material-ui/styles/colors';
+import getMuiTheme from 'material-ui/styles/getMuiTheme'
+import * as colors from 'material-ui/styles/colors'
 
 // This replaces the textColor value on the palette
 // and then update the keys for each component that depends on it.
@@ -22,6 +22,6 @@ const THEME = getMuiTheme({
     // clockCircleColor: fade(darkBlack, 0.07),
     // shadowColor: fullBlack,
   }
-});
+})
 
-export default THEME;
+export default THEME

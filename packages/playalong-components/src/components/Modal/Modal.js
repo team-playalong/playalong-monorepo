@@ -1,5 +1,4 @@
 import * as React from 'react';
-// import { oneOfType, string, number, func } from 'prop-types';
 import Dialog from 'material-ui/Dialog';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import THEME from '../../utils/theme';
@@ -12,14 +11,14 @@ import PlyButton from '../Button';
  * You can also close this dialog by clicking outside the dialog, or with the 'Esc' key.
  */
 class PlyModal extends React.Component {
-  componentWillMount() {
+  componentDidMount() {
     this.setState({
       isOpen: true,
     });
   }
 
-  handleClose(){
-    this.setState({ isOpen: false});
+  handleClose() {
+    this.setState({ isOpen: false });
   }
 
   defaultProps = {
@@ -30,7 +29,8 @@ class PlyModal extends React.Component {
     const { title } = Object.assign({}, this.defaultProps, this.props);
 
     const actions = [
-        <PlyButton
+      <PlyButton
+          key="plyButton"
           label="Cancel"
           primary={true}
           onTouchTap={this.handleClose}

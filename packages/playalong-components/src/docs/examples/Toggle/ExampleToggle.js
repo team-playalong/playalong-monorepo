@@ -10,8 +10,8 @@ class ToggleContainer extends React.Component {
     this.onToggle = this.onToggle.bind(this);
   }
 
-  componentWillMount() {
-    this.setState({ toggled: false});
+  componentDidMount() {
+    this.setState({ toggled: false });
   }
 
   onToggle = val => {

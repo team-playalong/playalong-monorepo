@@ -1,5 +1,5 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 
 const Props = ({props}) => {
   return (
@@ -24,16 +24,16 @@ const Props = ({props}) => {
                 <td>{props[key].defaultValue && props[key].defaultValue.value}</td>
                 <td>{props[key].required && 'X'}</td>
               </tr>
-            );
+            )
           })
         }
       </tbody>
     </table>
-  );
-};
+  )
+}
 
 Props.propTypes = {
   props: PropTypes.object.isRequired
-};
+}
 
-export default Props;
+export default Props

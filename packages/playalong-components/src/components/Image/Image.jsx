@@ -13,7 +13,7 @@ PlyImage.propTypes = {
 
 function PlyImage({
   src,
-  alt='No Image Available',
+  alt = 'No Image Available',
   type = '',
   height = 'auto',
   width = 'auto',
@@ -26,8 +26,6 @@ function PlyImage({
       border-radius: 50%;
     }
   `;
-
-
 
   return (
     <ImageComp

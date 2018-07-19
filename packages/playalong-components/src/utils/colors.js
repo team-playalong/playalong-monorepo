@@ -4,6 +4,6 @@ export const COLORS = {
   SECONDARY: '#03A9F4',
   TEXT: '#212121',
   GREY_LIGHT: '#EFEFEF'
-};
+}
 
-export default COLORS;
+export default COLORS

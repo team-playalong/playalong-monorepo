@@ -1,4 +1,4 @@
-import { getNestedProperty } from './object';
+import { getNestedProperty } from './object'
 
 test('Object helper getNestedProperty', () => {
   const obj = {
@@ -7,7 +7,7 @@ test('Object helper getNestedProperty', () => {
         c: 'Hello'
       }
     }
-  };
+  }
 
-  expect(getNestedProperty(obj, 'a.b.c')).toBe(obj.a.b.c);
-});
+  expect(getNestedProperty(obj, 'a.b.c')).toBe(obj.a.b.c)
+})

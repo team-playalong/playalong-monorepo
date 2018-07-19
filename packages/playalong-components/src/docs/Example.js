@@ -1,12 +1,12 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import CodeExample from './CodeExample';
-import COLORS from '../utils/colors';
+import React from 'react'
+import PropTypes from 'prop-types'
+import CodeExample from './CodeExample'
+import COLORS from '../utils/colors'
 
 class Example extends React.Component {
   constructor (props) {
-    super(props);
-    this.state = { showCode: false };
+    super(props)
+    this.state = { showCode: false }
   }
 
   styles = {
@@ -18,17 +18,17 @@ class Example extends React.Component {
   }
 
   toggleCode = event => {
-    event.preventDefault();
+    event.preventDefault()
     this.setState(prevState => {
-      return {showCode: !prevState.showCode};
-    });
+      return {showCode: !prevState.showCode}
+    })
   }
 
   render () {
-    const {showCode} = this.state;
-    const {code, description, name} = this.props.example;
+    const {showCode} = this.state
+    const {code, description, name} = this.props.example
     // Must use CommonJS require to dynamically require because ES Modules must be statically analyzable.
-    const ExampleComponent = require(`./examples/${this.props.componentName}/${name}`).default;
+    const ExampleComponent = require(`./examples/${this.props.componentName}/${name}`).default
     return (
       <div className="example">
         {description && <h4>{description}</h4> }
@@ -42,13 +42,13 @@ class Example extends React.Component {
 
         {showCode && <CodeExample>{code}</CodeExample>}
       </div>
-    );
+    )
   }
 }
 
 Example.propTypes = {
   example: PropTypes.object.isRequired,
   componentName: PropTypes.string.isRequired
-};
+}
 
-export default Example;
+export default Example

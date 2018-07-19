@@ -12,6 +12,5 @@ export default function ExampleRadioButtons() {
     onRadioChanged: val => alert(`Selected ${val}`),
   };
 
-
   return <RadioButtons {...props} />
 }

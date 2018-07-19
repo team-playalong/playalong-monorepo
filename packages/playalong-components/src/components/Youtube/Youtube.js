@@ -1,5 +1,5 @@
 import * as React from 'react';
-import 'lazysizes/lazysizes.min.js';
+import 'lazysizes/lazysizes.js';
 import PropTypes from 'prop-types';
 
 Youtube.propTypes = {
