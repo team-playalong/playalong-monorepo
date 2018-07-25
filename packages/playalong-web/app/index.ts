@@ -4,6 +4,7 @@ import 'angular-material';
 import '@uirouter/angularjs';
 import 'angularfire';
 import 'angular-translate';
+import './utils/angular-polyfills';
 import 'textangular';
 import 'textangular/dist/textAngular-sanitize';
 import 'angular-translate-interpolation-messageformat';
