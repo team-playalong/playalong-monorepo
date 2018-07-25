@@ -1,7 +1,5 @@
 import * as React from 'react';
 import { shallow } from 'enzyme';
-import renderer from 'react-test-renderer';
-
 import PlyIcon from './Icon';
 
 describe('PlyIcon Component', () => {
@@ -11,8 +9,6 @@ describe('PlyIcon Component', () => {
     click: jest.fn(),
     tooltip: 'Hello There',
   };
-
-
 
   beforeEach(() => {
     wrapper = shallow(<PlyIcon {...props} />);

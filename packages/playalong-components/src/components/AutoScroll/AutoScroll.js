@@ -68,16 +68,14 @@ class AutoScroll extends React.Component {
     return base + offset;
   };
 
-  componentWillMount() {
-    this.setState({
+  static getDerivedStateFromProps(props, state) {
+    return {
       speed: 0,
-    });
+    };
   }
 
   componentDidMount() {
-
     jQuery('.ply-autoscroll-widget').draggable();
-
   }
 
   render() {
