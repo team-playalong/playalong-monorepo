@@ -5,15 +5,14 @@ import DropDownMenu from 'material-ui/DropDownMenu';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import MenuItem from 'material-ui/MenuItem';
 import THEME from '../../utils/theme';
-import '../../utils/tap-events';
 
 PlyDropdown.propTypes = {
   /** Initial value of the dropdown */
-  value: oneOfType([ string, number]),
+  value: oneOfType([ string, number ]),
   /** Array of all the options to be presented in the dropdown */
   options: arrayOf(shape({
     label: string,
-    value: oneOfType([ string, number]),
+    value: oneOfType([ string, number ]),
   })),
   change: func,
 };
@@ -47,9 +46,4 @@ function PlyDropdown({
   );
 }
 
-// <MenuItem value={1} primaryText="Never" />
-// <MenuItem value={2} primaryText="Every Night" />
-// <MenuItem value={3} primaryText="Weeknights" />
-// <MenuItem value={4} primaryText="Weekends" />
-// <MenuItem value={5} primaryText="Weekly" />
 export default PlyDropdown;

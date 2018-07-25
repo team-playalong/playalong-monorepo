@@ -14,6 +14,6 @@ const props = {
 };
 
 storiesOf('Dropdown', module)
-  .add('Avatar Image', () => (
-    <PlyDropdown {...props} />
-  ));
+.add('Default', () => (
+  <PlyDropdown {...props} />
+));

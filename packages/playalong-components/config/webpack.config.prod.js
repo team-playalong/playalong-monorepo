@@ -1,5 +1,3 @@
-
-
 const autoprefixer = require('autoprefixer');
 const path = require('path');
 const webpack = require('webpack');
@@ -9,7 +7,7 @@ const ManifestPlugin = require('webpack-manifest-plugin');
 const InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin');
 const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin');
 const eslintFormatter = require('react-dev-utils/eslintFormatter');
-const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
+const GoogleFontsPlugin = require('google-fonts-webpack-plugin');
 const paths = require('./paths');
 const getClientEnvironment = require('./env');
 
@@ -40,9 +38,9 @@ const cssFilename = 'static/css/[name].[contenthash:8].css';
 // However, our output is structured with css, js and media folders.
 // To have this structure working with relative paths, we have to use custom options.
 const extractTextPluginOptions = shouldUseRelativeAssetPaths
-  ? // Making sure that the publicPath goes back to to build folder.
-    { publicPath: Array(cssFilename.split('/').length).join('../') }
-  : {};
+? // Making sure that the publicPath goes back to to build folder.
+{ publicPath: Array(cssFilename.split('/').length).join('../') }
+: {};
 
 // This is the production configuration.
 // It compiles slowly and is focused on producing a fast and minimal bundle.
@@ -67,7 +65,7 @@ module.exports = {
     publicPath: publicPath,
     // Point sourcemap entries to original disk location
     devtoolModuleFilenameTemplate: info =>
-      path.relative(paths.appSrc, info.absoluteResourcePath),
+    path.relative(paths.appSrc, info.absoluteResourcePath),
   },
   resolve: {
     // This allows you to set a fallback for where Webpack should look for modules.
@@ -84,19 +82,19 @@ module.exports = {
     // https://github.com/facebookincubator/create-react-app/issues/290
     extensions: ['.js', '.json', '.jsx'],
     alias: {
-
+      
       // Support React Native Web
       // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
       'react-native': 'react-native-web',
       'component-root': path.resolve(__dirname, '../src/components'),
     },
     plugins: [
-      // Prevents users from importing files from outside of src/ (or node_modules/).
-      // This often causes confusion because we only process files within src/ with babel.
-      // To fix this, we prevent you from importing files out of src/ -- if you'd like to,
-      // please link the files into your node_modules/ and let module-resolution kick in.
-      // Make sure your source files are compiled, as they will not be processed in any way.
-      // new ModuleScopePlugin(paths.appSrc),
+      new GoogleFontsPlugin({
+        fonts: [
+          { family: 'Source Sans Pro' },
+          { family: 'Roboto', variants: [ '400', '700italic' ] }
+        ],
+      }),
     ],
   },
   module: {
@@ -105,7 +103,7 @@ module.exports = {
       // TODO: Disable require.ensure as it's not a standard language feature.
       // We are waiting for https://github.com/facebookincubator/create-react-app/issues/2176.
       // { parser: { requireEnsure: false } },
-
+      
       // First, run the linter.
       // It's important to do this before Babel processes the JS.
       {
@@ -115,7 +113,7 @@ module.exports = {
           {
             options: {
               formatter: eslintFormatter,
-
+              
             },
             loader: require.resolve('eslint-loader'),
           },
@@ -127,7 +125,7 @@ module.exports = {
       // The `exclude` list *must* be updated with every change to loader extensions.
       // When adding a new loader, you must add its `test`
       // as a new entry in the `exclude` list in the "file" loader.
-
+      
       // "file" loader makes sure those assets end up in the `build` folder.
       // When you `import` an asset, you get its filename.
       {
@@ -161,7 +159,7 @@ module.exports = {
         test: /\.(js|jsx)$/,
         include: paths.appSrc,
         loader: require.resolve('babel-loader'),
-
+        
       },
       // The notation here is somewhat confusing.
       // "postcss" loader applies autoprefixer to our CSS.
@@ -294,25 +292,25 @@ module.exports = {
       navigateFallback: publicUrl + '/index.html',
       // Ignores URLs starting from /__ (useful for Firebase):
       // https://github.com/facebookincubator/create-react-app/issues/2237#issuecomment-302693219
-      navigateFallbackWhitelist: [/^(?!\/__).*/],
-      // Don't precache sourcemaps (they're large) and build asset manifest:
-      staticFileGlobsIgnorePatterns: [/\.map$/, /asset-manifest\.json$/],
-      // Work around Windows path issue in SWPrecacheWebpackPlugin:
-      // https://github.com/facebookincubator/create-react-app/issues/2235
-      stripPrefix: paths.appBuild.replace(/\\/g, '/') + '/',
-    }),
-    // Moment.js is an extremely popular library that bundles large locale files
-    // by default due to how Webpack interprets its code. This is a practical
-    // solution that requires the user to opt into importing specific locales.
-    // https://github.com/jmblog/how-to-optimize-momentjs-with-webpack
-    // You can remove this if you don't use Moment.js:
-    new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
-  ],
-  // Some libraries import Node modules but don't use them in the browser.
-  // Tell Webpack to provide empty mocks for them so importing them works.
-  node: {
-    fs: 'empty',
-    net: 'empty',
-    tls: 'empty',
-  },
+    navigateFallbackWhitelist: [/^(?!\/__).*/],
+    // Don't precache sourcemaps (they're large) and build asset manifest:
+    staticFileGlobsIgnorePatterns: [/\.map$/, /asset-manifest\.json$/],
+    // Work around Windows path issue in SWPrecacheWebpackPlugin:
+    // https://github.com/facebookincubator/create-react-app/issues/2235
+    stripPrefix: paths.appBuild.replace(/\\/g, '/') + '/',
+  }),
+  // Moment.js is an extremely popular library that bundles large locale files
+  // by default due to how Webpack interprets its code. This is a practical
+  // solution that requires the user to opt into importing specific locales.
+  // https://github.com/jmblog/how-to-optimize-momentjs-with-webpack
+  // You can remove this if you don't use Moment.js:
+  new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
+],
+// Some libraries import Node modules but don't use them in the browser.
+// Tell Webpack to provide empty mocks for them so importing them works.
+node: {
+  fs: 'empty',
+  net: 'empty',
+  tls: 'empty',
+},
 };

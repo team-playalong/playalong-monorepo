@@ -1,18 +1,20 @@
 import React from 'react';
-import TextInput from 'component-root/TextInput';
+import { storiesOf } from '@storybook/react';
+import { action } from '@storybook/addon-actions';
+import TextInput from '../src/components/TextInput';
 
 class TextInputContainer extends React.Component {
+
   constructor(props) {
     super(props);
-
+    this.state = {
+      val: '1234',
+    };
     this.handleChange = this.handleChange.bind(this);
   }
 
-  componentDidMount() {
-    this.setState({ val: '1234' });
-  }
-
   handleChange(val) {
+    action(`Text input changed to ${val}`)();
     this.setState({ val });
   }
 
@@ -23,14 +25,16 @@ class TextInputContainer extends React.Component {
           value="1234" name="Hey"
           onChange={this.handleChange}
         />
-        <span>{`Value is ${this.state.val}`}</span>
       </div>
     );
   }
 }
 
-/** Nice TextInput */
-export default function ExampleTextInput() {
-
-  return (<TextInputContainer />);
-}
+const stories = storiesOf('Text Input', module);
+// Knobs for React props
+stories.add('default', () => {
+  
+  return (
+    <TextInputContainer />
+  );
+});

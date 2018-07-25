@@ -5,7 +5,6 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import RaisedButton from 'material-ui/RaisedButton';
 import { generateUuid } from '../../utils/uuid';
 import THEME from '../../utils/theme';
-import '../../utils/tap-events';
 
 PlyButton.propTypes = {
   type: PropTypes.string,

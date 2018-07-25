@@ -25,13 +25,15 @@ class AutoScroll extends React.Component {
   styles = {
     widget: {
       display: 'flex',
-      'align-items': 'center',
-      'justify-content': 'center',
+      alignItems: 'center',
+      justifyContent: 'center',
     },
   };
   constructor(props) {
     super(props);
-
+    this.state = {
+      speed: 0,
+    };
     this.updateSpeed = this.updateSpeed.bind(this);
   }
 
@@ -68,16 +70,14 @@ class AutoScroll extends React.Component {
     return base + offset;
   };
 
-  componentWillMount() {
-    this.setState({
-      speed: 0,
-    });
+  static getDerivedStateFromProps(props, state) {
+    return {
+      speed: state.speed || props.speed || 0,
+    };
   }
 
   componentDidMount() {
-
     jQuery('.ply-autoscroll-widget').draggable();
-
   }
 
   render() {

@@ -4,8 +4,6 @@ import { text } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
 import Button from '../src/components/Button';
 
-
-
 const stories = storiesOf('Button', module);
 
 stories.add('with text', () => {

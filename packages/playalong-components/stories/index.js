@@ -1,7 +1,13 @@
 import './button';
 import './dropdown';
 import './autoscroll';
-import './editor';
 import './icon';
 import './text-slider';
-
+import './rating';
+import './image';
+import './title';
+import './toggle';
+import './spinner';
+import './youtube';
+import './text-input';
+import './radio-buttons';
