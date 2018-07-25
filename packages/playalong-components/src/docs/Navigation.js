@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import COLORS from '../utils/colors';
+import React from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
+import COLORS from '../utils/colors'
 
 const NavigationComp = styled.div`
   h1 {
@@ -24,8 +24,7 @@ const NavigationComp = styled.div`
 
     }
   }
-`;
-
+`
 
 const Navigation = ({components}) => {
   return (
@@ -33,7 +32,7 @@ const Navigation = ({components}) => {
       <h1>Playalong Components</h1>
       <ul className="navigation">
         {
-          components.map( name => {
+          components.map(name => {
             return (
               <li key={name} className="navigationp-item">
                 <a href={`#${name}`}>{name}</a>
@@ -48,6 +47,6 @@ const Navigation = ({components}) => {
 
 Navigation.propTypes = {
   components: PropTypes.array.isRequired
-};
+}
 
-export default Navigation;
+export default Navigation

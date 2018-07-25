@@ -8,7 +8,7 @@ class TextInputContainer extends React.Component {
     this.handleChange = this.handleChange.bind(this);
   }
 
-  componentWillMount() {
+  componentDidMount() {
     this.setState({ val: '1234' });
   }
 

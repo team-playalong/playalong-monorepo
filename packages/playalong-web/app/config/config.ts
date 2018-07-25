@@ -5,7 +5,7 @@ const Config = {
   paths: {
     firebaseDev: 'https://playalong.firebaseio.com/',
     firebaseProd: 'https://playalong-prod.firebaseio.com/',
-    firebase: undefined,
+    firebase: '',
     mocks: {
       singleChord: 'mocks/singleChord.json',
       hebrewChord: 'mocks/hebrewChord.json',

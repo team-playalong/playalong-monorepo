@@ -1,5 +1,5 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 
 const Props = ({props}) => {
   return (
@@ -14,19 +14,19 @@ const Props = ({props}) => {
         </tr>
       </thead>
       <tbody>
-      {
-        Object.keys(props).map(key => {
-          return (
-            <tr key={key}>
-              <td>{key}</td>
-              <td>{props[key].description}</td>
-              <td>{props[key].type.name}</td>
-              <td>{props[key].defaultValue && props[key].defaultValue.value}</td>
-              <td>{props[key].required && "X"}</td>
-            </tr>
-          );
-        })
-      }
+        {
+          Object.keys(props).map(key => {
+            return (
+              <tr key={key}>
+                <td>{key}</td>
+                <td>{props[key].description}</td>
+                <td>{props[key].type.name}</td>
+                <td>{props[key].defaultValue && props[key].defaultValue.value}</td>
+                <td>{props[key].required && 'X'}</td>
+              </tr>
+            )
+          })
+        }
       </tbody>
     </table>
   )
@@ -34,6 +34,6 @@ const Props = ({props}) => {
 
 Props.propTypes = {
   props: PropTypes.object.isRequired
-};
+}
 
-export default Props;
+export default Props

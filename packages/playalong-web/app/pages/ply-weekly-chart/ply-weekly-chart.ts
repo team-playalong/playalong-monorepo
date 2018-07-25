@@ -13,7 +13,7 @@ function weeklyChartCtrl(WeeklyChart, $rootScope) {
 	};
 
 	this.formatData = rawData => {
-		const songsArr = [];
+		const songsArr: any[] = [];
 
 		for (const songKey in rawData.songs) {
 			songsArr.push(rawData.songs[songKey]);

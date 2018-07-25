@@ -3,8 +3,8 @@
 // Generated on 2015-07-04 using
 // generator-karma 1.0.0
 
-module.exports = function(config) {
-  'use strict';
+module.exports = function (config) {
+  'use strict'
 
   config.set({
     // enable / disable watching file and executing tests whenever any file changes
@@ -16,7 +16,7 @@ module.exports = function(config) {
     // testing framework to use (jasmine/mocha/qunit/...)
     // as well as any additional frameworks (requirejs/chai/sinon/...)
     frameworks: [
-      'jasmine',
+      'jasmine'
     ],
 
     // list of files / patterns to load in the browser
@@ -32,7 +32,7 @@ module.exports = function(config) {
       'node_modules/angular-animate/angular-animate.js',
       'node_modules/angular-aria/angular-aria.js',
       'node_modules/angular-material/angular-material.js',
-      'node_modules/angular-ui-router/release/angular-ui-router.js',
+      'node_modules/@uirouter/angularjs/release/angular-ui-router.js',
       'node_modules/bootstrap/dist/js/bootstrap.js',
       'node_modules/angular-translate/dist/angular-translate.js',
       'node_modules/angular-translate-loader-static-files/angular-translate-loader-static-files.js',
@@ -90,7 +90,7 @@ module.exports = function(config) {
       'test/globals.js',
       'test/mock/**/*.js',
       'test/spec/**/*.js',
-      '!test/spec/E2E/**/*.js',
+      '!test/spec/E2E/**/*.js'
     ],
 
     // list of files / patterns to exclude
@@ -109,7 +109,7 @@ module.exports = function(config) {
     // - PhantomJS
     // - IE (only Windows)
     browsers: [
-      'PhantomJS',
+      'PhantomJS'
       // 'Chrome'
     ],
 
@@ -119,7 +119,7 @@ module.exports = function(config) {
       'karma-chrome-launcher',
       'karma-jasmine',
       'karma-coverage',
-      'karma-babel-preprocessor',
+      'karma-babel-preprocessor'
     ],
 
     // Continuous Integration mode
@@ -133,11 +133,11 @@ module.exports = function(config) {
     logLevel: config.LOG_INFO,
     reporters: [
       'progress',
-      'coverage',
+      'coverage'
     ],
     coverageReporter: {
       type: 'json',
-      dir: 'test/coverage',
+      dir: 'test/coverage'
     },
     preprocessors: {
       // source files, that you wanna generate coverage for
@@ -151,20 +151,20 @@ module.exports = function(config) {
       'app/scripts/directives/*.js': ['coverage'],
       'app/components/**/*.js': ['coverage'],
       'app/pages/**/*.js': ['coverage'],
-      'test/**/*.js': ['babel'],
+      'test/**/*.js': ['babel']
     },
 
     babelPreprocessor: {
       options: {
         presets: ['es2015'],
-        sourceMap: 'inline',
-      },
-    },
+        sourceMap: 'inline'
+      }
+    }
     // Uncomment the following lines if you are using grunt's server to run the tests
     // proxies: {
     //   '/': 'http://localhost:9000/'
     // },
     // URL root prevent conflicts with the site root
     // urlRoot: '_karma_'
-  });
-};
+  })
+}

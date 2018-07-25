@@ -2,9 +2,10 @@ sudo: required
 services:
 - docker
 language: node_js
-node_js: 8.0.0
+node_js: 8.10.0
 script:
-- commitlint-travis
+# TODO - stabilize
+# - commitlint-travis
 - npm run build
 - npm run test
 env:

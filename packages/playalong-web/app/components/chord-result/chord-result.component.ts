@@ -54,7 +54,6 @@ const ChordResult = {
 
 ChordResultCtrl.$inject = ['$rootScope', '$timeout'];
 function ChordResultCtrl($rootScope, $timeout) {
-
   this.isShowRank = () => this.availableRanks && this.availableRanks.length;
 
 	this.redirect = chord => {

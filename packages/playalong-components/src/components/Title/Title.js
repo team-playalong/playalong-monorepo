@@ -9,9 +9,9 @@ const TitleComp = styled.h1`
 `;
 
 Title.propTypes = {
-  text: string,
-}
-function Title({ text = '' }) {
+  text: string
+};
+function Title ({ text = '' }) {
   return <TitleComp>{text}</TitleComp>;
 }
 

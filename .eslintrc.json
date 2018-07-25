@@ -1,6 +1,14 @@
 {
   "parserOptions": {
-    "ecmaVersion": 5
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "jasmine": true,
+    "jest": true
   },
   "globals": {
     "window": true,
@@ -10,10 +18,18 @@
     "inject": false,
     "dump": false
   },
+  "extends": [
+    "standard",
+    "react-app",
+    "plugin:react/recommended"
+  ],
   "rules": {
-  	"indent": "off",
+    "indent": "off",
+    "jsx-a11y/href-no-hash": [0],
     "no-tabs": "off",
     "no-var": "off",
+    "space-before-function-paren": 0,
+    "semi": 0,
     "strict": "off",
     "padded-blocks": "off",
     "no-param-reassign": "off",
@@ -30,6 +46,8 @@
     "no-trailing-spaces": "off",
     "spaced-comment": "off",
     "wrap-iife": "off",
-    "eol-last": "off"
+    "eol-last": "off",
+    "trailing-comma": [true, {"multiline": "always", "singleline": "never"}],
+    "comma-dangle": 0
   }
 }

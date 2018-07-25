@@ -3,7 +3,7 @@ export const COLORS = {
   PRIMARY: '#FF4081',
   SECONDARY: '#03A9F4',
   TEXT: '#212121',
-  GREY_LIGHT: '#EFEFEF',
-};
+  GREY_LIGHT: '#EFEFEF'
+}
 
-export default COLORS;
+export default COLORS

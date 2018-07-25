@@ -1,6 +1,6 @@
 class PlyDate {
 	public getAllWeekNumbers() {
-		const allWeekNumbers = [];
+		const allWeekNumbers: number[] = [];
 		for (let i = 1; i < 55; ++i) {
 			allWeekNumbers.push(i);
 		}

@@ -3,9 +3,9 @@ compile.$inject = ['$compile'];
 function compile($compile) {
   return function(scope, element, attrs) {
     scope.$watch(
-      function(scope) {
+      function(_scope) {
         // watch the 'compile' expression for changes
-        return scope.$eval(attrs.compile);
+        return _scope.$eval(attrs.compile);
       },
       function(value) {
         // when the 'compile' expression changes

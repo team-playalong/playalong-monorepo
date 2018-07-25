@@ -7,22 +7,21 @@ import THEME from '../../utils/theme';
 import { generateUuid } from '../../utils/uuid';
 import { invokeIfFunction } from '../../utils/common';
 
-function setErrorText({value, required}) {
-  return required && !value ?
-    'This field is required' :
-    null;
+function setErrorText ({value, required}) {
+  return required && !value
+    ? 'This field is required'
+    : null;
 }
 
-function TextInput({
+function TextInput ({
   placeholder = '',
   name = 'textInput',
   id = generateUuid(),
   label = '',
   value = '',
   required = false,
-  onChange = null,
+  onChange = null
 }) {
-
   const handleChange = (e, newValue) => {
     invokeIfFunction(onChange, e.target.value);
   };
@@ -51,8 +50,8 @@ TextInput.propTypes = {
   value: PropTypes.string,
   placeholder: PropTypes.string,
   onChange: PropTypes.func,
-  required: PropTypes.bool,
-}
+  required: PropTypes.bool
+};
 
 export const props = ['label', 'placeholder', 'onChange'];
 export default TextInput;

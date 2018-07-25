@@ -15,7 +15,7 @@ class Common {
 	}
 
 	public objectToArray(obj = {}) {
-		const res = [];
+		const res: any[] = [];
 		let currObj; // tslint:disable-line
 		for (const curr in obj) {
 			currObj = Object.assign({}, obj[curr], { $id: curr }); 

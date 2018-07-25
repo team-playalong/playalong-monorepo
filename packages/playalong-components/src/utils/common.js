@@ -1,10 +1,10 @@
-function invokeIfFunction(func, params) {
+function invokeIfFunction (func, params) {
   if (!Array.isArray(params) && typeof params !== 'object') {
-    params = [params];
+    params = [params]
   }
   if (typeof func === 'function') {
-    return func.apply(null, params);
+    return func.apply(null, params)
   }
 }
 
-export { invokeIfFunction };
+export { invokeIfFunction }
