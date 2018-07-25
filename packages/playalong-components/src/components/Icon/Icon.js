@@ -9,16 +9,17 @@ PlyIcon.propTypes = {
   click: func,
   tooltip: string,
   size: oneOfType([string, number]),
+  flag: string,
 }
 
-const styles = {
-  cursor: 'pointer',
-  padding: '5px',
-  verticalAlign: 'middle',
-  fontSize: 'initial',
-};
-
 function PlyIcon({ size, icon, flag, click, tooltip }) {
+  const styles = {
+    cursor: 'pointer',
+    padding: '5px',
+    verticalAlign: 'middle',
+    fontSize: 'initial',
+  };
+
   if (size) {
     styles.fontSize = size + 'px';
   }

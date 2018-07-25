@@ -31,7 +31,9 @@ class AutoScroll extends React.Component {
   };
   constructor(props) {
     super(props);
-
+    this.state = {
+      speed: 0,
+    };
     this.updateSpeed = this.updateSpeed.bind(this);
   }
 
