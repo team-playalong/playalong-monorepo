@@ -25,8 +25,8 @@ class AutoScroll extends React.Component {
   styles = {
     widget: {
       display: 'flex',
-      'align-items': 'center',
-      'justify-content': 'center',
+      alignItems: 'center',
+      justifyContent: 'center',
     },
   };
   constructor(props) {
@@ -70,7 +70,7 @@ class AutoScroll extends React.Component {
 
   static getDerivedStateFromProps(props, state) {
     return {
-      speed: 0,
+      speed: state.speed || props.speed || 0,
     };
   }
 
