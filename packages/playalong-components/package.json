@@ -1,6 +1,7 @@
 {
   "name": "playalong-components",
   "private": false,
+  "license": "MIT",
   "scripts": {
     "start": "npm-run-all --parallel storybook test",
     "test": "jest --coverage",
