@@ -4,22 +4,16 @@
     <ply-chord-search-card on-chord-search-clicked="home.searchChords"></ply-chord-search-card>
   </section>
   <!-- search results -->
-    <section>
-      <md-card layout-align="center" class="ply-search-results">
-        <ply-spinner trigger-start-event="startSearchChordsSpinner" trigger-stop-event="stopSearchChordsSpinner"></ply-spinner>
-        <md-card-content>
-
-          <h1
-            class="md-title"
-            layout-align="left"
-            ng-if="home.resultMessage"
-            ng-bind="home.resultMessage">
-          </h1>
-          <ply-chord-result-list
-            store="home.store"
-          >
-          </ply-chord-result-list>
-        </md-card-content>
-      </md-card>
+    <section class="ply-search-results">
+			<ply-spinner trigger-start-event="startSearchChordsSpinner" trigger-stop-event="stopSearchChordsSpinner"></ply-spinner>
+			<h1
+				class="md-title"
+				layout-align="left"
+				ng-if="home.resultMessage"
+				ng-bind="home.resultMessage">
+			</h1>
+			<ply-chord-result-list
+				store="home.store"
+			></ply-chord-result-list>
   </section>
 </div>

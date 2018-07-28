@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { string, func } from 'prop-types';
 import FontAwesome from 'react-fontawesome';
 import ReactTooltip from 'react-tooltip';
 
@@ -28,6 +28,12 @@ function BtnIcon(props) {
 
   );
 }
+BtnIcon.propTypes = {
+	size: string,
+	icon: string.isRequired,
+	click: func,
+	tooltip: string,
+};
 
 export const props = ['icon', 'click', 'tooltip', 'size'];
 export default BtnIcon;
