@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { shallow } from 'enzyme';
-import renderer from 'react-test-renderer';
 
 import PlyToggle from './Toggle';
 
@@ -16,8 +15,6 @@ describe('Toggle Component', () => {
   });
 
   test('should be true', () => {
-    // console.log(wrapper.html());
-    expect(true).toBe(true);
+    expect(wrapper).toBeDefined();
   });
-
 });
