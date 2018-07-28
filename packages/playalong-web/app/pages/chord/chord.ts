@@ -81,7 +81,7 @@ export function ChordCtrl(
       newChordContent = newChordContent.replace(chord, EqualChordsMap[chord]);
     }
 
-    return newChordContent.replace(regex, `<span class="chord" popover-trigger="mouseenter" uib-popover-html="setPopoverHtml('$2')">$2</span>`);
+    return newChordContent.replace(regex, `<span class="chord" uib-popover-trigger="mouseenter" uib-popover-html="setPopoverHtml('$2')">$2</span>`);
   }
 
   $scope.disableAutoscroll = function() {

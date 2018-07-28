@@ -133,6 +133,7 @@
 		"webpack-dev-server": "^2.4.5"
 	},
 	"devDependencies": {
+		"@types/angular-material": "^1.1.59",
 		"@types/jquery": "^3.2.13",
 		"@types/react-dom": "^16.0.1",
 		"babel-cli": "^6.24.1",
