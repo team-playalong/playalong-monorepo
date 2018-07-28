@@ -6,7 +6,6 @@ var dirApp = path.join(__dirname, 'app');
 var dirAssets = path.join(__dirname, 'assets');
 var dirReact = path.join(__dirname, 'app/react');
 
-
 // Is the current build a development build
 var IS_DEV = (process.env.NODE_ENV === 'development');
 
@@ -59,7 +58,7 @@ module.exports = {
             loader: 'ts-loader',
             options: {
               compilerOptions: {
-                "sourceMap": true
+                'sourceMap': true
               },
             },
           },

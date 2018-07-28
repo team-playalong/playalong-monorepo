@@ -116,9 +116,6 @@
      },
      "unified-signatures":{
         "severity":"warning"
-     },
-     "no-unused-variable":{
-        "severity":"warning"
      }
   },
   "defaultSeverity":"error"
