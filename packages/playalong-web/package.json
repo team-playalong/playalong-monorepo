@@ -16,6 +16,7 @@
 		"lint": "npm-run-all --parallel tslint eslint",
 		"test:e2e": "testcafe chrome test/E2E/chord-search-page.e2e.js",
 		"deploy": "firebase use default && firebase deploy --token $FIREBASE_TOKEN",
+		"deploy:local": "firebase use default && firebase deploy",
 		"build": "cross-env NODE_ENV=production webpack -p --progress --config webpack.config.build.js",
 		"ci": "npm run build && npm run deploy",
 		"clean": "rm -rf bower_components && rm -rf node_modules && npm cache clean"

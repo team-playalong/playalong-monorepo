@@ -19,7 +19,8 @@
   "exclude": [
     "node_modules",
     "bower_components",
-    "packages/playalong-web/app/pages/tuner/tuner.component.ts"
+		"packages/playalong-web/app/pages/tuner/tuner.component.ts",
+		"dist"
   ],
   "paths": {
       "react": ["node_modules/@types/react"]
