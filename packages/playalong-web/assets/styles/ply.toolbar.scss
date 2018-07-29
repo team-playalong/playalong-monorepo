@@ -28,12 +28,15 @@ ply-avatar-menu {
 	z-index: 10;
 	background: $brand-primary;
 	width: 100%;
-	color: $ply-white;
 	display: flex;
 	align-items: center;
 	padding: 5px 10px;
+	color: $ply-white;
 	font-size: 20px;
 
+	.ply-topnav-header {
+		display: inline;
+	}
 	.ply-topnav-main {
 		flex: 6;
 		.ply-topnav-back {
@@ -42,9 +45,16 @@ ply-avatar-menu {
 		}
 	}
 
-
-
 	.ply-topnav-login {
+		height: 50px;
+		display: flex;
+    align-items: center;
+		.ply-topnav-login-menu {
+			margin: 0;
+			.ply-topnav-login-menu-arrow {
+				vertical-align: super;
+			}
+		}
 		.ply-topnav-login-title {
 			font-size: $LABEL-FONT-SIZE;
 		}

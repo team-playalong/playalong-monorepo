@@ -1,5 +1,6 @@
 <md-menu>
 	<md-button
+		class="ply-topnav-login-menu"
 		aria-label="Open avatar menu"
 		ng-click="$mdOpenMenu($event)">
 			<div ng-if="!ctrl.login.isLoggedIn()">
@@ -9,7 +10,7 @@
 			</div>
 			<div ng-if="ctrl.login.isLoggedIn()">
 				<img ng-src="{{ctrl.setAvatarImage()}}" class="md-avatar ply-topnav-login-avatar" alt="No Image" />
-				<ng-md-icon icon="keyboard_arrow_down" size="30">
+				<ng-md-icon  class="ply-topnav-login-menu-arrow" icon="keyboard_arrow_down" size="30">
 				</ng-md-icon>
 			</div>
 	</md-button>
