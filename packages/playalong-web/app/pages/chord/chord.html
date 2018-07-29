@@ -1,10 +1,9 @@
 <div  class="md-padding" id="chord" ng-cloak
       translate-namespace="chord">
-    <md-card  layout-padding layout-align="center"
-              ng-class="{'text-align-right' : isRtl}">
+    <section ng-class="{'text-align-right' : isRtl}">
       <!-- TODO - Fix drag issue -->
       <!-- <ply-auto-scroll></ply-auto-scroll> -->
-      <md-card-content class="ply-chord-container">
+      <div class="ply-chord-container">
         <div layout="row" layout-align="{{!!isRtl ? 'end' : 'start'}} center">
           <div flex="30">
             <text-slider element-class="chordContentClass" on-slider-changed="handleSliderChange" size="textSize"></text-slider>
@@ -21,7 +20,7 @@
             </span>
           </div>
           <div flex>
-            <ply-favorite-btn chord="chord"></ply-favorite-btn>
+            <ply-favorite-btn ng-if="login.isLoggedIn()" chord="chord"></ply-favorite-btn>
           </div>
         </div>
         <div layout="row" class="direction-initial" >
@@ -32,14 +31,14 @@
         </div>
 
         <!-- TODO - Return after resoving youtube errors -->
-        <!-- <div  layout="row" class="direction-initial"
+        <div  layout="row" class="direction-initial"
               ng-if="!!chord.youtubeLink">
           <div flex>
             <ply-youtube
               video-id="chord.youtubeLink">
             </ply-youtube>
           </div>
-        </div> -->
+        </div>
         <figure hide>
           <figcaption ng-bind="chord.imagePath"></figcaption>
           <img src="{{chord.imagePath}}" alt="no image">
@@ -61,8 +60,8 @@
           </p>
         </div>
         <ply-disqus ply-disqus-url="chord" ply-disqus-id="{{chord.$id}}"></ply-disqus>
-      </md-card-content>
-    </md-card>
+      </div>
+    </section>
 </div>
 <md-fab-speed-dial
     class="ply-fab"

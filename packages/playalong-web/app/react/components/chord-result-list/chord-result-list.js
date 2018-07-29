@@ -1,5 +1,5 @@
 import React from 'react';
-import { array } from 'prop-types';
+import { array, func } from 'prop-types';
 import styled from 'styled-components';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import { connect } from 'react-redux'
@@ -9,10 +9,13 @@ import THEME from '../../helpers/theme';
 import ChordResult from '../chord-result/chord-result';
 
 function PlyChordResultList({ chords = [], onChordClicked }) {
-  const ChordResultListComp = styled.div`
-  
+	const ChordResultListComp = styled.div`
+		hr {
+			border-top: 1px solid #eee;
+			height: 0;
+		}
   `;
-  
+
   function renderChordResult(chord, i) {
     return (
       <ChordResult
@@ -22,7 +25,7 @@ function PlyChordResultList({ chords = [], onChordClicked }) {
       />
     );
   }
-  
+
   return (
     <MuiThemeProvider muiTheme={THEME}>
     <ChordResultListComp>
@@ -39,16 +42,17 @@ const mapStateToProps = state => {
   };
 };
 
-const mapDispatchToProps = (dispatch, ownProps) => {
+const mapDispatchToProps = (dispatch) => {
   return {
-    onChordClicked: chord => {     
+    onChordClicked: chord => {
       dispatch(chordClicked(chord));
     }
   }
 }
 
 PlyChordResultList.propTypes = {
-  chords: array,
+	chords: array,
+	onChordClicked: func,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(PlyChordResultList);

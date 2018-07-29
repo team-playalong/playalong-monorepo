@@ -34,8 +34,7 @@ import 'angular-material/angular-material.css';
 import 'angular-material-icons/angular-material-icons.css';
 import 'font-awesome/css/font-awesome.css';
 import 'textangular/dist/textAngular.css';
-import 'bootstrap/dist/css/bootstrap.css';
-
+import 'bootstrap/dist/css/bootstrap-grid.min.css';
 import '../assets/styles/main.scss';
 
 // Config

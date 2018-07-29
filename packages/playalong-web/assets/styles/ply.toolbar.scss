@@ -26,11 +26,23 @@ ply-avatar-menu {
 	position: fixed;
 	top: 0;
 	z-index: 10;
+	background: $brand-primary;
+	width: 100%;
+	color: $ply-white;
+	display: flex;
+	align-items: center;
+	padding: 5px 10px;
+	font-size: 20px;
 
-	.ply-topnav-back {
-		margin: 0 10px;
-		vertical-align: inherit;
+	.ply-topnav-main {
+		flex: 6;
+		.ply-topnav-back {
+			margin: 0 10px;
+			vertical-align: inherit;
+		}
 	}
+
+
 
 	.ply-topnav-login {
 		.ply-topnav-login-title {
