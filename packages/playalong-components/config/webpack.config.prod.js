@@ -1,4 +1,4 @@
-const autoprefixer = require('autoprefixer');
+import autoprefixer from 'autoprefixer';
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -37,9 +37,9 @@ const cssFilename = 'static/css/[name].[contenthash:8].css';
 // (See https://github.com/webpack-contrib/extract-text-webpack-plugin/issues/27)
 // However, our output is structured with css, js and media folders.
 // To have this structure working with relative paths, we have to use custom options.
+// Making sure that the publicPath goes back to to build folder.
 const extractTextPluginOptions = shouldUseRelativeAssetPaths
-? // Making sure that the publicPath goes back to to build folder.
-{ publicPath: Array(cssFilename.split('/').length).join('../') }
+? { publicPath: Array(cssFilename.split('/').length).join('../') }
 : {};
 
 // This is the production configuration.
@@ -82,7 +82,7 @@ module.exports = {
     // https://github.com/facebookincubator/create-react-app/issues/290
     extensions: ['.js', '.json', '.jsx'],
     alias: {
-      
+
       // Support React Native Web
       // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
       'react-native': 'react-native-web',
@@ -103,7 +103,7 @@ module.exports = {
       // TODO: Disable require.ensure as it's not a standard language feature.
       // We are waiting for https://github.com/facebookincubator/create-react-app/issues/2176.
       // { parser: { requireEnsure: false } },
-      
+
       // First, run the linter.
       // It's important to do this before Babel processes the JS.
       {
@@ -113,7 +113,7 @@ module.exports = {
           {
             options: {
               formatter: eslintFormatter,
-              
+
             },
             loader: require.resolve('eslint-loader'),
           },
@@ -125,7 +125,7 @@ module.exports = {
       // The `exclude` list *must* be updated with every change to loader extensions.
       // When adding a new loader, you must add its `test`
       // as a new entry in the `exclude` list in the "file" loader.
-      
+
       // "file" loader makes sure those assets end up in the `build` folder.
       // When you `import` an asset, you get its filename.
       {
@@ -159,7 +159,7 @@ module.exports = {
         test: /\.(js|jsx)$/,
         include: paths.appSrc,
         loader: require.resolve('babel-loader'),
-        
+
       },
       // The notation here is somewhat confusing.
       // "postcss" loader applies autoprefixer to our CSS.

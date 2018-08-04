@@ -1,0 +1,37 @@
+[debug] [2018-08-04T18:39:53.646Z] ----------------------------------------------------------------------
+[debug] [2018-08-04T18:39:53.649Z] Command:       /Users/atardadi/.nvm/versions/node/v8.11.3/bin/node /Users/atardadi/git/playalong-monorepo/packages/playalong-cloud-functions/node_modules/.bin/firebase functions:shell
+[debug] [2018-08-04T18:39:53.649Z] CLI Version:   4.0.2
+[debug] [2018-08-04T18:39:53.649Z] Platform:      darwin
+[debug] [2018-08-04T18:39:53.649Z] Node Version:  v8.11.3
+[debug] [2018-08-04T18:39:53.650Z] Time:          Sat Aug 04 2018 21:39:53 GMT+0300 (IDT)
+[debug] [2018-08-04T18:39:53.650Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-08-04T18:39:53.665Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-08-04T18:39:53.666Z] > authorizing via signed-in user
+[debug] [2018-08-04T18:39:53.668Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-08-04T18:39:53.668Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/28ivVOIhtfEwIjMIf5cfrYo_0xru_xZapTusJn7hRKY',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sat Aug 04 2018 21:39:53 GMT+0300 (IDT)
+[debug] [2018-08-04T18:39:54.105Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-04T18:39:54.113Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/playalong-prod  
+  
+ Sat Aug 04 2018 21:39:54 GMT+0300 (IDT)
+[debug] [2018-08-04T18:39:55.057Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-04T18:39:55.058Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/playalong-prod/tokens  
+  
+ Sat Aug 04 2018 21:39:55 GMT+0300 (IDT)
+[debug] [2018-08-04T18:39:56.075Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-04T18:39:56.430Z] TypeError: Path must be a string. Received undefined
+    at assertPath (path.js:28:11)
+    at Object.join (path.js:1236:7)
+    at FunctionsEmulator.start (/Users/atardadi/git/playalong-monorepo/packages/playalong-cloud-functions/node_modules/firebase-tools/lib/functionsEmulator.js:95:27)
+    at Command.module.exports [as _action] (/Users/atardadi/git/playalong-monorepo/packages/playalong-cloud-functions/node_modules/firebase-tools/lib/functionsShellCommandAction.js:18:6)
+    at /Users/atardadi/git/playalong-monorepo/packages/playalong-cloud-functions/node_modules/firebase-tools/lib/command.js:200:29
+    at <anonymous>
+    at process._tickDomainCallback (internal/process/next_tick.js:228:7)
+[error] 
+[error] Error: An unexpected error has occurred.

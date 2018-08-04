@@ -15,6 +15,7 @@
     "setenv": "cross-env NODE_ENV=production",
     "lint": "lerna run lint",
     "build": "npm-run-all setenv bootstrap lint test build:packages",
+    "start": "lerna run start",
     "code:analysis": "node scripts/plato.js"
   },
   "devDependencies": {
