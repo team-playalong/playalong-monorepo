@@ -1,12 +1,6 @@
 import * as React from 'react';
 import BtnIcon from '../btn-icon/BtnIcon';
 
-interface FavoriteBtnProps {
-  isFavorite: boolean;
-  click?: any;
-}
-
-const defaults = {};
 const REMOVE_MESSAGE = 'Song in favorites';
 const ADD_MESSAGE = 'Click to add to favorites';
 const styles = {

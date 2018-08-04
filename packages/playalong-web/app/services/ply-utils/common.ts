@@ -16,9 +16,9 @@ class Common {
 
 	public objectToArray(obj = {}) {
 		const res: any[] = [];
-		let currObj; // tslint:disable-line
+		const currObj = {};
 		for (const curr in obj) {
-			currObj = Object.assign({}, obj[curr], { $id: curr }); 
+			Object.assign(currObj, obj[curr], { $id: curr });
 		  res.push(obj[curr]);
 		}
 

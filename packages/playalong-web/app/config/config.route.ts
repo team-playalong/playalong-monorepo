@@ -1,6 +1,3 @@
-// tslint:disable-next-line
-import * as angular from 'angular'; 
-
 RouteConfig.$inject = ['$stateProvider', '$urlRouterProvider'];
 function RouteConfig($stateProvider, $urlRouterProvider) {
   $stateProvider

@@ -10,7 +10,8 @@
     "noImplicitAny": false,
     "noImplicitThis": false,
     "moduleResolution": "node",
-    "removeComments": false,
+		"removeComments": false,
+		"noUnusedLocals": true,
     "jsx": "react",
     "lib": [ "es2015", "dom" ],
 		"strict": true,
@@ -18,7 +19,6 @@
   },
   "exclude": [
     "node_modules",
-    "bower_components",
 		"packages/playalong-web/app/pages/tuner/tuner.component.ts",
 		"dist"
   ],

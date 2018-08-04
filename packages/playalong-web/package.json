@@ -17,9 +17,9 @@
 		"test:e2e": "testcafe chrome test/E2E/chord-search-page.e2e.js",
 		"deploy": "firebase use default && firebase deploy --token $FIREBASE_TOKEN",
 		"deploy:local": "firebase use default && firebase deploy",
-		"build": "cross-env NODE_ENV=production webpack -p --progress --config webpack.config.build.js",
+		"build": "cross-env NODE_ENV=production webpack -p --progress --config webpack.config.prod.js",
 		"ci": "npm run build && npm run deploy",
-		"clean": "rm -rf bower_components && rm -rf node_modules && npm cache clean"
+		"clean": "rm -rf node_modules && npm cache clean"
 	},
 	"dependencies": {
 		"@firebase/app-types": "^0.3.2",
@@ -122,16 +122,15 @@
 		"styled-components": "^2.0.1",
 		"textangular": "^1.5.9",
 		"tslint": "^5.4.2",
-		"tslint-config-airbnb": "^5.0.0",
 		"tslint-config-prettier": "^1.10.0",
 		"tslint-config-standard": "^6.0.1",
-		"typescript": "^2.2.1",
 		"vinyl-fs": "2.4.4"
 	},
 	"devDependencies": {
 		"@types/angular-material": "^1.1.59",
 		"@types/jquery": "^3.2.13",
 		"@types/react-dom": "^16.0.1",
+		"@types/webpack": "^4.4.9",
 		"babel-cli": "^6.24.1",
 		"babel-core": "^6.25.0",
 		"babel-eslint": "^7.2.3",
@@ -188,10 +187,10 @@
 		"testcafe": "^0.20.5",
 		"ts-loader": "^4.4.2",
 		"tslint": "^5.4.2",
-		"tslint-config-airbnb": "^5.0.0",
+		"tslint-config-airbnb": "^5.9.2",
 		"tslint-config-prettier": "^1.10.0",
 		"tslint-config-standard": "^6.0.1",
-		"typescript": "^2.2.1",
+		"typescript": "^3.0.1",
 		"uglifyjs-webpack-plugin": "^1.2.7",
 		"url-loader": "^1.0.1",
 		"vinyl-fs": "2.4.4",
