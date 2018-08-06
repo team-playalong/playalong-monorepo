@@ -6,11 +6,11 @@ import plyLanguagePickerDirective from './ply-language-picker/plylanguagepicker.
 import loginCtrl from './login';
 import { ToolbarCtrl, plyToolbar } from './toolbar.component';
 
-angular.module('PlyToolbar', [])
-.component('plyToolbar', plyToolbar)
-.directive('plyLanguagePicker', plyLanguagePickerDirective)
-.component('plyAvatarMenu', plyAvatarMenu)
-.controller('toolbarCtrl', ToolbarCtrl)
-.controller('PlylanguagepickerCtrl', PlylanguagepickerCtrl)
-.controller('LoginCtrl', loginCtrl)
-.controller('LanguageModalDialogController', LanguageModalDialogController);
+export default angular.module('PlyToolbar', [])
+	.component('plyToolbar', plyToolbar)
+	.directive('plyLanguagePicker', plyLanguagePickerDirective)
+	.component('plyAvatarMenu', plyAvatarMenu)
+	.controller('toolbarCtrl', ToolbarCtrl)
+	.controller('PlylanguagepickerCtrl', PlylanguagepickerCtrl)
+	.controller('LoginCtrl', loginCtrl)
+	.controller('LanguageModalDialogController', LanguageModalDialogController);

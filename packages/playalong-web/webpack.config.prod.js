@@ -4,6 +4,7 @@ var CleanWebpackPlugin = require('clean-webpack-plugin');
 var webpackConfig = require('./webpack.config');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 
+webpackConfig.mode = 'production';
 webpackConfig.devtool = 'eval';
 
 // Move templates to dist folder

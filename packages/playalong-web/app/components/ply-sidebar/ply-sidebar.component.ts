@@ -30,7 +30,7 @@ const plySidebar = {
 
 SidebarCtrl.$inject = ['$mdSidenav', 'login'];
 function SidebarCtrl($mdSidenav, login) {
-  
+
   this.menuItems = [
     {
       text: 'sidebar.menu.SEARCH',
@@ -93,6 +93,6 @@ function SidebarCtrl($mdSidenav, login) {
   };
 }
 
-angular.module('PlySidebar', [])
+export default window.angular.module('PlySidebar', [])
 .controller('SidebarCtrl', SidebarCtrl)
 .component('plySidebar', plySidebar);

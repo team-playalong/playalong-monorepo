@@ -13,7 +13,6 @@ module.exports = {
   entry: {
     vendor: [
       'jquery',
-      'lodash',
     ],
     bundle: path.join(dirApp, 'index'),
   },
@@ -38,8 +37,6 @@ module.exports = {
       'window.jQuery': 'jquery',
       'root.jQuery': 'jquery',
 
-      // lodash
-      _: 'lodash',
     }),
 
     new HtmlWebpackPlugin({
@@ -77,12 +74,12 @@ module.exports = {
               importLoaders: 1,
             },
           },
-        ],
+				],
       },
 
       // CSS / SASS
       {
-        test: /\.scss/,
+				test: /\.scss/,
         use: [
           'style-loader',
           {
@@ -102,11 +99,11 @@ module.exports = {
       // Fonts
       {
         test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        loader: 'url-loader?limit=10000&mimetype=application/font-woff',
+				loader: 'url-loader?limit=10000&mimetype=application/font-woff',
       },
       {
         test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        loader: 'file-loader',
+				loader: 'file-loader',
       },
       // EJS
       {

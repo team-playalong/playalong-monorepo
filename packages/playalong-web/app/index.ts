@@ -1,10 +1,11 @@
 // Third Parties
 import * as angular from 'angular';
-import 'angular-material';
+import  'angular-material';
 import '@uirouter/angularjs';
 import 'angularfire';
 import 'angular-translate';
-import './utils/angular-polyfills';
+import angularPolyfill from './utils/angular-polyfills';
+angularPolyfill();
 import 'textangular';
 import 'textangular/dist/textAngular-sanitize';
 import 'angular-translate-interpolation-messageformat';
@@ -15,19 +16,19 @@ import 'angular-local-storage';
 import 'ng-redux';
 
 // Modules
-import './components/ply-toolbar';
-import './services/ply-utils';
-import './components/ply-sidebar/ply-sidebar.component';
-import './pages/home';
-import './pages/chord';
-import './pages/ply-weekly-chart';
-import './pages/builder';
-import './pages/favorites';
-import './pages/tuner';
-import './pages/admin';
+import PlyToolbar from './components/ply-toolbar';
+import PlyUtils from './services/ply-utils';
+import PlySidebar from  './components/ply-sidebar/ply-sidebar.component';
+import  PlyHome from './pages/home';
+import  PlyChord from './pages/chord';
+import  PlyWeeklyChart from './pages/ply-weekly-chart';
+import  PlyBuilder from './pages/builder';
+import PlyFavorites from './pages/favorites';
+import PlyTuner from './pages/tuner';
+import  PlyAdmin from './pages/admin';
 
 // React
-import './react/ply-react.module';
+import  PlyReact from './react/ply-react.module';
 
 // CSS
 import 'angular-material/angular-material.css';
@@ -67,18 +68,18 @@ angular.module('playalongWebApp', [
   'firebase',
   'pascalprecht.translate',
   'textAngular',
-  'PlyToolbar',
-  'PlyUtils',
-  'PlySidebar',
-  'PlyHome',
-  'PlyChord',
-  'PlyBuilder',
-  'PlyWeeklyChart',
-  'PlyFavorites',
-  'PlyTuner',
-  'PlyAdmin',
+  PlyToolbar.name,
+  PlyUtils.name,
+  PlySidebar.name,
+  PlyHome.name,
+  PlyChord.name,
+  PlyBuilder.name,
+  PlyWeeklyChart.name,
+  PlyFavorites.name,
+  PlyTuner.name,
+  PlyAdmin.name,
 
-  'PlyReact',
+  PlyReact.name,
 
   'ngMdIcons',
   'ui.bootstrap',

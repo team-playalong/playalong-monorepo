@@ -1,4 +1,3 @@
-// tslint:disable-next-line
 import { getNestedProperty } from '../../react/helpers/object';
 
 const plyToolbar = {

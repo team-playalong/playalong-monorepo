@@ -21,6 +21,13 @@
 		"ci": "npm run build && npm run deploy",
 		"clean": "rm -rf node_modules && npm cache clean"
 	},
+	"sideEffects": [
+		"./app/pages/tuner/dsp.js",
+		"./app/pages/tuner/AudioContextMonkeyPatch.js",
+		"./app/config/sentry.config.js",
+		"*.css",
+		"*.scss"
+  ],
 	"dependencies": {
 		"@firebase/app-types": "^0.3.2",
 		"@types/jquery": "^3.2.13",

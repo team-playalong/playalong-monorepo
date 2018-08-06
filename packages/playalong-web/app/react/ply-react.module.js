@@ -1,9 +1,8 @@
 import 'ngreact';
-import * as angular from 'angular';
 import { react2angular } from 'react2angular';
 
 // Modules
-import './components/styled';
+import PlyStyled from './components/styled';
 
 // Native Components
 import PlyChordResultList from './components/chord-result-list/chord-result-list';
@@ -25,28 +24,28 @@ import PlyToggle from 'playalong-components/lib/components/Toggle';
 import PlyImage from 'playalong-components/lib/components/Image';
 import PlyDropdown from 'playalong-components/lib/components/Dropdown';
 
-angular.module('PlyReact', [
+export default window.angular.module('PlyReact', [
   'react',
-  'PlyStyled',
+  PlyStyled.name,
 ])
-// Native Components
-.component('plyChordResultList', react2angular(PlyChordResultList))
-.component('plyChordSearchCard', react2angular(PlyChordSearchCard))
+	// Native Components
+	.component('plyChordResultList', react2angular(PlyChordResultList))
+	.component('plyChordSearchCard', react2angular(PlyChordSearchCard))
 
-// playalong-components
-.component('plyRating', react2angular(Rating, RatingProps ))
-.component('radioButtons', react2angular(RadioButtons, RadioButtonsProps ))
-.component('plyRadioButtons', react2angular(RadioButtons, RadioButtonsProps ))
-.component('textInput', react2angular(TextInput))
-.component('favoriteBtn', react2angular(FavoriteBtn, FavoriteBtnProps ))
-.component('textSlider', react2angular(TextSlider, TextSliderProps ))
-.component('plyButton', react2angular(Button, ButtonProps ))
-.component('btnIcon', react2angular(BtnIcon, BtnIconProps ))
-.component('plyBtnIcon', react2angular(BtnIcon, BtnIconProps ))
-.component('plyYoutube', react2angular(Youtube, YoutubeProps ))
-.component('plyLogo', react2angular(PlyLogo, PlyLogoProps ))
-.component('plySpinner', react2angular(PlySpinner, PlySpinnerProps ))
-.component('plyAutoScroll', react2angular(AutoScroll, AutoScrollProps ))
-.component('plyToggle', react2angular(PlyToggle))
-.component('plyImage', react2angular(PlyImage))
-.component('plyDropdown', react2angular(PlyDropdown));
+	// playalong-components
+	.component('plyRating', react2angular(Rating, RatingProps))
+	.component('radioButtons', react2angular(RadioButtons, RadioButtonsProps))
+	.component('plyRadioButtons', react2angular(RadioButtons, RadioButtonsProps))
+	.component('textInput', react2angular(TextInput))
+	.component('favoriteBtn', react2angular(FavoriteBtn, FavoriteBtnProps))
+	.component('textSlider', react2angular(TextSlider, TextSliderProps))
+	.component('plyButton', react2angular(Button, ButtonProps))
+	.component('btnIcon', react2angular(BtnIcon, BtnIconProps))
+	.component('plyBtnIcon', react2angular(BtnIcon, BtnIconProps))
+	.component('plyYoutube', react2angular(Youtube, YoutubeProps))
+	.component('plyLogo', react2angular(PlyLogo, PlyLogoProps))
+	.component('plySpinner', react2angular(PlySpinner, PlySpinnerProps))
+	.component('plyAutoScroll', react2angular(AutoScroll, AutoScrollProps))
+	.component('plyToggle', react2angular(PlyToggle))
+	.component('plyImage', react2angular(PlyImage))
+	.component('plyDropdown', react2angular(PlyDropdown));
