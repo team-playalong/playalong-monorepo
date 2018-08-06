@@ -1,4 +1,3 @@
-import * as angular from 'angular';
 import $translate from 'angular-translate';
 
 class PlyTooltip {
@@ -8,7 +7,7 @@ class PlyTooltip {
 	}
 
 	public setTooltip(elem) {
-		const newElem = angular.element(elem);
+		const newElem = window.angular.element(elem);
 		newElem.attr('uib-tooltip', 'Test');
 	}
 }

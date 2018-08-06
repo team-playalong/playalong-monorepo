@@ -6,5 +6,6 @@ webpackConfig.output = {
     publicPath: '/',
     filename: '[name].js',
 };
+webpackConfig.mode = 'development';
 
 module.exports = webpackConfig;

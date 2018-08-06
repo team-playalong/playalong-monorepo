@@ -1,8 +1,7 @@
-import * as angular from 'angular';
 import './AudioContextMonkeyPatch';
 
 import { TunerCtrl, plyTuner } from './tuner.component';
 
-angular.module('PlyTuner', [])
+export default window.angular.module('PlyTuner', [])
 .controller('TunerCtrl', TunerCtrl)
 .component('plyTuner', plyTuner);

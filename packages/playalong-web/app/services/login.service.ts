@@ -1,5 +1,3 @@
-import CustomerIoHelper from './customeriohelper';
-
 login.$inject = ['$q', '$rootScope', 'PlyFirebase'];
 function login($q: ng.IQService, $rootScope, PlyFirebase) {
 
@@ -69,8 +67,6 @@ function login($q: ng.IQService, $rootScope, PlyFirebase) {
         }
         $rootScope.$broadcast('plyUserLoggedIn', userModel);
 
-        // Identify against customerIo
-        CustomerIoHelper.identifyUser(userModel);
         if (!!window.mixpanel) {
           window.mixpanel.identify(userModel.uid);
           window.mixpanel.people.set({
@@ -132,7 +128,7 @@ function login($q: ng.IQService, $rootScope, PlyFirebase) {
   }
 
   const getAuth = () => authModel;
-  
+
   const getFirstName = () => userModel ? userModel.firstName : '';
 
   const getLastName = () => userModel ? userModel.lastName : '';

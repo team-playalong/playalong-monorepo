@@ -1,9 +1,10 @@
-/* tslint:disable */
-if (typeof angular !== undefined) {
-  if (typeof angular.lowercase !== 'function') {
-    angular.lowercase = text => {
-      return typeof text === 'string' ? text.toLowerCase() : text;
-    };
-  }
+export default function angularPolyfill() {
+	if (typeof window.angular !== undefined) {
+		if (typeof window.angular.lowercase !== 'function') {
+			window.angular.lowercase = text => {
+				return typeof text === 'string' ? text.toLowerCase() : text;
+			};
+		}
+	}
+
 }
-/* tslint:enable */
