@@ -25,6 +25,7 @@
 		"./app/pages/tuner/dsp.js",
 		"./app/pages/tuner/AudioContextMonkeyPatch.js",
 		"./app/config/sentry.config.js",
+		"./app/utils/angular-polyfills.",
 		"*.css",
 		"*.scss"
   ],
