@@ -1,5 +1,5 @@
 interface Window {
-  ga: any;
+	ga: any;
   PLY_CONFIG: any;
 	firebase: any;
 	_cio: any;

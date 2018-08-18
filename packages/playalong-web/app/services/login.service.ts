@@ -96,11 +96,17 @@ function login($q: ng.IQService, $rootScope, PlyFirebase) {
       }
       provider.addScope('email');
 
-      PlyFirebase.authentication.signInWithPopup(provider)
-      .then(authData => {
-        // User successfully logged in
-        userModel = authData.user;
-        resolve(authData);
+			PlyFirebase
+				.authentication
+				.signInWithPopup(provider)
+				.then(authData => {
+					analytics.track('LoggedIn', {
+						userId: authData.uid,
+					});
+
+					// User successfully logged in
+					userModel = authData.user;
+					resolve(authData);
       })
       .catch((error) => reject(error));
     });
