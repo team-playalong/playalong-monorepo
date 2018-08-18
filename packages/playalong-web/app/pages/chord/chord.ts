@@ -15,9 +15,7 @@ export function ChordCtrl(
 ) {
   $scope.login = login;
   $scope.initCtrl = function() {
-    if (!!window.mixpanel) {
-      window.mixpanel.track('ply_page_view_chords');
-    }
+
     $rootScope.currPage = $scope.chord.artist + ' - ' + $scope.chord.title;
     $rootScope.pageTitle = 'Playalong - ' + $scope.chord.artist + ' ' + $scope.chord.title;
     $scope.chordRating = $scope.chord.rating || 1;

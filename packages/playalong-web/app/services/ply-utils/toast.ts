@@ -1,6 +1,5 @@
 import $mdToast from 'angular-material/angular-material.min';
 import $translate from 'angular-translate';
-console.log($mdToast);
 class Toast {
 
 	private conf = {

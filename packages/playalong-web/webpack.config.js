@@ -41,7 +41,7 @@ module.exports = {
 
     new HtmlWebpackPlugin({
       template: path.join(__dirname, '/app/index.ejs'),
-      title: 'Playalong',
+      title: 'Playalong | Amazing Chords',
       env: process.env.NODE_ENV,
     }),
   ],

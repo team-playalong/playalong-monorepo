@@ -45,10 +45,6 @@ FavoritesCtrl.$inject = [
 	'login', 'user', '$rootScope', '$scope',
 ];
 function FavoritesCtrl(login, user, $rootScope, $scope) {
-  if (!!window.mixpanel) {
-    window.mixpanel.track('ply_page_view_favorites');
-  }
-
   this.removeFavorite = ($event, favorite) => {
     $event.preventDefault();
     $event.stopPropagation();
