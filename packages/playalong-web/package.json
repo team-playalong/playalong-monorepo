@@ -24,7 +24,7 @@
 	"sideEffects": [
 		"./app/pages/tuner/dsp.js",
 		"./app/pages/tuner/AudioContextMonkeyPatch.js",
-		"./app/utils/angular-polyfills.",
+		"./app/utils/angular-polyfills.js",
 		"*.css",
 		"*.scss"
 	],
